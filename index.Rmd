@@ -1,6 +1,67 @@
 ---
 title: "Praktiske oplysninger"
-output: html_document
+output: 
+  html_document:
+    toc: true
 ---
 
+Velkommen til kurset Statistisk Dataanalyse 1 (version 2019/2020).
+
+Link til
+
+* officielt kursusbeskrivelse
+* ekstern hjemmeside (kursusmateriale)
+
+På kursets Absalon-side findes de vigtigste oplysninger, men kursushjemmesiden bruges til kursusmateriale.
+
+(løbende pensumliste i Absalon)
+
+(Om eksamen i Absalon)
+
+# Undervisningen: personer, skema og planer
+
+## Forelæser
+
+## Instruktorer
+
+## Skema
+
+## Plan over kursusaktiviteter
+
+# Kursusmateriale: slides, datasæt, opgaver, R, bøger
+
+Der henvises til kursets eksterne hjemmesiden ...
+
+## Forelæsningsslides
+
+## Datasæt
+
+En del kan hentes på CRAN (isdals).
+
+## Opgaver
+
+## R-programmer + øvrige ressourcer
+
+Link til download af R og R studio (som forventes installeret fra start - nyeste version).
+
+
+## Bøger
+
+Vi benytter os af lærebogen 
+
+* Claus Thorn Ekstrøm & Helle Sørensen: **Statistical Data Analyse for the Life Sciences (Second Edition)**
+
+Bogen kan købes i ... .
+
+# Eksamen
+
+Der afholdes en 4 timer skriftlig eksamen d. 
+
+Alle hjælpemidler tilladt inklusive brug af R på egen medbragte computer. Dette betyder også, at I må aflevere jeres besvarelse på computer. Vi snakker om, hvilket format der kan være hensigtsmæssigt her.
+
+Det er jeres eget ansvar at holde jer orienteret om
+
+* frister for til- og afmelding til eksamen (jeg hverken må eller vil hjælpe)
+
+* tid og sted for den skriftlige eksamen
 
