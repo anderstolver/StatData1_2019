@@ -1,0 +1,13 @@
+name: "Statistisk Dataanalyse 1 (2019/2020)"
+output_dir: "docs"
+navbar:
+  title: "Statistisk Dataanalyse 1 (2019/2020)"
+  left:
+    - text: "Praktiske oplysninger"
+      href: index.html
+    - text: "Kursusplan"
+      href: kursusplan.html
+    - text: "Forelæsninger"
+    - text: "Regneøvelser"
+    - text: "R"
+    - text: "Data"
