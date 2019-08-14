@@ -9,10 +9,10 @@ Velkommen til kurset Statistisk Dataanalyse 1 (version 2019/2020).
 
 Link til
 
-* officielt kursusbeskrivelse
-* ekstern hjemmeside (kursusmateriale)
+* Kursets [officielle kursusbeskrivelse](https://kurser.ku.dk/course/lmab10069u/2019-2020)
+* Kursets eksterne [hjemmeside](https://anderstolver.github.io/StatData1_2019/index.html)
 
-På kursets Absalon-side findes de vigtigste oplysninger, men kursushjemmesiden bruges til kursusmateriale.
+På kursets Absalon-side findes de vigtigste oplysninger, men den eksterne kursushjemmeside bruges til kursusmateriale.
 
 (løbende pensumliste i Absalon)
 
