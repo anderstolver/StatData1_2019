@@ -19,6 +19,12 @@ Kursusuge | Dag | Emner | Lærebog | Detaljer
 3 | Onsdag |  |  | link  
 4 | Mandag |  |  | link 
 4 | Onsdag |  |  | link  
+5 | Mandag |  |  | link 
+5 | Onsdag |  |  | link  
+6 | Mandag |  |  | link 
+6 | Onsdag |  |  | link  
+7 | Mandag |  |  | link 
+7 | Onsdag |  |  | link  
 
 # Program for enkelte uger
 
