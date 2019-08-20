@@ -111,10 +111,10 @@ Der vil blive stillet en afleveringsopgave et par gange i løbet af kurset. Det 
 
 Udover de skemalagte timer skal du naturligvis arbejde intensivt med stoffet på egen hånd. Undervisningen (skal) tilrettelægges, så et fuldtidsstudie kræver, at du bruger mindst 40 timer om ugen på dit studie (heraf mindst 20 timer på Statistik Dataanalyse). Hvis du bruger mindre end 20 timer om uger, så kan du ikke forvente at få et fornuftigt udbytte af kurset, og din præstation ved eksamen vil være dårligere, end den behøvede at være. Det er naturligvis meget forskelligt fra person til person hvordan denne tid bedst fordeles på de forskellige kursuselementer, men et løst forslag er følgende:
 
-Forelæsninger: 5 timer
-Øvelsestimer: 5 timer
-Læse i bogen før og efter forelæsninger: 4 timer
-Selvstændigt arbejde med opgaver, slides, R programmer m.m. (før/efter timer): 6 timer
+* Forelæsninger: 5 timer
+* Øvelsestimer: 5 timer
+* Læse i bogen før og efter forelæsninger: 4 timer
+* Selvstændigt arbejde med opgaver, slides, R programmer m.m. (før/efter timer): 6 timer
 
 ## R programmer og datasæt
 
@@ -152,7 +152,7 @@ Alle datasæt, som optræder i lærebogen kan downloades ved at installere R-pak
 
 # Eksamen
 
-Der afholdes en 4 timer skriftlig eksamen, som ifølge mine oplysninger ligger d. 20. november 2019 (men check selv når tiden nærmer sig!). 
+Der afholdes en 4 timer skriftlig eksamen, som ifølge mine oplysninger ligger d. 6. november 2019 (men check selv når tiden nærmer sig!). 
 
 Alle hjælpemidler tilladt inklusive brug af R på egen medbragte computer. Du skal have en computer med til eksamen som har R installeret da dele af opgaven ikke kan løses uden brug af R. Datasæt vil blive udleveret på en USB-stick til eksamen, så du skal anskaffe en adapter hvis du ikke har en USB-indgang i din computer. Dette betyder også, at I må aflevere jeres besvarelse på computer. 
 
