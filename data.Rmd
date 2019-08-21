@@ -1,0 +1,17 @@
+---
+title: "Liste over dataset"
+output: 
+  html_document:
+    toc: true
+---
+
+# Data
+
+På denne side findes en liste over de datasæt, som har været benyttet i forbindelse med undervisningen på Statistisk Dataanalyse 1 (2019/20120).
+
+## Data fra eksempler og opgaver i lærebogen
+
+Download `isdals` R-pakken: **indsæt link til CRAN**
+
+## Øvrige data
+
