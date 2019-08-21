@@ -6,7 +6,11 @@ navbar:
     - text: "Praktiske oplysninger"
       href: index.html
     - text: "Kursusplan"
-      href: kursusplan.html
+      menu:
+        - text: "Oversigtsskema"
+          href: skema.html
+        - text: "Detaljer om undervisningen"
+          href: kursusplan.html
     - text: "Slides"
       menu: 
         - text: "2/9-2019"

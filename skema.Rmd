@@ -1,0 +1,24 @@
+---
+title: "Oversigt over undervisningen"
+output: html_document
+---
+
+Skemaet giver en grov foreløbig plan for undervisningen. Planen og linket (til højre for hver kursusdag) med detaljerede oplysninger opdateres løbende for hver enkelt undervisningsgang.
+
+Kursusuge | Dag | Emner | Lærebog | Detaljer 
+----------| --- | ----- | ------- | -------- 
+1 | Mandag (2/9) | Introduktion | Ch. 1-3 | [link](kursusplan.html/#uge1)
+1 | Onsdag (4/9) | Introduktion | Ch. 1-3 | link  
+2 | Mandag (9/9) |  | Ch. 4, Ch. 5.3.1-5.3.4 | link 
+2 | Onsdag (11/9) |  | Ch. 4, Ch. 5.3.1-5.3.4 | link  
+3 | Mandag (16/9) |  | Resten af Ch. 5 | link 
+3 | Onsdag (18/9) |  | Resten af Ch. 5 | link  
+4 | Mandag (23/9) |  | Ch. 6 | link 
+4 | Onsdag (25/9) |  | Ch. 6 | link  
+5 | Mandag (30/9) |  | Ch. 7 + dele af Ch. 8 | link 
+5 | Onsdag (2/10) |  | Ch. 7 + dele af Ch. 8 | link  
+6 | Mandag (7/10) |  | Dele af Ch. 10+11 | link 
+6 | Onsdag (9/10) |  | Dele af Ch. 10+11 | link  
+7 | Mandag (21/10) |  | Dele af Ch. 12 | link 
+7 | Onsdag (23/10) |  | Dele af Ch. 12 | link  
+8 | Mandag (28/10) |  | Repetition | link  
