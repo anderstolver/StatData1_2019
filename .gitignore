@@ -35,5 +35,10 @@ vignettes/*.pdf
 # Shiny token, see https://shiny.rstudio.com/articles/shinyapps.html
 rsconnect/
 
-
+# Additional files created by sweave
+*.tex
+*.log
+*.nav
+*.snm
+*.toc
 
