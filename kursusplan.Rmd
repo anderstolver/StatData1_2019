@@ -7,7 +7,7 @@ output:
 
 # Oversigt
 
-Skemaet giver en foreløbig grov plan for undervisningen. Planen og linket (til højre for hver kursusdag) med detaljerede oplysninger opdateres løbende for hver enkelt undervisningsgang.
+Skemaet giver en grov foreløbig plan for undervisningen. Planen og linket (til højre for hver kursusdag) med detaljerede oplysninger opdateres løbende for hver enkelt undervisningsgang.
 
 Kursusuge | Dag | Emner | Lærebog | Detaljer 
 ----------| --- | ----- | ------- | -------- 
