@@ -34,3 +34,16 @@ vignettes/*.pdf
 
 # Shiny token, see https://shiny.rstudio.com/articles/shinyapps.html
 rsconnect/
+
+# Source code for slides
+slides/
+
+# Data folder
+data/
+
+# Files produced by sweave
+*.tex
+*.log
+*.nav
+*.snm
+*.synctex.gz
