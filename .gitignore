@@ -34,4 +34,20 @@ vignettes/*.pdf
 
 # Shiny token, see https://shiny.rstudio.com/articles/shinyapps.html
 rsconnect/
+<<<<<<< HEAD
 .Rproj.user
+=======
+
+# Source code for slides
+slides/
+
+# Data folder
+data/
+
+# Files produced by sweave
+*.tex
+*.log
+*.nav
+*.snm
+*.synctex.gz
+>>>>>>> 030ba401349a45789f0548612af67ba58407c9a9
