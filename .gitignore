@@ -42,6 +42,7 @@ rsconnect/
 *.snm
 *.toc
 *.synctex.gz
+*.DS_Store
 
 # .Rnw files 
 *.Rnw
