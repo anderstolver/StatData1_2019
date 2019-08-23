@@ -5,6 +5,9 @@ output:
     toc: true
 ---
 
+***
+
+
 Velkommen til kurset <h2>Statistisk Dataanalyse 1 (version 2019/2020)</h2>
 
 De vigtigste oplysninger findes både på kursets Absalon-side og på kursets eksterne kursushjemmeside. Det er dog i høj grad kursushjemmesiden, som vil blive brugt til distribution af kursusmateriale.
@@ -14,11 +17,19 @@ Vær opmærksom på følgende vigtige links
 * Kursets [officielle kursusbeskrivelse](https://kurser.ku.dk/course/lmab10069u/2019-2020)
 * Kursets eksterne [hjemmeside](https://anderstolver.github.io/StatData1_2019/index.html)
 
+
+***
+
+
 # Praktiske oplysninger om undervisningen
 
 ## Kursusansvarlig og forelæser
 
 Forelæsninger, kursusplanlægning og eksamen varetages af: Anders Tolver (<tolver@math.ku.dk>)
+
+
+***
+
 
 ## Instruktorer
 
@@ -31,6 +42,10 @@ Der er tilknyttet 7 instruktorer (hjælpelærere) til kurset
 * Josva Engmose Jensen
 * Mark Bech Knudsen
 * Mathias Petersen
+
+
+***
+
 
 ## Skema
 
@@ -45,11 +60,19 @@ I kursusuge 8 er der kun undervisning mandag (men altså ikke onsdag).
 
 For en præcis oversigt over lokaler henvises til [den officielle skemaside for KU](https://skema.ku.dk/ku1920/dk/index.htm). Du kan ikke være sikker på, at du skal være i samme lokale hver uge!
 
+
+***
+
+
 ## Plan over kursusaktiviteter
 
 For en detaljeret plan over kursusaktiviteter henvises til følgende [kursusplan](https://anderstolver.github.io/StatData1_2019/kursusplan.html).
 
 Detaljerne i kursusplanen for den kommende uge annonceres som udgangspunkt torsdag eftermiddag. Jeg vurderer løbende hvordan kurset skrider frem , og det er derfor ikke muligt at lave en detaljeret plan for hele kurset fra starten. Der kommer en grov foreløbig oversigt over kurset omkring blokstart.
+
+
+***
+
 
 ## Indhold
 
@@ -65,13 +88,25 @@ Der lægges vægt på "oversættelse" fra biologiske problemstillinger til stati
 
 Beregninger gennemføres i simple tilfælde med lommeregner, men som hovedregel ved brug af det statistiske program R - også ved eksamen.
 
+
+***
+
+
 ## Forudsætninger
 
 Kurset forudsætter kurset Matematik og databehandling eller lignende. Specifkt forudsættes kendskab til R, således at vi ikke starter forfra med R. Hvis din baggrund er anderledes således at du ikke kender R, må du insdstille dig på ekstra arbejde i starten af kurset. 
 
+
+***
+
+
 ## Feedback
 
 Hvis der er problemer i løbet af kurset, så sig til i løbet af kurset i stedet for at vente til evalueringen. Forhåbentlig kan vi så løse problemerne mens kurset kører.
+
+
+***
+
 
 # Om undervisningen
 
@@ -89,6 +124,10 @@ Du vil i lige så høj grad komme til at opleve, at vi trækker på følgende un
 * opgaver og opgaveløsninger
 * R programmer
 
+
+***
+
+
 ## Forelæsninger
 
 Forelæsningerne bliver ikke en slavisk gennemgang af stoffet i bogen. Jeg vil i stedet forsøge at fokusere på ideer, fortolkninger, praksis og forståelse.
@@ -97,15 +136,27 @@ Der vil være derfor være mange ting i bogen, der ikke bliver gennemgået. Det 
 
 Ved forelæsningerne benyttes forelæsningsslides der gøres tilgængelige umiddelbart før forelæsningen.
 
+
+***
+
+
 ## Øvelsestimer
 
 Ved øvelsestimerne sidder I og regner de opgaver der er annonceret på ugeplanen. Der er instruktorer der kan hjælpe jer, og I er velkomne til at spørge om alt hvad der har med kurset at gøre. Enkelte opgaver vil blive gennemgået ved tavlen.
 
 Der vil ikke være tid til at regne alle opgaver i løbet af øvelsestimerne, og de vil ikke alle blive gennemgået. Resten er hjemmearbejde, og det er dit eget ansvar at få fulgt op på opgaverne. 
 
+
+***
+
+
 ## Afleveringsopgaver
 
 Der vil blive stillet en afleveringsopgave et par gange i løbet af kurset. Det er frivilligt at aflevere, men det er et rasende godt tilbud og en fremragende mulighed for at få feedback på din skriftlige fremstilling af besvarelsen.
+
+
+***
+
 
 ## Hjemmearbejde
 
@@ -115,6 +166,10 @@ Udover de skemalagte timer skal du naturligvis arbejde intensivt med stoffet på
 * Øvelsestimer: 5 timer
 * Læse i bogen før og efter forelæsninger: 4 timer
 * Selvstændigt arbejde med opgaver, slides, R programmer m.m. (før/efter timer): 6 timer
+
+
+***
+
 
 ## R programmer og datasæt
 
@@ -148,6 +203,9 @@ I forbindelse med forelæsninger, øvelser og eksamen vil i skulle indlæse og r
 Alle datasæt, som optræder i lærebogen kan downloades ved at installere R-pakken `isdals` fra CRAN.
 
 Øvrige datasæt vil blive uploaded til en særlig folder på [kursets eksterne hjemmeside](https://anderstolver.github.io/StatData1_2019/index.html).
+
+
+***
 
 
 # Eksamen
