@@ -17,3 +17,4 @@ navbar:
     - text: "Data"
       href: data.html
     - text: "Opgaver"
+      href: https://github.com/anderstolver/StatData1_2019/tree/master/docs/opgaver

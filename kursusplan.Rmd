@@ -11,8 +11,8 @@ Skemaet giver en grov foreløbig plan for undervisningen. Planen og linket (til 
 
 Kursusuge | Dag | Emner | Lærebog | Detaljer 
 ----------| --- | ----- | ------- | -------- 
-1 | Mandag (2/9) | Introduktion | Ch. 1-3 | [link](#uge1)
-1 | Onsdag (4/9) | Introduktion | Ch. 1-3 | link  
+1 | Mandag (2/9) | Introduktion, R, Deskriptiv statistik | Ch. 1 | [link](#uge1)
+1 | Onsdag (4/9) | Introduktion | Ch. 2-3 | link  
 2 | Mandag (9/9) |  | Ch. 4, Ch. 5.3.1-5.3.4 | link 
 2 | Onsdag (11/9) |  | Ch. 4, Ch. 5.3.1-5.3.4 | link  
 3 | Mandag (16/9) |  | Resten af Ch. 5 | link 
@@ -39,23 +39,66 @@ Følgende afsnit fra lærebogen er gennemgået
 
 # Program for enkelte uger
 
+
+***
+
+
 ## Kursusuge 1 {#uge1}
 
 ### Generel info
 
+Ud over at følge undervisningen bør du i kursusuge 1
+
+* læse den [praktiske information om kurset](https://anderstolver.github.io/StatData1_2019/index.html)
+
+* installere de nyeste versioner af [R](https://cran.r-project.org) og [R Studio](https://www.rstudio.com/products/rstudio/download/) på din computer
+
+* anskaffe dig et eksemplar af lærebogen *Claus Thorn Ekstrøm & Helle Sørensen:* **Statistical Data Analyse for the Life Sciences (Second Edition)**
+
+Bemærk desuden, at der sikkert er stillet flere opgaver end du kan nå i timerne, og at du skal lave resten derhjemme. Husk at du forventes at arbejde 20 timer om ugen med kurset, for at få fuldt udbytte af undervisningen.
+
 ### Forelæsninger
 
-#### Forelæsninger mandag kl 13.00-14.45 i ...
+#### Forelæsninger mandag kl 13.00-14.45 i aud - A2-82.01 (3-02)
 
-#### Forelæsninger onsdag kl. 9.00-10.45 i ... og kl. 15.00-15.45 i ...
+* Introduktion til kurset
+* Genopfriskning af R
+* Kapitel 1: Datatyper, deskriptiv statistik
+
+#### Forelæsninger onsdag kl. 9.00-10.45 i aud - A2-82.01 (3-02) og kl. 15.00-15.45 i aud - A2-82.01 (3-02)
+
+Jeg vil bruge mindre energi på de matematiske detaljer end der er lagt op til i bogen. Det vigtigste er at forstå problemstillingerne, princippet om mindste kvadraters metode, samt begreber som variation, forventede værdier, population, stikprøve. 
+
+* Kapitel 2: Intro til lineær regression og korrelation
+* Kapitel 3, dog ikke detaljerne i afsnit 3.4: Intro til ensidet ANOVA
+* R Markdown. R Markdown er et filformat til at generere dokumenter der både indeholder almindelig tekst og R-kode med tilhørende output. Det er helt frivilligt om I vil bruge R Markdown til jeres kursusarbejde, men det kan være en hensigtsmæssig måde at arbejde på. Jeg vil selv bruge det i forbindelse med forelæsningerne, og opgave HS.5 i næste uge hjælper dig i gang.
 
 ### Øvelsestimer
 
 #### Øvelser mandag kl. 15.00-16.45 (se lokaleplanen)
 
+HS-opgaver kan findes [her](https://github.com/anderstolver/StatData1_2019/tree/master/docs/opgaver). De øvrige opgaver er fra lærebogen.
+
+* Opgave HS.1: Om at arbejde med R og RStudio. Hvis du har helt styr på hvordan du gebærder dig i R, kan du springe opgaven over.
+* Opgave 1.1: Datatyper
+* Opgave 1.2: Summary measures. Kommentarer: (a) Du må gerne bruge R, men vær sikker på at du forstår hvad der foregår! (b) Se sidste spørgsmål i HS.1 for hvordan du kan indlæse data til R. (c) Man kan tænke på første kvartil som medianen i deldatasættet der inkluderer observationerne fra den mindste observation til medianen.
+* Opgave 1.9. Summary measures, fortsættelse af opgave 1.2
+* Opgave 1.7, men kun spørgsmål 1-4: Histogram og boxplot i R
+* Opgave 1.8: Histogrammer og boxplots
+ 
 #### Øvelser onsdag kl. 11:00-11:45 og kl. 13.00-14.45 (se lokaleplanen)
 
+HS-opgaver kan findes **her - indsæt link**. De øvrige opgaver er fra lærebogen.
 
+* HS.2: Om installation af R-pakker, datasæt fra pakker
+* HS.3: Om datasæt og variable i R
+* Opgave 2.3, men kun spørgsmål 1-7: Lineær regression og korrelation
+* Opgave 2.7: Korrelation 
+* Opgave HS.4: Ensidet ANOVA
+* Opgave 3.1: Ensidet ANOVA
+
+
+***
 
 
 ## Kursusuge 2
@@ -64,9 +107,9 @@ Følgende afsnit fra lærebogen er gennemgået
 
 ### Forelæsninger
 
-#### Forelæsninger mandag kl 13.00-14.45 i ...
+#### Forelæsninger mandag kl 13.00-14.45 i aud - A2-82.01 (3-02)
 
-#### Forelæsninger onsdag kl. 9.00-10.45 i ... og kl. 15.00-15.45 i ...
+#### Forelæsninger onsdag kl. 9.00-10.45 i aud - A2-82.01 (3-02) og kl. 15.00-15.45 i aud - A2-82.01 (3-02)
 
 ### Øvelsestimer
 
@@ -75,6 +118,7 @@ Følgende afsnit fra lærebogen er gennemgået
 #### Øvelser onsdag kl. 11:00-11:45 og kl. 13.00-14.45 (se lokaleplanen)
 
 
+***
 
 
 ## Kursusuge 3
@@ -83,9 +127,9 @@ Følgende afsnit fra lærebogen er gennemgået
 
 ### Forelæsninger
 
-#### Forelæsninger mandag kl 13.00-14.45 i ...
+#### Forelæsninger mandag kl 13.00-14.45 i aud - A2-82.01 (3-02)
 
-#### Forelæsninger onsdag kl. 9.00-10.45 i ... og kl. 15.00-15.45 i ...
+#### Forelæsninger onsdag kl. 9.00-10.45 i aud - A2-82.01 (3-02) og kl. 15.00-15.45 i aud - A2-82.01 (3-02)
 
 ### Øvelsestimer
 
@@ -94,6 +138,7 @@ Følgende afsnit fra lærebogen er gennemgået
 #### Øvelser onsdag kl. 11:00-11:45 og kl. 13.00-14.45 (se lokaleplanen)
 
 
+***
 
 
 ## Kursusuge 4
@@ -102,9 +147,9 @@ Følgende afsnit fra lærebogen er gennemgået
 
 ### Forelæsninger
 
-#### Forelæsninger mandag kl 13.00-14.45 i ...
+#### Forelæsninger mandag kl 13.00-14.45 i aud - A2-82.01 (3-02)
 
-#### Forelæsninger onsdag kl. 9.00-10.45 i ... og kl. 15.00-15.45 i ...
+#### Forelæsninger onsdag kl. 9.00-10.45 i aud - A2-82.01 (3-02) og kl. 15.00-15.45 i aud - A2-82.01 (3-02)
 
 ### Øvelsestimer
 
@@ -113,6 +158,7 @@ Følgende afsnit fra lærebogen er gennemgået
 #### Øvelser onsdag kl. 11:00-11:45 og kl. 13.00-14.45 (se lokaleplanen)
 
 
+***
 
 
 ## Kursusuge 5
@@ -121,9 +167,9 @@ Følgende afsnit fra lærebogen er gennemgået
 
 ### Forelæsninger
 
-#### Forelæsninger mandag kl 13.00-14.45 i ...
+#### Forelæsninger mandag kl 13.00-14.45 i aud - A2-82.01 (3-02)
 
-#### Forelæsninger onsdag kl. 9.00-10.45 i ... og kl. 15.00-15.45 i ...
+#### Forelæsninger onsdag kl. 9.00-10.45 i aud - A2-82.01 (3-02) og kl. 15.00-15.45 i aud - A2-82.01 (3-02)
 
 ### Øvelsestimer
 
@@ -132,6 +178,7 @@ Følgende afsnit fra lærebogen er gennemgået
 #### Øvelser onsdag kl. 11:00-11:45 og kl. 13.00-14.45 (se lokaleplanen)
 
 
+***
 
 
 ## Kursusuge 6
@@ -140,9 +187,9 @@ Følgende afsnit fra lærebogen er gennemgået
 
 ### Forelæsninger
 
-#### Forelæsninger mandag kl 13.00-14.45 i ...
+#### Forelæsninger mandag kl 13.00-14.45 i aud - A2-82.01 (3-02)
 
-#### Forelæsninger onsdag kl. 9.00-10.45 i ... og kl. 15.00-15.45 i ...
+#### Forelæsninger onsdag kl. 9.00-10.45 i aud - A2-82.01 (3-02) og kl. 15.00-15.45 i aud - A2-82.01 (3-02)
 
 ### Øvelsestimer
 
@@ -150,6 +197,8 @@ Følgende afsnit fra lærebogen er gennemgået
 
 #### Øvelser onsdag kl. 11:00-11:45 og kl. 13.00-14.45 (se lokaleplanen)
 
+
+***
 
 
 ## Kursusuge 7
@@ -158,9 +207,9 @@ Følgende afsnit fra lærebogen er gennemgået
 
 ### Forelæsninger
 
-#### Forelæsninger mandag kl 13.00-14.45 i ...
+#### Forelæsninger mandag kl 13.00-14.45 i aud - A2-82.01 (3-02)
 
-#### Forelæsninger onsdag kl. 9.00-10.45 i ... og kl. 15.00-15.45 i ...
+#### Forelæsninger onsdag kl. 9.00-10.45 i aud - A2-82.01 (3-02) og kl. 15.00-15.45 i aud - A2-82.01 (3-02)
 
 ### Øvelsestimer
 
@@ -169,6 +218,7 @@ Følgende afsnit fra lærebogen er gennemgået
 #### Øvelser onsdag kl. 11:00-11:45 og kl. 13.00-14.45 (se lokaleplanen)
 
 
+***
 
 
 ## Kursusuge 8 
@@ -177,7 +227,7 @@ Følgende afsnit fra lærebogen er gennemgået
 
 ### Forelæsninger
 
-#### Forelæsninger mandag kl 13.00-14.45 i ...
+#### Forelæsninger mandag kl 13.00-14.45 i aud - A2-82.01 (3-02)
 
 ### Øvelsestimer
 
