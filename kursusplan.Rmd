@@ -79,7 +79,7 @@ Bemærk desuden, at der sikkert er stillet flere opgaver end du kan nå i timern
 
 #### Øvelser mandag kl. 15.00-16.45 (se lokaleplanen)
 
-<!-- HS-opgaver kan findes [her](https://github.com/anderstolver/StatData1_2019/tree/master/docs/opgaver). De øvrige opgaver er fra lærebogen.
+HS-opgaver kan findes [her](https://github.com/anderstolver/StatData1_2019/tree/master/docs/opgaver). De øvrige opgaver er fra lærebogen.
 
 * Opgave HS.1: Om at arbejde med R og RStudio. Hvis du har helt styr på hvordan du gebærder dig i R, kan du springe opgaven over.
 * Opgave 1.1: Datatyper
@@ -87,8 +87,6 @@ Bemærk desuden, at der sikkert er stillet flere opgaver end du kan nå i timern
 * Opgave 1.9. Summary measures, fortsættelse af opgave 1.2
 * Opgave 1.7, men kun spørgsmål 1-4: Histogram og boxplot i R
 * Opgave 1.8: Histogrammer og boxplots
-
--->
 
 #### Øvelser onsdag kl. 11:00-11:45 og kl. 13.00-14.45 (se lokaleplanen)
 
