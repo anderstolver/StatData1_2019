@@ -16,7 +16,7 @@ navbar:
       href: data.html
     - text: "Opgaver"
       menu:
-        - text: "Fra øvelsestimer"
-          href: docs/opgaver
+        - text: "Fra ovelsestimer"
+          href: opgaver/
         - text: "Gamle eksamensopgaver"
-          href: docs/eksamensopgaver
+          href: eksamensopgaver/
