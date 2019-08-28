@@ -58,7 +58,9 @@ Der er planlagt 5 forelæsninger og 5 øvelsestimer hver uge
 
 I kursusuge 8 er der kun undervisning mandag (men altså ikke onsdag).
 
-For en præcis oversigt over lokaler henvises til [den officielle skemaside for KU](https://skema.ku.dk/ku1920/dk/index.htm). Du kan ikke være sikker på, at du skal være i samme lokale hver uge!
+For en præcis oversigt over lokaler henvises til [den officielle skemaside for KU](https://skema.ku.dk/tt/tt.asp?SDB=KU1920&language=DK&folder=Reporting&style=textspreadsheet&type=module&idtype=id&id=89738&weeks=6&days=1-5&periods=1-68&width=0&height=0&template=SWSCUST2+module+textspreadsheet). Bemærk, at linket viser lokaleoversigten for kursusuge 1. Du kan ikke være sikker på, at du skal være i samme lokale hver uge!
+
+Du kan se skemaet for de følgende uger ved at klikke på linket `Næste uges skema >` nederst på den side, som jeg har linket til.
 
 
 ***
