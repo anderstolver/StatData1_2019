@@ -67,7 +67,7 @@ Emner
 * Genopfriskning af R
 * Kapitel 1: Datatyper, deskriptiv statistik
 
-Slides til dagens forelæsning: [fuld version](slides/sd1_forel190902.pdf) - [Kort version: 4 slides per side](slides/sd1_forel190902_short.pdf)
+Slides til dagens forelæsning: [fuld version](slides/sd1_forel190902.pdf) - [kort version: 4 slides per side](slides/sd1_forel190902_short.pdf)
 
 R-program fra forelæsning d. 2/9-2019: [output](R/forel190902_Rprog.html) - [R Markdown](R/forel190902_Rprog.Rmd)
 
@@ -96,16 +96,14 @@ HS-opgaver kan findes [her](https://github.com/anderstolver/StatData1_2019/tree/
 
 #### Øvelser onsdag kl. 11:00-11:45 og kl. 13.00-14.45 (se lokaleplanen)
 
-<!--
-HS-opgaver kan findes **her - indsæt link**. De øvrige opgaver er fra lærebogen.
+HS-opgaver kan findes [her](https://github.com/anderstolver/StatData1_2019/tree/master/docs/opgaver). De øvrige opgaver er fra lærebogen.
 
-* HS.2: Om installation af R-pakker, datasæt fra pakker
-* HS.3: Om datasæt og variable i R
+* Opgave HS.2: Om installation af R-pakker, datasæt fra pakker
+* Opgave HS.3: Om datasæt og variable i R
 * Opgave 2.3, men kun spørgsmål 1-7: Lineær regression og korrelation
 * Opgave 2.7: Korrelation 
 * Opgave HS.4: Ensidet ANOVA
 * Opgave 3.1: Ensidet ANOVA
--->
 
 
 ***
