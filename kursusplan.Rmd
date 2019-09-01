@@ -61,11 +61,15 @@ Bemærk desuden, at der sikkert er stillet flere opgaver end du kan nå i timern
 
 #### Forelæsninger mandag kl 13.00-14.45 i aud - A2-82.01 (3-02)
 
+Emner
+
 * Introduktion til kurset
 * Genopfriskning af R
 * Kapitel 1: Datatyper, deskriptiv statistik
 
 [Slides til dagens forelæsning](slides/sd1_forel190902.pdf) - [(Kort version: 4 slides per side)](slides/sd1_forel190902_short.pdf)
+
+[R-program fra forelæsning d. 2/9-2019](R/forel190902_Rprog.html) 
 
 #### Forelæsninger onsdag kl. 9.00-10.45 i aud - A2-82.01 (3-02) og kl. 15.00-15.45 i aud - A2-82.01 (3-02)
 
