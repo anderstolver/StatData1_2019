@@ -76,7 +76,7 @@ Nogle af vejledningerne er skrevet på et forholdsvis højt niveau, så man skal
     - `mean, sd, var, median, summary`: til at beskrive en numerisk/kontinuert/kvantitativ variabel
     - `plot, boxplot, hist`: til visualisering af data
     - `table`: til tabellering af kategoriske variable
-* [R-program fra forelæsning d. 2/9-2019](R/forel190902_Rprog.html)    
+* R-program fra forelæsning d. 2/9-2019: [output](R/forel190902_Rprog.html) - [R Markdown](R/forel190902_Rprog.Rmd)
     
 <!--
 

@@ -67,9 +67,9 @@ Emner
 * Genopfriskning af R
 * Kapitel 1: Datatyper, deskriptiv statistik
 
-[Slides til dagens forelæsning](slides/sd1_forel190902.pdf) - [(Kort version: 4 slides per side)](slides/sd1_forel190902_short.pdf)
+Slides til dagens forelæsning: [fuld version](slides/sd1_forel190902.pdf) - [Kort version: 4 slides per side](slides/sd1_forel190902_short.pdf)
 
-[R-program fra forelæsning d. 2/9-2019](R/forel190902_Rprog.html) 
+R-program fra forelæsning d. 2/9-2019: [output](R/forel190902_Rprog.html) - [R Markdown](R/forel190902_Rprog.Rmd)
 
 #### Forelæsninger onsdag kl. 9.00-10.45 i aud - A2-82.01 (3-02) og kl. 15.00-15.45 i aud - A2-82.01 (3-02)
 
