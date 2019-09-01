@@ -18,6 +18,6 @@ navbar:
     - text: "Opgaver"
       menu:
         - text: "Fra ovelsestimer"
-          href: opgaver
+          href: https://github.com/anderstolver/StatData1_2019/tree/master/docs/opgaver
         - text: "Gamle eksamensopgaver"
-          href: eksamensopgaver
+          href: https://github.com/anderstolver/StatData1_2019/tree/master/docs/eksamensopgaver
