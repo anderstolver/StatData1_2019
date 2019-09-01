@@ -11,7 +11,7 @@
 
 
 
-<title>Liste over dataset</title>
+<title>Oversigt over R materiale</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -232,29 +232,90 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Liste over dataset</h1>
+<h1 class="title toc-ignore">Oversigt over R materiale</h1>
 
 </div>
 
 <div id="TOC">
 <ul>
-<li><a href="#data">Data</a><ul>
-<li><a href="#data-fra-eksempler-og-opgaver-i-lrebogen">Data fra eksempler og opgaver i lærebogen</a></li>
-<li><a href="#vrige-data">Øvrige data</a></li>
+<li><a href="#installation-r-pakker-og-nyttige-links">Installation, R pakker og nyttige links</a><ul>
+<li><a href="#installation-af-r-og-r-studio">Installation af R og R Studio</a></li>
+<li><a href="#r-pakker-benyttet-pa-statistisk-dataanalyse-2">R pakker benyttet på Statistisk Dataanalyse 2</a></li>
+<li><a href="#vejledninger-og-notater">Vejledninger og notater</a></li>
+</ul></li>
+<li><a href="#centrale-r-begreber-fra-undervisningen">Centrale R begreber fra undervisningen</a><ul>
+<li><a href="#uge-1">Uge 1</a></li>
 </ul></li>
 </ul>
 </div>
 
-<div id="data" class="section level1">
-<h1>Data</h1>
-<p>På denne side findes en liste over de datasæt, som har været benyttet i forbindelse med undervisningen på Statistisk Dataanalyse 1 (2019/20120).</p>
-<div id="data-fra-eksempler-og-opgaver-i-lrebogen" class="section level2">
-<h2>Data fra eksempler og opgaver i lærebogen</h2>
-<p>De fleste datasæt som benyttes i lærebogen findes i <code>isdals</code> R-pakken.</p>
-<p>Du kan læse mere om, hvordan du downloader og bruger data fra <code>isdals</code> R-pakken i <a href="opgaver/hs1-4.pdf">Opgave HS. 2</a>.</p>
+<hr />
+<div id="installation-r-pakker-og-nyttige-links" class="section level1">
+<h1>Installation, R pakker og nyttige links</h1>
+<div id="installation-af-r-og-r-studio" class="section level2">
+<h2>Installation af R og R Studio</h2>
+<p>Du skal først installere R: <a href="http://www.r-project.org/">www.r-project.org/</a></p>
+<ul>
+<li>klik CRAN i venstre bjælke og vælg et mirror i Danmark</li>
+<li>vælg operativsystem</li>
+<li>følg vejledningen (brug defaultindstillingerne)</li>
+</ul>
+<p>Dernæst skal du installere RStudio: <a href="http://www.rstudio.com/">www.rstudio.com</a></p>
+<ul>
+<li>Vælg “RStudio Desktop” (gratis)</li>
+</ul>
+<p>Hvis du allerede har RStudio installeret, så kan programmet også updateres inde fra RStudio</p>
+<ul>
+<li>vælg <code>Help</code> i menuen og derefter <code>Check for updates</code></li>
+</ul>
+<hr />
 </div>
-<div id="vrige-data" class="section level2">
-<h2>Øvrige data</h2>
+<div id="r-pakker-benyttet-pa-statistisk-dataanalyse-2" class="section level2">
+<h2>R pakker benyttet på Statistisk Dataanalyse 2</h2>
+<p>R kode er organiseret i R pakker. Når man installerer R på sin computer får man adgang til en lang række R funktioner, men det er ikke alle R funktioner der er tilgængelige, blot man åbner R. Derfor vil man ofte på brug for at <em>loade</em> R pakker i sine R programmer.</p>
+<p>R pakken <code>MASS</code> følger med R standardinstallationen, men skal loades i dine R programmer ved at køre kommandoen</p>
+<pre class="r"><code>library(MASS)</code></pre>
+<p>Følgende øvrige R pakker har været benyttet / omtalt på Statistisk Dataanalyse 1 (2019/2020) og disse R pakker skal du selv først installere på din computer og dernæst loade ved at køre kommandoen <code>library(&quot;pakkenavn&quot;)</code>.</p>
+<ul>
+<li><code>isdals</code>: indeholder datasæt fra lærebogen</li>
+<li><code>ggplot2</code>: indeholder funktioner til at lave figurer</li>
+<li><code>tidyverse</code> indeholder en masse nyttige funktioner til at lave manipulationer med datasæt</li>
+</ul>
+<p>Du kan bl.a. løse <a href="opgaver/hs1-4.pdf">Opgave HS. 2</a> for at lære, hvordan du kan downloade en R pakke.</p>
+<hr />
+</div>
+<div id="vejledninger-og-notater" class="section level2">
+<h2>Vejledninger og notater</h2>
+<p>Her findes en liste over nogle nyttige/links til vejledninger og manualer, som kan være nyttige, når man arbejder med R.</p>
+<p>Nogle af vejledningerne er skrevet på et forholdsvis højt niveau, så man skal ofte have noget erfaring med R, for at forstå det hele.</p>
+<!-- * **Anders Tolver: Notat om datamanipulationer:** skrevet med henblik på StatData1
+* **Anders Tolver: Notat om visualisering:** skrevet med henblik på StatData1
+* **Anders Tolver: Notat om Rmarkdown:** skrevet med henblik på StatData1
+* **Helle Sørensen:Gammels notat om R:** skrevet med henblik på studerende
+* **Hadley Wickham R for data science** sej (men avanceret) bog der beskriver værktøjerne omkring **tidyverse** pakken
+* **Yuwie: R markdown:** sej (med avanceret) om R markdown
+-->
+<hr />
+</div>
+</div>
+<div id="centrale-r-begreber-fra-undervisningen" class="section level1">
+<h1>Centrale R begreber fra undervisningen</h1>
+<div id="uge-1" class="section level2">
+<h2>Uge 1</h2>
+<ul>
+<li>Ved undervisningen i uge 1 talte vi bl.a. om R kommandoerne
+<ul>
+<li><code>mean, sd, var, median, summary</code>: til at beskrive en numerisk/kontinuert/kvantitativ variabel</li>
+<li><code>plot, boxplot, hist</code>: til visualisering af data</li>
+<li><code>table</code>: til tabellering af kategoriske variable</li>
+</ul></li>
+<li><a href="R/sd1_forel190902.html">R-program fra forelæsning d. 2/9-2019</a></li>
+</ul>
+<!--
+
+    - hvordan man installerer og loader en R pakke
+    - hvordan man kommer i gang med at bruge R markdown formatet
+-->
 </div>
 </div>
 
