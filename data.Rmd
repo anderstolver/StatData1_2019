@@ -13,7 +13,7 @@ På denne side findes en liste over de datasæt, som har været benyttet i forbi
 
 De fleste datasæt som benyttes i lærebogen findes i `isdals` R-pakken. 
 
-Du kan læse mere om, hvordan du downloader og bruger data fra `isdals` R-pakken i [Opgave HS. 2](https://github.com/anderstolver/StatData1_2019/tree/master/docs/opgaver/hs1-4.pdf).
+Du kan læse mere om, hvordan du downloader og bruger data fra `isdals` R-pakken i [Opgave HS. 2](opgaver/hs1-4.pdf).
 
 ## Øvrige data
 

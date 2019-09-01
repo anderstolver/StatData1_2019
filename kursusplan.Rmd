@@ -65,6 +65,8 @@ Bemærk desuden, at der sikkert er stillet flere opgaver end du kan nå i timern
 * Genopfriskning af R
 * Kapitel 1: Datatyper, deskriptiv statistik
 
+[Slides til dagens forelæsning](slides/sd1_forel190902.pdf) - [(Kort version: 4 slides per side)](slides/sd1_forel190902_short.pdf)
+
 #### Forelæsninger onsdag kl. 9.00-10.45 i aud - A2-82.01 (3-02) og kl. 15.00-15.45 i aud - A2-82.01 (3-02)
 
 <!-- Jeg vil bruge mindre energi på de matematiske detaljer end der er lagt op til i bogen. Det vigtigste er at forstå problemstillingerne, princippet om mindste kvadraters metode, samt begreber som variation, forventede værdier, population, stikprøve. 

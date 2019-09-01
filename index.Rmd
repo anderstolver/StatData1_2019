@@ -35,13 +35,13 @@ Forelæsninger, kursusplanlægning og eksamen varetages af: Anders Tolver (<tolv
 
 Der er tilknyttet 7 instruktorer (hjælpelærere) til kurset
 
-* Asger Andersen
-* Frederik Mølkjær Andersen
-* Jens Baalkilde Andersen
-* Frederik Baadsgaard
-* Josva Engmose Jensen
-* Mark Bech Knudsen
-* Mathias Petersen
+* Hold 6: Asger Andersen
+* Hold 5: Frederik Mølkjær Andersen
+* Hold 2: Jens Baalkilde Andersen
+* Hold 3: Frederik Baadsgaard
+* Hold 1: Josva Engmose Jensen
+* Hold 4: Mark Bech Knudsen
+* Hold 7: Mathias Petersen
 
 
 ***
