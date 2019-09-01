@@ -18,6 +18,6 @@ navbar:
     - text: "Opgaver"
       menu:
         - text: "Fra ovelsestimer"
-          href: opgaver/
+          href: opgaver
         - text: "Gamle eksamensopgaver"
-          href: eksamensopgaver/
+          href: eksamensopgaver
