@@ -1,0 +1,85 @@
+---
+title: "Oversigt over R materiale"
+output: 
+  html_document:
+    toc: true
+---
+
+***
+
+# Installation, R pakker og nyttige links
+
+## Installation af R og R Studio
+
+Du skal først installere R: [www.r-project.org/](http://www.r-project.org/) 
+
+* klik CRAN i venstre bjælke og vælg et mirror i Danmark
+* vælg operativsystem
+* følg vejledningen (brug defaultindstillingerne)
+
+Dernæst skal du installere RStudio: [www.rstudio.com](http://www.rstudio.com/)
+
+* Vælg "RStudio Desktop" (gratis)
+
+Hvis du allerede har RStudio installeret, så kan programmet også updateres inde fra RStudio 
+
+* vælg `Help` i menuen og derefter `Check for updates`
+
+
+***
+
+
+## R pakker benyttet på Statistisk Dataanalyse 2
+
+R kode er organiseret i R pakker. Når man installerer R på sin computer får man adgang til en lang række R funktioner, men det er ikke alle R funktioner der er tilgængelige, blot man åbner R. Derfor vil man ofte på brug for at *loade* R pakker i sine R programmer. 
+
+R pakken `MASS` følger med R standardinstallationen, men skal loades i dine R programmer ved at køre kommandoen 
+```{r}
+library(MASS)
+```
+
+Følgende øvrige R pakker har været benyttet / omtalt på Statistisk Dataanalyse 1 (2019/2020) og disse R pakker skal du selv først installere på din computer og dernæst loade ved at køre kommandoen `library("pakkenavn")`.
+
+* `isdals`: indeholder datasæt fra lærebogen
+* `ggplot2`: indeholder funktioner til at lave figurer
+* `tidyverse` indeholder en masse nyttige funktioner til at lave manipulationer med datasæt
+
+Du kan bl.a. løse [Opgave HS. 2](opgaver/hs1-4.pdf) for at lære, hvordan du kan downloade en R pakke.
+
+
+***
+
+
+## Vejledninger og notater
+
+Her findes en liste over nogle nyttige/links til vejledninger og manualer, som kan være nyttige, når man arbejder med R. 
+
+Nogle af vejledningerne er skrevet på et forholdsvis højt niveau, så man skal ofte have noget erfaring med R, for at forstå det hele.
+
+
+<!-- * **Anders Tolver: Notat om datamanipulationer:** skrevet med henblik på StatData1
+* **Anders Tolver: Notat om visualisering:** skrevet med henblik på StatData1
+* **Anders Tolver: Notat om Rmarkdown:** skrevet med henblik på StatData1
+* **Helle Sørensen:Gammels notat om R:** skrevet med henblik på studerende
+* **Hadley Wickham R for data science** sej (men avanceret) bog der beskriver værktøjerne omkring **tidyverse** pakken
+* **Yuwie: R markdown:** sej (med avanceret) om R markdown
+-->
+
+***
+
+
+# Centrale R begreber fra undervisningen
+
+## Uge 1
+
+* Ved undervisningen i uge 1 talte vi bl.a. om R kommandoerne
+    - `mean, sd, var, median, summary`: til at beskrive en numerisk/kontinuert/kvantitativ variabel
+    - `plot, boxplot, hist`: til visualisering af data
+    - `table`: til tabellering af kategoriske variable
+* [R-program fra forelæsning d. 2/9-2019](R/forel190902_Rprog.html)    
+    
+<!--
+
+    - hvordan man installerer og loader en R pakke
+    - hvordan man kommer i gang med at bruge R markdown formatet
+-->
