@@ -76,7 +76,11 @@ Nogle af vejledningerne er skrevet på et forholdsvis højt niveau, så man skal
     - `mean, sd, var, median, summary`: til at beskrive en numerisk/kontinuert/kvantitativ variabel
     - `plot, boxplot, hist`: til visualisering af data
     - `table`: til tabellering af kategoriske variable
+    - `lm`: til at estimere en regressionslinje og beregne gruppegennemsnit i ensidet variansanalyse
+    - `abline`: til at tilføle en linje til et scatterplot
+    _ `cor`: til at beregne en korrelationskoefficient mellem to kvantitative kontinuerte variable
 * R-program fra forelæsning d. 2/9-2019: [output](R/forel190902_Rprog.html) - [R Markdown](R/forel190902_Rprog.Rmd)
+* R-program fra forelæsning d. 4/9-2019: [output](R/forel190904_Rprog.html) - [R Markdown](R/forel190904_Rprog.Rmd)
     
 <!--
 

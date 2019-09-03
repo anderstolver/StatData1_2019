@@ -73,13 +73,16 @@ R-program fra forelæsning d. 2/9-2019: [output](R/forel190902_Rprog.html) - [R 
 
 #### Forelæsninger onsdag kl. 9.00-10.45 i aud - A2-82.01 (3-02) og kl. 15.00-15.45 i aud - A2-82.01 (3-02)
 
-<!-- Jeg vil bruge mindre energi på de matematiske detaljer end der er lagt op til i bogen. Det vigtigste er at forstå problemstillingerne, princippet om mindste kvadraters metode, samt begreber som variation, forventede værdier, population, stikprøve. 
+Jeg vil bruge mindre energi på de matematiske detaljer end der er lagt op til i bogen. Det vigtigste er at forstå problemstillingerne, princippet om mindste kvadraters metode, samt begreber som variation, forventede værdier, population, stikprøve. 
 
 * Kapitel 2: Intro til lineær regression og korrelation
 * Kapitel 3, dog ikke detaljerne i afsnit 3.4: Intro til ensidet ANOVA
-* R Markdown. R Markdown er et filformat til at generere dokumenter der både indeholder almindelig tekst og R-kode med tilhørende output. Det er helt frivilligt om I vil bruge R Markdown til jeres kursusarbejde, men det kan være en hensigtsmæssig måde at arbejde på. Jeg vil selv bruge det i forbindelse med forelæsningerne, og opgave HS.5 i næste uge hjælper dig i gang.
+* R Markdown. R Markdown er et filformat til at generere dokumenter der både indeholder almindelig tekst og R-kode med tilhørende output. Det er en hensigtsmæssig måde at arbejde på. Jeg bruger det selv i forbindelse med forelæsningerne, og opgave HS.5 i næste uge hjælper dig i gang.
 
--->
+Slides til dagens forelæsning: [fuld version](slides/sd1_forel190904_handout.pdf) - [kort version: 4 slides per side](slides/sd1_forel190904_short.pdf)
+
+R-program fra forelæsning d. 4/9-2019: [output](R/forel190904_Rprog.html) - [R Markdown](R/forel190904_Rprog.Rmd)
+
 
 ### Øvelsestimer
 
