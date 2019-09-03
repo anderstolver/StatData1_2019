@@ -12,9 +12,9 @@ Skemaet giver en grov foreløbig plan for undervisningen. Planen og linket (til 
 Kursusuge | Dag | Emner | Lærebog | Detaljer 
 ----------| --- | ----- | ------- | -------- 
 1 | Mandag (2/9) | Introduktion, R, Deskriptiv statistik | Ch. 1 | [link](#uge1)
-1 | Onsdag (4/9) |  | Ch. 2-3 | link  
-2 | Mandag (9/9) |  | Ch. 4, Ch. 5.3.1-5.3.4 | link 
-2 | Onsdag (11/9) |  | Ch. 4, Ch. 5.3.1-5.3.4 | link  
+1 | Onsdag (4/9) | Intro til lineær regression og ensidet ANOVA | Ch. 2-3 | [link](#uge1) 
+2 | Mandag (9/9) | Normalfordelingen  | Ch. 4.1+4.3 | link 
+2 | Onsdag (11/9) | Analyse af en stikprøve | Ch. 4.2+4.4, Ch. 5.3.1-5.3.4 | link  
 3 | Mandag (16/9) |  | Resten af Ch. 5 | link 
 3 | Onsdag (18/9) |  | Resten af Ch. 5 | link  
 4 | Mandag (23/9) |  | Ch. 6 | link 
@@ -29,13 +29,13 @@ Kursusuge | Dag | Emner | Lærebog | Detaljer
 
 ## Liste over gennemgået pensum
 
-Følgende afsnit fra lærebogen er gennemgået
+Følgende afsnit fra lærebogen er gennemgået i kursusuge 1
 
-* ...
+* Chapter 1: Datatyper, visualisering og deskriptiv statistik
 
-* ...
+* Chapter 2: Introduktion til lineær regression
 
-* ...
+* Chapter 3: Sammenligning af grupper og introduktion til ensidet variansanalyse
 
 # Program for enkelte uger
 
@@ -116,18 +116,53 @@ HS-opgaver kan findes [her](https://github.com/anderstolver/StatData1_2019/tree/
 
 ### Generel info
 
+<!--
+
+* om mængden af opgaver (flere / færre)
+* vejledende besvarlser
+* input til ugens pensum/opgaver
+* Om Quizzer: quiz 1 + quiz 2
+-->
+
 ### Forelæsninger
 
 #### Forelæsninger mandag kl 13.00-14.45 i aud - A2-82.01 (3-02)
 
+<!-- Kapitel 4, dog ikke afsnit 4.2 og 4.4 -->
+
 #### Forelæsninger onsdag kl. 9.00-10.45 i aud - A2-82.01 (3-02) og kl. 15.00-15.45 i aud - A2-82.01 (3-02)
+
+<!--
+Kapitel 5 tages i en lidt speciel rækkefølge, idet vi først snakker om model, estimation og konfidensinterval for en enkelt stikprøve (one sample), og først senere går tilbage til lineær regression og ensidet ANOVA. I bogen er de tre modeltyper blandet mere sammen. 
+
+* Afsnit 4.2 
+* Afsnit 4.4: Du kan læse dette overfladisk; jeg siger nok lidt om det ved forelæsningerne
+* Afsnit 5.3, indtil delafsnit 5.3.4 (dvs. side 117 nederst til side 124 øverst)
+* Eftermiddag: Om gæt på antal punkter; samme data som opgave HS.11 (dette skal ændres!)
+-->
 
 ### Øvelsestimer
 
 #### Øvelser mandag kl. 15.00-16.45 (se lokaleplanen)
 
+<!--
+* Opgave HS.5: Om R Markdown. Hvis du har tænkt dig at lave eksamensbesvarelsen på computeren, så kan du med fordel bruge R Markdown.
+* Opgave 4.1: Histogrammer og stikprøvestørrelser.
+* Opgave HS.6: Normalfordelingen
+* Opgave HS.7: Transformation
+* Caseopgave 1, del I: side 428 i bogen
+-->
+
 #### Øvelser onsdag kl. 11:00-11:45 og kl. 13.00-14.45 (se lokaleplanen)
 
+<!--
+* Opgave HS.9: Indlæsning af data.
+* Opgave HS.10: Konfidensinterval på flere måder i R
+* HS.8: Konfidensinterval
+* Opgave HS.11: Gæt på antal punkter, variationskoefficient. 
+* Opgave 4.5: Evaluering af QQ-plots
+* HS.12: Ekstra spørgsmål til opgave 4.5 
+-->
 
 ***
 
