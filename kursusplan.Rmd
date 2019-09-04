@@ -145,24 +145,22 @@ Kapitel 5 tages i en lidt speciel rækkefølge, idet vi først snakker om model,
 
 #### Øvelser mandag kl. 15.00-16.45 (se lokaleplanen)
 
-<!--
 * Opgave HS.5: Om R Markdown. Hvis du har tænkt dig at lave eksamensbesvarelsen på computeren, så kan du med fordel bruge R Markdown.
 * Opgave 4.1: Histogrammer og stikprøvestørrelser.
 * Opgave HS.6: Normalfordelingen
 * Opgave HS.7: Transformation
+<!--
 * Caseopgave 1, del I: side 428 i bogen
 -->
 
 #### Øvelser onsdag kl. 11:00-11:45 og kl. 13.00-14.45 (se lokaleplanen)
 
-<!--
 * Opgave HS.9: Indlæsning af data.
 * Opgave HS.10: Konfidensinterval på flere måder i R
 * HS.8: Konfidensinterval
 * Opgave HS.11: Gæt på antal punkter, variationskoefficient. 
 * Opgave 4.5: Evaluering af QQ-plots
 * HS.12: Ekstra spørgsmål til opgave 4.5 
--->
 
 ***
 
