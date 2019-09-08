@@ -28,6 +28,9 @@ Følgende datasæt har desuden været benyttet ved regneøvelserne
 ### Gamle eksamensopgaver
 -->
 
-<!--
+
 ### Forelæsninger
--->
+
+Følgende datasæt har desuden været benyttet ved forelæsningerne
+
+* Eksempel fra 9/9-2019 (højder af studerende på StatData1 i 2017): [stud2017-v2.xls](data/stud2017-v2.xls)

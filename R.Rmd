@@ -96,3 +96,14 @@ Nogle af vejledningerne er skrevet på et forholdsvis højt niveau, så man skal
     - hvordan man installerer og loader en R pakke
     - hvordan man kommer i gang med at bruge R markdown formatet
 -->
+
+## Uge 2
+
+* Ved undervisningen i uge 2 talte vi bl.a. om R kommandoerne
+    - `pnorm`: til beregning af sandsynligheder i en normalfordeling
+    - `qnorm`: til beregning af fraktiler i en normalfordeling
+    - `rnorm`: til simulation (dvs. trækning af kunstige data) fra en normalfordeling
+    - `qqnorm`: til at tegne et QQ-plot med henblik på at vurdere om data ligner en normalfordling
+
+<!--* R-program fra forelæsning d. 9/9-2019: [output](R/forel190909_Rprog.html) - [R Markdown](R/forel190909_Rprog.Rmd)
+* R-program fra forelæsning d. 11/9-2019: [output](R/forel190911_Rprog.html) - [R Markdown](R/forel190911_Rprog.Rmd)-->

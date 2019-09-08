@@ -137,6 +137,8 @@ Ved dagens forelæsning snakker vi om lærebogens Kapitel 4, dog ikke afsnit 4.2
 * Hvordan checker man om data er normalfordelte?
 * Hvorfor er normalfordelingen så vigtig?
 
+Slides til dagens forelæsning: [fuld version](slides/sd1_forel190909_handout.pdf) - [kort version: 4 slides per side](slides/sd1_forel190909_short.pdf)
+
 #### Forelæsninger onsdag kl. 9.00-10.45 i aud - A2-82.01 (3-02) og kl. 15.00-15.45 i aud - A2-82.01 (3-02)
 
 Kapitel 5 tages i en lidt speciel rækkefølge, idet vi først snakker om model, estimation og konfidensinterval for en enkelt stikprøve (one sample), og først senere går tilbage til lineær regression og ensidet ANOVA. I bogen er de tre modeltyper blandet mere sammen. 
