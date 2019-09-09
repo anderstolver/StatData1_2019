@@ -26,7 +26,7 @@ Følgende datasæt har desuden været benyttet ved regneøvelserne
 
 ### Gamle eksamensopgaver
 
-Følgende datasæt hører til de [gamle eksamensopgaver](eksamensopgaver/)
+Følgende datasæt hører til de [gamle eksamensopgaver](https://github.com/anderstolver/StatData1_2019/tree/master/docs/eksamensopgaver)
 
 * Eksamen jan. 2019, opgave 1: [ss_gr.txt](data/ss_gr.txt) - [ss_gr.xlsx](data/ss_gr.xlsx)
 * Eksamen jan. 2019, opgave 2: [florida.txt](data/florida.txt) - [florida.xlsx](data/florida.xlsx)
