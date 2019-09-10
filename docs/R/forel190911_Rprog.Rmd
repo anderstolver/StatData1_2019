@@ -150,7 +150,11 @@ Der er to ting som gør, at vi alligevel godt kan bruge lærebogens Kapitel 5.3 
 
 Vores datasæt består og 51 målinger, hvilket må betragtes som en rimelig stor stikprøve, så der er god grund til at tro, at vi blot kan beskrive gennemsnittet ved en normalfordeling.
 
-Til illustration af pointen kan vi lave et legetøjseksperiment. Lad os for et øjeblik antage at de 51 udgør den fulde population, som vi interesserer os for. Histogrammet her ...
+Til illustration af pointen kan vi lave et legetøjseksperiment. Eksemplet viser hvordan computeren kan bruges til at lave simulationseksperimenter. Detaljerne er ikke pensum, men det er bestemt inden for rækkevidde for den ambitiøse studerende, at lære denne teknik selv. 
+
+Lad os for et øjeblik antage at de 51 målinger udgør den fulde population, som vi interesserer os for. 
+
+Histogrammet her ...
 
 ```{r}
 hist(studiejob$indtaegt, prob = TRUE, xlab = "Maanedlig indtaegt (i DKK)", main = "Studerende paa StatData1 i 2019", col = "lightgrey")
