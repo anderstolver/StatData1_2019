@@ -105,6 +105,7 @@ Nogle af vejledningerne er skrevet på et forholdsvis højt niveau, så man skal
     - `rnorm`: til simulation (dvs. trækning af kunstige data) fra en normalfordeling
     - `qqnorm`: til at tegne et QQ-plot med henblik på at vurdere om data ligner en normalfordling
     - `read_excel`, `read.table`: til indlæsning af data fra excel-filer (.xlsx) og tekst-filer (.txt)
+    - `qt`: til beregning af fraktiler i en t-fordeing (bruges i forb. med konfidensintervaller)
     - `t.test, confint`: til beregning af konfidensintervaller for gennemsnit baseret på en enkelt stikprøve
 
 * R-program fra forelæsning d. 9/9-2019: [output](R/forel190909_Rprog.html) - [R Markdown](R/forel190909_Rprog.Rmd)

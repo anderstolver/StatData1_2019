@@ -297,7 +297,14 @@ $(document).ready(function () {
 <div id="oversigt-over-undervisningen" class="section level1">
 <h1>Oversigt over undervisningen</h1>
 <p>Skemaet giver en grov foreløbig plan for undervisningen. Planen og linket (til højre for hver kursusdag) med detaljerede oplysninger opdateres løbende for hver enkelt undervisningsgang.</p>
-<table>
+<table style="width:53%;">
+<colgroup>
+<col width="15%" />
+<col width="5%" />
+<col width="8%" />
+<col width="11%" />
+<col width="12%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th>Kursusuge</th>
@@ -339,8 +346,8 @@ $(document).ready(function () {
 <tr class="odd">
 <td>3</td>
 <td>Mandag (16/9)</td>
-<td></td>
-<td>Resten af Ch. 5</td>
+<td>Linæer regression og ensidet ANOVA (i detaljer)</td>
+<td>Ch. 5.1-5.2</td>
 <td><a href="#uge3">link</a></td>
 </tr>
 <tr class="even">
@@ -569,25 +576,20 @@ $(document).ready(function () {
 <div id="generel-info-2" class="section level3">
 <h3>Generel info</h3>
 <ul>
-<li>Ved den skriftlige eksamen vil en del af eksamenssættet bestå af <em>multiple choice opgaver</em> (dvs. små quiz-spørgmål). For at give dig mulighed for at træne dette format, så vil der hver uge være en ny quiz i Absalon, som du kan øve dig på. Disse quizzer gøres typisk tilgængelige onsdag eftermiddag eller torsdag (dvs. efter den skemalagte undervisning), så du kan passende bruge noget at dit hjemmearbejde til at lave quizzerne, og dermed repetere ugens pensum.</li>
+<li><p>Ved den skriftlige eksamen vil en del af eksamenssættet bestå af <em>multiple choice opgaver</em> (dvs. små quiz-spørgmål). For at give dig mulighed for at træne dette format, så vil der hver uge være en ny quiz i Absalon, som du kan øve dig på. Disse quizzer gøres typisk tilgængelige onsdag eftermiddag eller torsdag (dvs. efter den skemalagte undervisning), så du kan passende bruge noget at dit hjemmearbejde til at lave quizzerne, og dermed repetere ugens pensum.</p></li>
+<li><p>I denne uge skal vi have udvidet vores diskussion af statistiske modeller, estimation, standard errors og konfidensintervaller til også at dække lineær regression og ensidet variansanalyse. Derudover skal vi snakke om hypotesetest. Nogle af jer vil opleve at analyserne hver for sig er nogenlunde nemme at gå til, og at det svære først og fremmest er at finde ud af hvilken analyse der er den korrekte at gribe fat i. Jeg anbefaler at I bruger <a href="slides/modeller.pdf">modelvalgsdiagrammet</a> (flowdiagram/procesdiagram), som jeg tit viser til forelæsningerne.</p></li>
+<li><p>Du formodes nu (efter kursusuge 2) at være i stand til at læse data ind fra excel- eller tekstfiler (<a href="opgaver/hs5-12.pdf">opgave HS.9</a>). Indlæsning af xlsx-filer kræver pakken readxl. Den kan installeres en gang for alle som forklaret i opgave HS.9, men skal loades når du skal bruge den, fx vha. library-funktionen.</p></li>
+<li><p>Husk at rækkefølgen af opgaver ikke er tilfældig, så jeg anbefaler at du regner dem i den rækkefølge de står på ugeplanen.</p></li>
 </ul>
-<!--
-* I denne uge skal vi have udvidet vores diskussion af statistiske modeller, estimation, standard errors og konfidensintervaller til også at dække lineær regression og ensidet variansanalyse. Derudover skal vi snakke om hypotesetest. Nogle af jer vil opleve at analyserne hver for sig er nogenlunde nemme at gå til, og at det svære først og fremmest er at finde ud af hvilken analyse der er den korrekte at gribe fat i. Jeg anbefaler at I bruger modelvalgsdiagrammet. (flowdiagram/procesdiagram), som jeg tit viser til forelæsningerne. Det ligger også i Notater, som filen modeller.pdf.
-
-* Du formodes nu (efter kursusuge 2) at være i stand til at læse data ind fra excel- eller tekstfiler (opgave HS.9). Indlæsning af xlsx-filer kræver pakken readxl. Den kan installeres en gang for alle som forklaret i opgave HS.9, men skal loades når du skal bruge den, fx vha. library-funktionen.
-
-* Husk at rækkefølgen af opgaver ikke er tilfældig, så jeg anbefaler at du regner dem i den rækkefølge de står på ugeplanen.
--->
 </div>
 <div id="forelsninger-2" class="section level3">
 <h3>Forelæsninger</h3>
 <div id="forelsninger-mandag-kl-13.00-14.45-i-aud---a2-82.01-3-02-2" class="section level4">
 <h4>Forelæsninger mandag kl 13.00-14.45 i aud - A2-82.01 (3-02)</h4>
-<!--
-I onsdags snakkede vi om statistisk model, estimation, standard error, konfidensinterval for en enkelt stikprøve. I dag skal vi have de samme begreber på plads for ensidet ANOVA og lineær regression.
-
-* Kapitel 5. Bemærk at vi allerede har snakket om det meste af afsnit 5.3, og at vi nok ikke når afsnit 5.4 i dag.
--->
+<p>I onsdags snakkede vi om statistisk model, estimation, standard error, konfidensinterval for en enkelt stikprøve. I dag skal vi have de samme begreber på plads for ensidet ANOVA og lineær regression.</p>
+<ul>
+<li>Kapitel 5. Bemærk at vi allerede har snakket om det meste af afsnit 5.3, og at vi nok ikke når afsnit 5.4 i dag.</li>
+</ul>
 </div>
 <div id="forelsninger-onsdag-kl.-9.00-10.45-i-aud---a2-82.01-3-02-og-kl.-15.00-15.45-i-aud---a2-82.01-3-02-2" class="section level4">
 <h4>Forelæsninger onsdag kl. 9.00-10.45 i aud - A2-82.01 (3-02) og kl. 15.00-15.45 i aud - A2-82.01 (3-02)</h4>
@@ -604,29 +606,25 @@ I onsdags snakkede vi om statistisk model, estimation, standard error, konfidens
 <h3>Øvelsestimer</h3>
 <div id="velser-mandag-kl.-15.00-16.45-se-lokaleplanen-2" class="section level4">
 <h4>Øvelser mandag kl. 15.00-16.45 (se lokaleplanen)</h4>
-<!--
-
-Der er opgaver i flere modeltyper. Brug gerne modeldiagrammet i hver opgave til at gennemskue hvilket set-up der er det relevante.
-
-* Opgave HS.13: Sudoko
-* Opgave HS.14: Højde- og vægtdata
-* Opgave HS.15: Gæt på punktplot
-* Opgave 5.8: Opløsningsmidler
-* Opgave 5.10: Priser på landbrugsejendomme. I spørgsmål 3 behøver du ikke beregne KI.
--->
+<p>Der er opgaver i flere modeltyper. Brug gerne modeldiagrammet i hver opgave til at gennemskue hvilket set-up der er det relevante.</p>
+<ul>
+<li>Opgave HS.13: Sudoko</li>
+<li>Opgave HS.14: Højde- og vægtdata</li>
+<li>Opgave HS.15: Gæt på punktplot</li>
+<li>Opgave 5.8: Opløsningsmidler</li>
+<li>Opgave 5.10: Priser på landbrugsejendomme. I spørgsmål 3 behøver du ikke beregne KI.</li>
+</ul>
 </div>
 <div id="velser-onsdag-kl.-1100-1145-og-kl.-13.00-14.45-se-lokaleplanen-2" class="section level4">
 <h4>Øvelser onsdag kl. 11:00-11:45 og kl. 13.00-14.45 (se lokaleplanen)</h4>
-<!--
-
-Der er opgaver i mange modeltyper. Brug gerne modeldiagrammet i hver opgave til at gennemskue hvilket set-up der er det relevante.
-
-Opgave 6.1: Drægtighed for heste. Du skal lave dette "manuelt", altså ved at bruge formler i bogen.
-Opgave HS.16: Parret vs uparret
-Opgave HS.17: Hjerte- og kropsvægt for katte.
-Opgave 6.6: Soyabønner
-Opgave 6.2: Maveeksperiment
--->
+<p>Der er opgaver i mange modeltyper. Brug gerne modeldiagrammet i hver opgave til at gennemskue hvilket set-up der er det relevante.</p>
+<ul>
+<li>Opgave 6.1: Drægtighed for heste. Du skal lave dette “manuelt”, altså ved at bruge formler i bogen.</li>
+<li>Opgave HS.16: Parret vs uparret</li>
+<li>Opgave HS.17: Hjerte- og kropsvægt for katte.</li>
+<li>Opgave 6.6: Soyabønner</li>
+<li>Opgave 6.2: Maveeksperiment</li>
+</ul>
 <hr />
 </div>
 </div>

@@ -22,7 +22,9 @@ Du kan læse mere om, hvordan du downloader og bruger data fra `isdals` R-pakken
 Følgende datasæt har desuden været benyttet ved regneøvelserne
 
 * Opgave HS.9: [johnson-fatpct.txt](data/johnson-fatpct.txt) - [johnson-fatpct.xlsx](data/johnson-fatpct.xlsx)
-* Opgave HS.11: [punktplot2017.txt](data/punktplot2017.txt) - [punktplot2017.xlsx](data/punktplot2017.xlsx)
+* Opgave HS.11+HS.15: [punktplot2017.txt](data/punktplot2017.txt) - [punktplot2017.xlsx](data/punktplot2017.xlsx)
+* Opgave HS.13: [sudoku-sd1.txt](data/sudoku-sd1.txt) - [sudoku-sd1.xlsx](data/sudoku-sd1.xlsx)
+* Opgave HS.14: [stud2017-v2.xls](data/stud2017-v2.xls)
 
 ### Gamle eksamensopgaver
 
