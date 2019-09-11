@@ -193,7 +193,7 @@ HS-opgaver kan findes [her](https://github.com/anderstolver/StatData1_2019/tree/
 
 * I denne uge skal vi have udvidet vores diskussion af statistiske modeller, estimation, standard errors og konfidensintervaller til også at dække lineær regression og ensidet variansanalyse. Derudover skal vi snakke om hypotesetest. Nogle af jer vil opleve at analyserne hver for sig er nogenlunde nemme at gå til, og at det svære først og fremmest er at finde ud af hvilken analyse der er den korrekte at gribe fat i. Jeg anbefaler at I bruger [modelvalgsdiagrammet](slides/modeller.pdf) (flowdiagram/procesdiagram), som jeg tit viser til forelæsningerne.
 
-* Du formodes nu (efter kursusuge 2) at være i stand til at læse data ind fra excel- eller tekstfiler ([opgave HS.9](opgaver/hs5-12.pdf)). Indlæsning af xlsx-filer kræver pakken readxl. Den kan installeres en gang for alle som forklaret i opgave HS.9, men skal loades når du skal bruge den, fx vha. library-funktionen.
+* Du formodes nu (efter kursusuge 2) at være i stand til at læse data ind fra excel- eller tekstfiler ([opgave HS.9](notater/hs5-12.pdf)). Indlæsning af xlsx-filer kræver pakken readxl. Den kan installeres en gang for alle som forklaret i opgave HS.9, men skal loades når du skal bruge den, fx vha. library-funktionen.
 
 * Husk at rækkefølgen af opgaver ikke er tilfældig, så jeg anbefaler at du regner dem i den rækkefølge de står på ugeplanen.
 
