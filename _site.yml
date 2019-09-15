@@ -17,6 +17,8 @@ navbar:
           href: slides/sd1_forel190909_handout.pdf
         - text: "11/9-2019"
           href: slides/sd1_forel190911_handout.pdf
+        - text: "16/9-2019"
+          href: slides/sd1_forel190916_handout.pdf
     - text: "R"
       href: R.html
     - text: "Data"

@@ -205,6 +205,8 @@ I onsdags snakkede vi om statistisk model, estimation, standard error, konfidens
 
 * Kapitel 5. Bemærk at vi allerede har snakket om det meste af afsnit 5.3, og at vi nok ikke når afsnit 5.4 i dag.
 
+Slides til dagens forelæsning: [fuld version](slides/sd1_forel190916_handout.pdf) - [kort version: 4 slides per side](slides/sd1_forel190916_short.pdf)
+
 #### Forelæsninger onsdag kl. 9.00-10.45 i aud - A2-82.01 (3-02) og kl. 15.00-15.45 i aud - A2-82.01 (3-02)
 
 <!--
@@ -212,8 +214,10 @@ I onsdags snakkede vi om statistisk model, estimation, standard error, konfidens
 * Afsnit 3.5 og 5.4 om to stikprøver (parrede og uparrede)
 * Afsnit 6.1-6.2 om hypotesetest
 * Eftermiddag: Fortsat analyse af data om punkplot, denne gang med fokus på sammenligning af mænd og kvinder og fortolkning af estimater efter transformation.
-
 -->
+
+Ved forelæsningen onsdag eftermiddag bruger vi ca. 20 minutter på at gennemgå quizzen hørende til kursusuge 2 (som findes i Absalon). I forventes at have lavet quizzen hjemme inden onsdagsforelæsningen, og vi *spilder* ikke dine medstuderendes tid med at afsætte undervisningstid til, at du kan lave quizzen.
+
 ### Øvelsestimer
 
 #### Øvelser mandag kl. 15.00-16.45 (se lokaleplanen)

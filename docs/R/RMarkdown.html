@@ -139,7 +139,7 @@ $(document).ready(function () {
 <hr />
 <div id="de-frste-linjer-i-en-r-markdown-fil" class="section level1">
 <h1>De første linjer i en R Markdown fil …</h1>
-<p>En RMarkdown fil (dvs. en <code>.Rmd</code> fil) vil typisk indeholder en såkaldt <em>YAML header</em>, som består af nogle kommandoer omkranset af <code>---</code>. Disse kommandoer kontrollerer bl.a. forskellige ting, som har betydning for, hvordan output-filen kommer til at se ud, når vi <em>Knitr</em> dokumentet.</p>
+<p>En RMarkdown fil (dvs. en <code>.Rmd</code> fil) vil typisk indeholde en såkaldt <em>YAML header</em>, som består af nogle kommandoer i begyndelse af filen, som er omkranset af <code>---</code>. Disse kommandoer kontrollerer bl.a. forskellige ting, som har betydning for, hvordan output-filen kommer til at se ud, når vi <em>Knitr</em> dokumentet.</p>
 <p>YAML-headeren til dette dokument er meget simpel</p>
 <pre><code>---
 title: 'StatData1: om R Markdown'
@@ -148,6 +148,19 @@ output:
     toc: true
 ---</code></pre>
 <p>Ud over en titel på dokumentet (<code>title:</code>), så vil der i html-output produceret fra denne .Rmd-fil bliver inkluderet en indholdsfortegnelse (<code>toc: true</code>). Indholdsfortegnelsen indeholder som udgangspunkt de overskrifter (dvs. <em>Header</em>s), der optræder i .Rmd-filen.</p>
+<p>For de R programmer som lægges ud i forbindelse med forelæsningerne benyttes en YAML header af formen</p>
+<pre><code>---
+title: 'StatData1: forel190911'
+author: &quot;Anders Tolver&quot;
+output:   
+  html_document:
+    theme: sandstone
+    toc: true
+    code_folding: hide
+---</code></pre>
+<p>Her benyttes <code>theme: sandstone</code>. Der findes en række for-programmerede temaer (<code>theme</code>) som bl.a. kontrollerer skrifttypen i output-filen. Du kan se en <a href="http://www.datadreaming.org/post/r-markdown-theme-gallery/">oversigt over temaer</a> her.</p>
+<p>Jeg benytter desuden <code>code_folding: hide</code> til at sikre, at R koden som udgangspunkt er skjult i output-filen (men den kan kaldes frem ved at klikke på <code>show</code> ud for de enkelte kodefragmenter i output-filen).</p>
+<p>Kapitel 3.1 i Yihui Xie, J. J. Allaire &amp; Garrett Grolemund <a href="https://bookdown.org/yihui/rmarkdown/html-document.html">R Markdown: The Definitive Guide</a> indeholder detaljeret info om, hvordan man kan forbedre og kontrollere layout i html-dokumenter produceret ud fra R Markdown filer.</p>
 <hr />
 </div>
 <div id="code-chunks" class="section level1">

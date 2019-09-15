@@ -21,7 +21,7 @@ Indholdet på siden udbygges løbende på baggrund af de behov der opstår i for
 
 # De første linjer i en R Markdown fil ...
 
-En RMarkdown fil (dvs. en `.Rmd` fil) vil typisk indeholder en såkaldt *YAML header*, som består af nogle kommandoer omkranset af `---`. Disse kommandoer kontrollerer bl.a. forskellige ting, som har betydning for, hvordan output-filen kommer til at se ud, når vi *Knitr* dokumentet.
+En RMarkdown fil (dvs. en `.Rmd` fil) vil typisk indeholde en såkaldt *YAML header*, som består af nogle kommandoer i begyndelse af filen, som er omkranset af `---`. Disse kommandoer kontrollerer bl.a. forskellige ting, som har betydning for, hvordan output-filen kommer til at se ud, når vi *Knitr* dokumentet.
 
 YAML-headeren til dette dokument er meget simpel
 
@@ -36,6 +36,26 @@ output:
 
 Ud over en titel på dokumentet (`title:`), så vil der i html-output produceret fra denne .Rmd-fil bliver inkluderet en indholdsfortegnelse (`toc: true`). Indholdsfortegnelsen indeholder som udgangspunkt de overskrifter (dvs. *Header*s), der optræder i .Rmd-filen.
 
+
+For de R programmer som lægges ud i forbindelse med forelæsningerne benyttes en YAML header af formen
+
+```
+---
+title: 'StatData1: forel190911'
+author: "Anders Tolver"
+output:   
+  html_document:
+    theme: sandstone
+    toc: true
+    code_folding: hide
+---
+```
+
+Her benyttes `theme: sandstone`. Der findes en række for-programmerede temaer (`theme`) som bl.a. kontrollerer skrifttypen i output-filen. Du kan se en [oversigt over temaer](http://www.datadreaming.org/post/r-markdown-theme-gallery/) her.
+
+Jeg benytter desuden `code_folding: hide` til at sikre, at R koden som udgangspunkt er skjult i output-filen (men den kan kaldes frem ved at klikke på `show` ud for de enkelte kodefragmenter i output-filen).
+
+Kapitel 3.1 i Yihui Xie, J. J. Allaire & Garrett Grolemund [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/html-document.html) indeholder detaljeret info om, hvordan man kan forbedre og kontrollere layout i html-dokumenter produceret ud fra R Markdown filer.
 
 ***
 
