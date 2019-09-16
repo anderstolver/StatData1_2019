@@ -114,5 +114,11 @@ Nogle af vejledningerne er skrevet på et forholdsvis højt niveau, så man skal
 ## Uge 3
 
 * Ved undervisningen i uge 3 talte vi bl.a. om R kommandoerne
+    - `group_by()`: til at fortage beregning af stikprøvestørrelser for en kontinuert variabel separat for målinger i hver gruppe givet ved en kategorisk variabel
+    - `lm`: til at estimere parametre i en ensidet variansanalysemodel (ANOVA)
+    - `lm`: fokus på betydning af forskellen mellem formelsyntaksen `org ~ type - 1` og `org ~ type`
+    - `relevel`: til at ændre referencegruppen i forbindelse med estimation i ensidet ANOVA
+    - `confint`: til beregning af konfidensintervaller i en ensidet ANOVA
+    
   
 * R-program fra forelæsning d. 16/9-2019: [output](R/forel190916_Rprog.html) - [R Markdown](R/forel190916_Rprog.Rmd)

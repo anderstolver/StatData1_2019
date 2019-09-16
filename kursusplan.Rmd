@@ -211,14 +211,15 @@ R-program fra forelæsning d. 16/9-2019: [output](R/forel190916_Rprog.html) - [R
 
 #### Forelæsninger onsdag kl. 9.00-10.45 i aud - A2-82.01 (3-02) og kl. 15.00-15.45 i aud - A2-82.01 (3-02)
 
-<!--
+Vi starter med at gennemgå s. 27-34 fra forelæsningsslides til mandagsforelæsningen (16/9-2019) i et roligt tempo!
+
+Dernæst gennemgår vi
 
 * Afsnit 3.5 og 5.4 om to stikprøver (parrede og uparrede)
-* Afsnit 6.1-6.2 om hypotesetest
+* Afsnit 6.1-6.2 om hypotesetest (i det omfang tiden tillader det)
 * Eftermiddag: Fortsat analyse af data om punkplot, denne gang med fokus på sammenligning af mænd og kvinder og fortolkning af estimater efter transformation.
--->
 
-Ved forelæsningen onsdag eftermiddag bruger vi ca. 20 minutter på at gennemgå quizzen hørende til kursusuge 2 (som findes i Absalon). I forventes at have lavet quizzen hjemme inden onsdagsforelæsningen, og vi *spilder* ikke dine medstuderendes tid med at afsætte undervisningstid til, at du kan lave quizzen.
+Ved forelæsningen onsdag eftermiddag bruger vi desuden ca. 20 minutter på at gennemgå quizzen hørende til kursusuge 2 (som findes i Absalon). I forventes at have lavet quizzen hjemme inden onsdagsforelæsningen, og vi *spilder* ikke dine medstuderendes tid med at afsætte undervisningstid til, at du kan lave quizzen.
 
 ### Øvelsestimer
 
