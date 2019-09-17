@@ -56,9 +56,7 @@ Her findes en liste over nogle nyttige/links til vejledninger og manualer, som k
 
 Nogle af vejledningerne er skrevet på et forholdsvis højt niveau, så man skal ofte have noget erfaring med R, for at forstå det hele.
 
-<!--
 * Anders Tolver: [Notat om at lave grafik i R](R/grafik_i_R.html)
--->
 
 * Anders Tolver: [Notat om at arbejde med R Markdown formatet](R/RMarkdown.html) (skrevet til StatData1)
 
