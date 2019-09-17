@@ -119,14 +119,14 @@ Nogle af vejledningerne er skrevet på et forholdsvis højt niveau, så man skal
     - `lm`: fokus på betydning af forskellen mellem formelsyntaksen `org ~ type - 1` og `org ~ type`
     - `relevel`: til at ændre referencegruppen i forbindelse med estimation i ensidet ANOVA
     - `confint`: til beregning af konfidensintervaller i en ensidet ANOVA
-    _ `t.test`: til sammenligning af to stikprøver (både parrede og uparrede)
+    - `t.test`: til sammenligning af to stikprøver (både parrede og uparrede)
     - `pt`: benyttet til beregning af P-værdi ud fra en (manuelt beregnet) t-teststørrelse (ofte foretages denne beregning automatisk og angives i R outputtet)
     
   
 * R-program fra forelæsning d. 16/9-2019: [output](R/forel190916_Rprog.html) - [R Markdown](R/forel190916_Rprog.Rmd)
 
-* R-program fra forelæsning d. 18/9-2019: 
-<!-- 
-[output](R/forel190918_Rprog.html) - [R Markdown](R/forel190918_Rprog.Rmd) 
--->
+* R-program fra morgenforelæsning d. 18/9-2019: [output](R/forel190918_Rprog.html) - [R Markdown](R/forel190918_Rprog.Rmd)
+
+* R-program fra eftermiddagsforelæsning d. 18/9-2019: [output](R/punktplot190918_Rprog.html) - [R Markdown](R/punktplot190918_Rprog.Rmd)
+
 

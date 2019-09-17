@@ -228,9 +228,9 @@ Ved forelæsningen onsdag eftermiddag bruger vi desuden ca. 20 minutter på at g
 
 Slides til dagens forelæsning: [fuld version](slides/sd1_forel190918_handout.pdf) - [kort version: 4 slides per side](slides/sd1_forel190918_short.pdf)
 
-<!--
-R-program fra forelæsning d. 18/9-2019: [output](R/forel190918_Rprog.html) - [R Markdown](R/forel190918_Rprog.Rmd)
--->
+R-program fra morgenforelæsning d. 18/9-2019: [output](R/forel190918_Rprog.html) - [R Markdown](R/forel190918_Rprog.Rmd)
+
+R-program fra eftermiddagsforelæsning d. 18/9-2019: [output](R/punktplot190918_Rprog.html) - [R Markdown](R/punktplot190918_Rprog.Rmd)
 
 ### Øvelsestimer
 
