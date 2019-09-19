@@ -266,7 +266,7 @@ Der er opgaver i mange modeltyper. Brug gerne modeldiagrammet i hver opgave til 
 
 * Der var meget nyt pensum og mange opgaver i kursusuge 3. Jeg har derfor prøvet at skrue lidt ned for programmet ved øvelserne i kursusuge 4.
 
-* Husk at jeg lægger quizzer ud hver uge, og at der kommer lignende spørgsmål til eksamen.
+* Husk at jeg lægger quizzer ud hver uge, og at der kommer lignende spørgsmål til eksamen. Der ligger nu 3 quizzer i Absalon som trækker på det gennemgåede stof fra kursusugerne 1-3.
 
 * I bliver tit bedt om at *fitte en model*. Det betyder blot at køre den relevante `lm`-kommando. Intet andet. Det betyder fx ikke at man skal tegne noget. Senere i opgaven bliver I altid spurgt om ting, hvor I skal bruge modellen, fx. noget som kan aflæses af summary fra modellen.
 
