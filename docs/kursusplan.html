@@ -271,10 +271,11 @@ $(document).ready(function () {
 <li><a href="#forelsninger-2">Forelæsninger</a></li>
 <li><a href="#velsestimer-2">Øvelsestimer</a></li>
 </ul></li>
-<li><a href="#kursusuge-4">Kursusuge 4</a><ul>
+<li><a href="#uge4">Kursusuge 4</a><ul>
 <li><a href="#generel-info-3">Generel info</a></li>
 <li><a href="#forelsninger-3">Forelæsninger</a></li>
 <li><a href="#velsestimer-3">Øvelsestimer</a></li>
+<li><a href="#aflevering1">Frivillig afleveringsopgave til onsdag d. 2. oktober</a></li>
 </ul></li>
 <li><a href="#kursusuge-5">Kursusuge 5</a><ul>
 <li><a href="#generel-info-4">Generel info</a></li>
@@ -361,69 +362,69 @@ $(document).ready(function () {
 <td>Onsdag (18/9)</td>
 <td>Hypotesetest med fokus på t-test</td>
 <td>Resten af Ch. 5, Ch. 3.5, (Ch. 6.1-6.2)</td>
-<td>link</td>
+<td><a href="#uge3">link</a></td>
 </tr>
 <tr class="odd">
 <td>4</td>
 <td>Mandag (23/9)</td>
-<td></td>
-<td>Ch. 6</td>
-<td>link</td>
+<td>F-test samt diskussion af fejltyper ved statistiske test</td>
+<td>(Ch. 6.1-6.2) + Ch. 6.3+6.4</td>
+<td><a href="#uge4">link</a></td>
 </tr>
 <tr class="even">
 <td>4</td>
 <td>Onsdag (25/9)</td>
-<td></td>
-<td>Ch. 6</td>
-<td>link</td>
+<td>Modelkontrol og prædiktion</td>
+<td>Ch. 7</td>
+<td><a href="#uge4">link</a></td>
 </tr>
 <tr class="odd">
 <td>5</td>
 <td>Mandag (30/9)</td>
-<td></td>
-<td>Ch. 7 + dele af Ch. 8</td>
+<td>Repetition / Opsummering</td>
+<td>Intet nyt! (Ch. 1-7)</td>
 <td>link</td>
 </tr>
 <tr class="even">
 <td>5</td>
 <td>Onsdag (2/10)</td>
-<td></td>
-<td>Ch. 7 + dele af Ch. 8</td>
+<td>Multiple lineær regression</td>
+<td>Ch. 8.1</td>
 <td>link</td>
 </tr>
 <tr class="odd">
 <td>6</td>
 <td>Mandag (7/10)</td>
-<td></td>
-<td>Dele af Ch. 10+11</td>
+<td>Tosidet ANOVA</td>
+<td>Ch. 8.2</td>
 <td>link</td>
 </tr>
 <tr class="even">
 <td>6</td>
 <td>Onsdag (9/10)</td>
-<td></td>
-<td>Dele af Ch. 10+11</td>
+<td>Modeller med både kvantitative og kontinuerte forklarende variable</td>
+<td>Ch. 8.3</td>
 <td>link</td>
 </tr>
 <tr class="odd">
 <td>7</td>
 <td>Mandag (21/10)</td>
-<td></td>
-<td>Dele af Ch. 12</td>
+<td>Binomialfordelingen</td>
+<td>Ch. 11</td>
 <td>link</td>
 </tr>
 <tr class="even">
 <td>7</td>
 <td>Onsdag (23/10)</td>
-<td></td>
+<td>Analyse af antalstabeller</td>
 <td>Dele af Ch. 12</td>
 <td>link</td>
 </tr>
 <tr class="odd">
 <td>8</td>
 <td>Mandag (28/10)</td>
-<td></td>
-<td>Repetition</td>
+<td>Repetition / opgavegennemgang</td>
+<td>Intet nyt!</td>
 <td>link</td>
 </tr>
 </tbody>
@@ -643,29 +644,84 @@ $(document).ready(function () {
 </div>
 </div>
 </div>
-<div id="kursusuge-4" class="section level2">
+<div id="uge4" class="section level2">
 <h2>Kursusuge 4</h2>
 <div id="generel-info-3" class="section level3">
 <h3>Generel info</h3>
+<ul>
+<li><p>Jeg har stillet en <a href="#aflevering1">frivillig opgave til aflevering</a> onsdag den 2. oktober (ved øvelserne). Det er et rasende godt tilbud, men det er frivilligt. Man vil ikke kunne få hjælp til opgaven ved øvelsestimerne (min beslutning, ikke instruktorernes). Brug diskussionforum på Absalon hvis du har spørgsmål.</p></li>
+<li><p>Der var meget nyt pensum og mange opgaver i kursusuge 3. Jeg har derfor prøvet at skrue lidt ned for programmet ved øvelserne i kursusuge 4.</p></li>
+<li><p>Husk at jeg lægger quizzer ud hver uge, og at der kommer lignende spørgsmål til eksamen.</p></li>
+<li><p>I bliver tit bedt om at <em>fitte en model</em>. Det betyder blot at køre den relevante <code>lm</code>-kommando. Intet andet. Det betyder fx ikke at man skal tegne noget. Senere i opgaven bliver I altid spurgt om ting, hvor I skal bruge modellen, fx. noget som kan aflæses af summary fra modellen.</p></li>
+<li><p>Når du har fittet en model, så lav et <code>summary</code> af modellen, og overvej om den indeholder de parameterlinjer som du forventer. Husk også at estimater, p-værdier mm. er uinteressante, hvis man ikke ved hvad de betyder. Det hele er ret ligegyldigt hvis vi ikke kan fortolke parametre og hypoteser, så tænk altid over fortolkningerne når du løser opgaver.</p></li>
+<li><p>Der kommer nogle opgaver på onsdag hvor det bliver relevant at transformere data. Kig gerne på analysen fra onsdag eftermiddag i kursusuge 2 og 3 (gæt på punktplot) for eksempler på hvordan man fortolker resultaterne hvis analysen er foretaget på log-transformerede data.</p></li>
+</ul>
 </div>
 <div id="forelsninger-3" class="section level3">
 <h3>Forelæsninger</h3>
 <div id="forelsninger-mandag-kl-13.00-14.45-i-aud---a2-82.01-3-02-3" class="section level4">
 <h4>Forelæsninger mandag kl 13.00-14.45 i aud - A2-82.01 (3-02)</h4>
+<ul>
+<li>Repetition: t-test for relevante hypoteser i lineær regression og ensidet ANOVA</li>
+<li>Afsnit 6.3 - 6.4 om F-test. Jeg vil lægge mindre vægt på LSD-diskussionen end der er lagt op til bogen.</li>
+<li>Afsnit 6.5 om fejltyper ved statistiske test</li>
+<li>Afrunding af kapitel 5 og 6</li>
+</ul>
 </div>
 <div id="forelsninger-onsdag-kl.-9.00-10.45-i-aud---a2-82.01-3-02-og-kl.-15.00-15.45-i-aud---a2-82.01-3-02-3" class="section level4">
 <h4>Forelæsninger onsdag kl. 9.00-10.45 i aud - A2-82.01 (3-02) og kl. 15.00-15.45 i aud - A2-82.01 (3-02)</h4>
+<ul>
+<li>Kapitel 7 om modelkontrol og prædiktion</li>
+</ul>
 </div>
 </div>
 <div id="velsestimer-3" class="section level3">
 <h3>Øvelsestimer</h3>
 <div id="velser-mandag-kl.-15.00-16.45-se-lokaleplanen-3" class="section level4">
 <h4>Øvelser mandag kl. 15.00-16.45 (se lokaleplanen)</h4>
+<p>HS-opgaver kan findes <a href="https://github.com/anderstolver/StatData1_2019/tree/master/docs/opgaver">her</a>. De øvrige opgaver er fra lærebogen.</p>
+<ul>
+<li>Opgave 6.7. Ensidet ANOVA med 4 grupper.
+<ul>
+<li>Vink til spg. 1: Når du skal specificere en model, skal du sige hvilken slags model der er tale om og angive antagelserne.</li>
+<li>Vink til spg. 2: Du kan fx skifte referencegruppe når du skal sammenligne gruppe 2 og 3</li>
+</ul></li>
+<li>Opgave 6.14.
+<ul>
+<li>Vink til spg 5: Husk at der er lige mange observationer i hver gruppe. Hvad betyder det om SE for de forskellige parvise forskelle? Se evt. afsnit 6.3.2 i lærebogen.</li>
+<li>Vink til spg. 6: Gennemsnitsværdien for hver <em>supplier</em> skal estimeres ved gennemsnittet af n (ukendt!) observationer fra den nye undersøgelse/stikprøve. Find formlen for 95 % - konfidensintervaller for en stikprøve (one sample) og start med at finde ud af, hvilke størrelser som indgår i formlen.</li>
+</ul></li>
+<li>Opgave HS.19. Specialtilfælde af lineær regression. Data findes på kursushjemmesiden.</li>
+</ul>
 </div>
 <div id="velser-onsdag-kl.-1100-1145-og-kl.-13.00-14.45-se-lokaleplanen-3" class="section level4">
 <h4>Øvelser onsdag kl. 11:00-11:45 og kl. 13.00-14.45 (se lokaleplanen)</h4>
-<hr />
+<ul>
+<li>Opgave 7.7. Bemærk: Figuren nederst til højre er lidt atypisk i forhold til hvad man ser i praksis, men overvej alligevel hvad “der er galt” med figuren.</li>
+<li>Opgave 7.2. To ekstra spørgsmål:
+<ul>
+<li><ol start="5" style="list-style-type: decimal">
+<li>Bestem et 95% konfidensinterval og et 95% prædiktionsinterval svarende til værdien 8 for radioact. Hvad er fortolkningen af de to intervaller?</li>
+</ol></li>
+<li><ol start="6" style="list-style-type: decimal">
+<li>For hvilken værdi af radioact vil man forvente at få en tumorvægt på 0.2?</li>
+</ol></li>
+</ul></li>
+<li>Opgave 7.4 <!--
+* Opgave HS.20.
+--></li>
+</ul>
 </div>
+</div>
+<div id="aflevering1" class="section level3">
+<h3>Frivillig afleveringsopgave til onsdag d. 2. oktober</h3>
+<p>Det er frivilligt at aflevere opgaven, men det er god eksamenstræning og en mulighed for at få feedback på jeres måde at formulere jer på. Bemærk at instruktorerne - efter min “ordre” - ikke hjælper med afleveringsopgaven i øvelsestimerne. Hvis du har spørgsmål, så brug diskussionsforum i Absalon, som jeg (=Anders) vil checke ca. dagligt (i hverdage).</p>
+<p>Bemærk, at der kan være ting fra undervisningen i kursusuge 4, som skal bruges til løsning af opgaverne, men de fleste ting burde kunne laves allerede nu.</p>
+<ul>
+<li>Opgave HS.18</li>
+<li>November 2017, opgave 1, men kun spørgsmål 1 og 2 (Data til opgaven findes under linket <a href="data.html">Data</a> øverst på kursushjemmesiden).</li>
+</ul>
+<hr />
 </div>
 </div>
 <div id="kursusuge-5" class="section level2">

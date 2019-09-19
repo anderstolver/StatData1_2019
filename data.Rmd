@@ -35,7 +35,7 @@ Følgende datasæt hører til de [gamle eksamensopgaver](https://github.com/ande
 * Eksamen jan. 2019, opgave 2: [florida.txt](data/florida.txt) - [florida.xlsx](data/florida.xlsx)
 * Eksamen nov. 2018, opgave 1: [soeer.txt](data/soeer.txt) - [soeer.xlsx](data/soeer.xlsx)
 * Eksamen nov. 2018, opgave 2: [elections.txt](data/elections.txt) - [elections.xlsx](data/elections.xlsx)
-
+* Eksamen nov. 2017, opgave 1: [guns.txt](data/guns.txt) - [guns.xlsx](data/guns.xlsx)
 
 ### Forelæsninger
 
