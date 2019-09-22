@@ -244,6 +244,7 @@ Der er opgaver i flere modeltyper. Brug gerne modeldiagrammet i hver opgave til 
 * Opgave 5.8: Opløsningsmidler
 * Opgave 5.10: Priser på landbrugsejendomme. I spørgsmål 3 behøver du ikke beregne KI.
 
+
 #### Øvelser onsdag kl. 11:00-11:45 og kl. 13.00-14.45 (se lokaleplanen)
 
 Der er opgaver i mange modeltyper. Brug gerne modeldiagrammet i hver opgave til at gennemskue hvilket set-up der er det relevante.
@@ -282,6 +283,8 @@ Der er opgaver i mange modeltyper. Brug gerne modeldiagrammet i hver opgave til 
 * Afsnit 6.3 - 6.4 om F-test. Jeg vil lægge mindre vægt på LSD-diskussionen end der er lagt op til bogen.
 * Afsnit 6.5 om fejltyper ved statistiske test
 * Afrunding af kapitel 5 og 6
+
+Slides til dagens forelæsning: [fuld version](slides/sd1_forel190923_handout.pdf) - [kort version: 4 slides per side](slides/sd1_forel190923_short.pdf)
 
 #### Forelæsninger onsdag kl. 9.00-10.45 i aud - A2-82.01 (3-02) og kl. 15.00-15.45 i aud - A2-82.01 (3-02)
 
