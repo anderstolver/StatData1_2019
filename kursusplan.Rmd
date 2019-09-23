@@ -286,6 +286,8 @@ Der er opgaver i mange modeltyper. Brug gerne modeldiagrammet i hver opgave til 
 
 Slides til dagens forelæsning: [fuld version](slides/sd1_forel190923_handout.pdf) - [kort version: 4 slides per side](slides/sd1_forel190923_short.pdf)
 
+R-program fra forelæsning d. 23/9-2019: [output](R/forel190923_Rprog.html) - [R Markdown](R/forel190923_Rprog.Rmd)
+
 #### Forelæsninger onsdag kl. 9.00-10.45 i aud - A2-82.01 (3-02) og kl. 15.00-15.45 i aud - A2-82.01 (3-02)
 
 * Kapitel 7 om modelkontrol og prædiktion

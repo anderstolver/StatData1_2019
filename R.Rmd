@@ -127,4 +127,12 @@ Nogle af vejledningerne er skrevet på et forholdsvis højt niveau, så man skal
 
 * R-program fra eftermiddagsforelæsning d. 18/9-2019: [output](R/punktplot190918_Rprog.html) - [R Markdown](R/punktplot190918_Rprog.Rmd)
 
+## Uge 4
+
+* Ved undervisningen i uge 4 talte vi bl.a. om R kommandoerne
+    - `drop1()`: til at udtrække F-test for sammenligning af (flere end tre) gruppemiddelværdier i en ensidet ANOVA
+    - `anova(nullModel, fullModel)`: til at sammenligne (dvs. lave F-test) en fuld model og en nulmodel (med restriktioner på nogle af parametrene)
+
+* R-program fra forelæsning d. 23/9-2019: [output](R/forel190923_Rprog.html) - [R Markdown](R/forel190923_Rprog.Rmd)
+
 
