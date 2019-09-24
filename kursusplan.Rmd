@@ -292,6 +292,8 @@ R-program fra forelæsning d. 23/9-2019: [output](R/forel190923_Rprog.html) - [R
 
 * Kapitel 7 om modelkontrol og prædiktion
 
+Slides til dagens forelæsning: [fuld version](slides/sd1_forel190925_handout.pdf) - [kort version: 4 slides per side](slides/sd1_forel190925_short.pdf)
+
 ### Øvelsestimer
 
 #### Øvelser mandag kl. 15.00-16.45 (se lokaleplanen)
