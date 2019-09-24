@@ -133,6 +133,7 @@ Nogle af vejledningerne er skrevet på et forholdsvis højt niveau, så man skal
     - `drop1()`: til at udtrække F-test for sammenligning af (flere end tre) gruppemiddelværdier i en ensidet ANOVA
     - `anova(nullModel, fullModel)`: til at sammenligne (dvs. lave F-test) en fuld model og en nulmodel (med restriktioner på nogle af parametrene)
     - `res(), rstandard()`: til at udtrække residualer og standardiserede residualer fra en model fittet med `lm()`
+    - `qqnorm`: til at tegne et QQ-plot med henblik på at vurdere om de standardiserede residualer ligner en standardnormalfordeling (middelværdi 0 og varians 1)
     - `predict()`: til at lave prædiktionsintervaller
     
 
