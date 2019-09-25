@@ -36,7 +36,10 @@ Følgende datasæt hører til de [gamle eksamensopgaver](https://github.com/ande
 * Eksamen jan. 2019, opgave 2: [florida.txt](data/florida.txt) - [florida.xlsx](data/florida.xlsx)
 * Eksamen nov. 2018, opgave 1: [soeer.txt](data/soeer.txt) - [soeer.xlsx](data/soeer.xlsx)
 * Eksamen nov. 2018, opgave 2: [elections.txt](data/elections.txt) - [elections.xlsx](data/elections.xlsx)
+* Eksamen jan. 2018, opgave 1: [ss2017-18.txt](data/ss2017-18.txt) - [ss2017-18.xlsx](data/ss2017-18.xlsx)
+* Eksamen jan. 2018, opgave 2:  [johnson-fatpct.txt](data/johnson-fatpct.txt) - [johnson-fatpct.xlsx](data/johnson-fatpct.xlsx)
 * Eksamen nov. 2017, opgave 1: [guns.txt](data/guns.txt) - [guns.xlsx](data/guns.xlsx)
+* Eksamen nov. 2017, opgave 3: [rodlaengde.txt](data/rodlaengde.txt) - [rodlaengde.xlsx](data/rodlaengde.xlsx)
 
 ### Forelæsninger
 
