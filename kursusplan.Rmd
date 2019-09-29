@@ -348,7 +348,7 @@ Bemærk, at der kan være ting fra undervisningen i kursusuge 4, som skal bruges
 
 * Nogle af jer efterlyser formler. Jeg vil godt understrege at I har brug for meget, meget få formler fordi vi lader R gøre arbejdet for os, men der er faktisk en formelsamling i Appendix A. Men som sagt: Det er stort set kun i tilfældet med en enkelt stikprøve at I har brug for dem.
 
-* Der stilles en frivillig afleveringsopgave til onsdag d. 9. oktober. Nærmere detaljer kommer i løbet af kursusuge 5.
+* Der er nu også stillet en frivillig [afleveringsopgave til onsdag d. 9. oktober](#aflevering2). Opgaven kræver bl.a. kendskab til stof som gennemgås ved forelæsningen d. 2. oktober.
 
 * Data til gamle eksamensopgaver: Eksamensopgaver fra Januar 2017 og tidligere indeholder R-kode og R-output, men det vil som bekendt sjældent være tilfældet ved den kommende eksamen (der er dog undtagelser). I de kommende uger stiller jeg en del eksamensopgaver, hvor jeg som udgangspunkt lægger data på kursushjemmesiden, og jeg vil kraftigt opfordre jer til at køre analyserne selv. Nogle spørgsmål bliver i øvrigt væsentligt nemmere på den måde!
 
@@ -393,15 +393,11 @@ HS-opgaver kan findes [her](https://github.com/anderstolver/StatData1_2019/tree/
 
 * Opgave 7.8: Minder en del om Opgave HS. 22 fra mandagsøvelserne.
 
-
-<!--
 ### Frivillig afleveringsopgave til onsdag d. 9. oktober {#aflevering2}
 
 Det er frivilligt at aflevere opgaven, men det er god eksamenstræning og en mulighed for at få feedback på jeres måde at formulere jer på. Bemærk at instruktorerne - efter min "ordre" - ikke hjælper med afleveringsopgaven i øvelsestimerne. Hvis du har spørgsmål, så brug diskussionsforum i Absalon, som jeg (=Anders) vil checke ca. dagligt (i hverdage). 
 
-* Find gamle eksamensopgaver med fx. multiple regression eller ikke-lineær regression.
--->
-
+* Januar 2019, opgave 2 (Data til opgaven findes under linket [Data](data.html) øverst på kursushjemmesiden)
 
 
 ***
