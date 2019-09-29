@@ -360,6 +360,8 @@ Bemærk, at der kan være ting fra undervisningen i kursusuge 4, som skal bruges
 
 Der er ikke noget nyt-nyt stof i dag indholdsmæssigt. I stedet samler vi op på hængepartier og laver lidt repetition.
 
+Slides til dagens forelæsning: [fuld version](slides/sd1_forel190930_handout.pdf) - [kort version: 4 slides per side](slides/sd1_forel190930_short.pdf)
+
 #### Forelæsninger onsdag kl. 9.00-10.45 i aud - A2-82.01 (3-02) og kl. 15.00-15.45 i aud - A2-82.01 (3-02)
 
 * Afsnit 8.1 om multipel regression
@@ -368,7 +370,7 @@ Der er ikke noget nyt-nyt stof i dag indholdsmæssigt. I stedet samler vi op på
 
 #### Øvelser mandag kl. 15.00-16.45 (se lokaleplanen)
 
-* November 2017, opgave 2. Der er ikke data til denne opgave. I anden halvdel af opgave 3 er det nok at bestemme den faktor som regnmængden forøges med (snarere end den procentvise forøgelse); dette gælder både estimat og konfidensinterval.
+* November 2017, opgave 2. Der er ikke data til denne opgave. I anden halvdel af delspørgsmål 3 er det nok at bestemme den faktor som regnmængden forøges med (snarere end den procentvise forøgelse); dette gælder både estimat og konfidensinterval.
 
 * Opgave HS.22: Lineær regression og ensidet ANOVA på samme datasæt. Forskel på at inddrage en forklarende variabel som kontinuert variabel og som kategorisk variabel (faktor).
 
