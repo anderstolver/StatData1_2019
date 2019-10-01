@@ -368,6 +368,8 @@ R-program fra forelæsning d. 30/9-2019: [output](R/forel190930_Rprog.html) - [R
 
 * Afsnit 8.1 om multipel regression
 
+Slides til dagens forelæsning: [fuld version](slides/sd1_forel191002_handout.pdf) - [kort version: 4 slides per side](slides/sd1_forel191002_short.pdf)
+
 ### Øvelsestimer
 
 #### Øvelser mandag kl. 15.00-16.45 (se lokaleplanen)

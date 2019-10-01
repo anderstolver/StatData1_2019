@@ -78,6 +78,32 @@ plot(cats$Bwt, cats$Hwt, xlab = "Body weight (kg)",  ylab = "Heart weight (g)"
 abline(-0.3567, 4.0314)
 ```
 
+## Histogrammer
+
+Der findes del information om, hvordan man kan lave histogrammer i [R programmet fra første forelæsning](forel190902_Rprog.html)
+
+Simpel R kode til at lave histogrammer for hjertevægt (`Hwt`) og kropsvægt (`Bwt`) findes her
+
+```{r, out.width="49%", fig.show = "hold"}
+hist(cats$Bwt)
+hist(cats$Hwt)
+```
+
+
+R koden neden for viser hvordan man kan sørge for at
+
+* der benyttes 20 søjler
+* søjlerne farves lysegrå
+* der sættes labels på x-aksen
+* der sættes en overskrift på figuren
+* det samlede areal under boksene skaleres til at være 1 (dvs. 100 %)
+
+```{r, out.width="49%", fig.show = "hold"}
+hist(cats$Bwt, xlab="Body weight (kg)", main="Cats: Body weight", nclass=20, prob=TRUE, col = "lightgray")
+hist(cats$Hwt, xlab="Heart weight (g)", main="Cats: Heart weight", nclass=20, prob=TRUE, col = "lightgray")
+```
+
+
 ## Boxplot
 
 Simpel R-kode til at producere et boxplot af indholdet af organisk stof i hver af de 6 fodergrupper fra datasættet `antibio` i `isdals` R-pakken
@@ -128,6 +154,19 @@ ggplot(data = cats) + geom_point(aes(x = Bwt, y = Hwt, fill = Sex), shape = 21, 
   geom_abline(intercept = -0.3567, slope = 4.0341)
 
 ```
+
+## Histogrammer
+
+Simpel R kode til at lave histogrammer for hjertevægt (Hwt) og kropsvægt (Bwt) findes her
+
+```{r, fig.show = "hold", out.width = "49%"}
+ggplot(data = cats) + geom_histogram(aes(x = Bwt), binwidth = 0.1) +
+  labs(x = "Kropsvaegt (kg)", y = "Antal")
+ggplot(data = cats) + geom_histogram(aes(x = Hwt), binwidth = 1) +
+  labs(x = "Hjertevaegt (g)", y = "Antal")
+```
+
+**Forklaring:** Et histogram laves med funktionen `geom_histogram`. Et histogram viser andelen af observationer som falder i givne intervaller (eng: *bins*). Antallet af observationer i hvert interval visualiseres ved en *kasse/søjle*. Man skal som minimum angive, hvilken variabel (`x`) der skal optegnes på histogrammmet. I koden ovenfor har vi også valgt bredden (`binwidth`) af søjlerne på histogrammet og sat navne på akserne.
 
 
 ## Boxplot
