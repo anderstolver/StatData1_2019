@@ -371,6 +371,9 @@ R-program fra forelæsning d. 30/9-2019: [output](R/forel190930_Rprog.html) - [R
 
 Slides til dagens forelæsning: [fuld version](slides/sd1_forel191002_handout.pdf) - [kort version: 4 slides per side](slides/sd1_forel191002_short.pdf)
 
+R-program fra forelæsning d. 2/10-2019: [output](R/forel191002_Rprog.html) - [R Markdown](R/forel191002_Rprog.Rmd)
+
+
 ### Øvelsestimer
 
 #### Øvelser mandag kl. 15.00-16.45 (se lokaleplanen)

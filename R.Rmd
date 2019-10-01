@@ -146,10 +146,9 @@ Nogle af vejledningerne er skrevet på et forholdsvis højt niveau, så man skal
 * Ved undervisningen i uge 4 talte vi bl.a. om R kommandoerne
     - `lm(freq ~ temp + I(temp^2), data=eels)`: til at fitte en kvadratisk regressionsmodel
     - `anova()`: til at teste en lineær regressionsmodel imod hhv. en kvadratisk regressionsmodel og imod en ensidet ANOVA
+    - `lm(Volume ~ Height + Girth)`: til at fitte en multipel lineær regressionsmodel
 
 * R-program fra forelæsning d. 30/9-2019: [output](R/forel190930_Rprog.html) - [R Markdown](R/forel190930_Rprog.Rmd)
 
-<!--
 * R-program fra forelæsning d. 2/10-2019: [output](R/forel191002_Rprog.html) - [R Markdown](R/forel191002_Rprog.Rmd)
--->
 
