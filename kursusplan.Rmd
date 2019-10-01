@@ -20,7 +20,7 @@ Kursusuge | Dag | Emner | Lærebog | Detaljer
 4 | Mandag (23/9) | F-test samt diskussion af fejltyper ved statistiske test | (Ch. 6.1-6.2) + Ch. 6.3+6.4 | [link](#uge4)  
 4 | Onsdag (25/9) | Modelkontrol og prædiktion | Ch. 7 | [link](#uge4)   
 5 | Mandag (30/9) | Repetition / Opsummering | Intet nyt! (Ch. 1-7) | [link](#uge5) 
-5 | Onsdag (2/10) | Multiple lineær regression | Ch. 8.1 | link  
+5 | Onsdag (2/10) | Multiple lineær regression | Ch. 8.1 | [link](#uge5)  
 6 | Mandag (7/10) | Tosidet ANOVA | Ch. 8.2 | link 
 6 | Onsdag (9/10) | Modeller med både kvantitative og kontinuerte forklarende variable | Ch. 8.3 | link  
 7 | Mandag (21/10) | Binomialfordelingen  | Ch. 11 | link 
@@ -51,6 +51,7 @@ Følgende afsnit fra lærebogen er gennemgået i kursusuge 1-4
 
 * Chapter 7: Modelkontrol og prædiktion i forbindelse med modeller fittet med `lm()` funktionen i R
 
+* Chapter 8.1: Multipel lineær regression
 
 # Program for enkelte uger
 
