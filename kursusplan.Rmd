@@ -21,15 +21,15 @@ Kursusuge | Dag | Emner | Lærebog | Detaljer
 4 | Onsdag (25/9) | Modelkontrol og prædiktion | Ch. 7 | [link](#uge4)   
 5 | Mandag (30/9) | Repetition / Opsummering | Intet nyt! (Ch. 1-7) | [link](#uge5) 
 5 | Onsdag (2/10) | Multiple lineær regression | Ch. 8.1 | [link](#uge5)  
-6 | Mandag (7/10) | Tosidet ANOVA | Ch. 8.2 | link 
-6 | Onsdag (9/10) | Modeller med både kvantitative og kontinuerte forklarende variable | Ch. 8.3 | link  
+6 | Mandag (7/10) | Tosidet ANOVA | Ch. 8.2 | [link](#uge6) 
+6 | Onsdag (9/10) | Modeller med både kvantitative og kontinuerte forklarende variable | Ch. 8.3 | [link](#uge6)  
 7 | Mandag (21/10) | Binomialfordelingen  | Ch. 11 | link 
 7 | Onsdag (23/10) | Analyse af antalstabeller | Dele af Ch. 12 | link  
 8 | Mandag (28/10) | Repetition / opgavegennemgang | Intet nyt! | link  
 
 ## Liste over gennemgået pensum
 
-Følgende afsnit fra lærebogen er gennemgået i kursusuge 1-4
+Følgende afsnit fra lærebogen er gennemgået i kursusuge 1-5
 
 * Chapter 1: Datatyper, visualisering og deskriptiv statistik
 
@@ -411,25 +411,58 @@ Det er frivilligt at aflevere opgaven, men det er god eksamenstræning og en mul
 ***
 
 
-## Kursusuge 6
+## Kursusuge 6 {#uge6}
 
 ### Generel info
 
-* Jeg regner med at stille en frivillig afleveringsopgave til aflevering i kursusuge 7. For at sikre, at I kan nå at få rettet opgaverne, så regner jeg med at afleveringsfristen bliver mandag d. 21/10 (efter ferien).
+* Husk [afleveringsopgaven](#aflevering2) (Januar 2019, opgave 1) der kan afleveres onsdag den 9. oktober ved øvelsernes. Opgaven bedes afleveret senest kl. 11:45. Hvis I laver opgaven i grupper, så nøjes med at aflevere et eksemplar. Det er instruktorernes ønske, at I afleverer opgaver på papir. I må naturligvis godt lave besvarelsen eleketronisk (fx. i R Markdown), men opgaven bedes skrevet ud!
 
+* Jeg regner med at stille en frivillig afleveringsopgave til aflevering i kursusuge 7. For at sikre, at I kan nå at få rettet opgaverne, så regner jeg med at afleveringsfristen bliver mandag d. 21/10 (efter undervisningspausen i uge 42).
+
+* I denne uge gør vi normalfordelingsmodellerne færdige!
+
+* Husk som altid at lave de opgaver, du ikke når i timerne, derhjemme.
+
+* De fleste af HS-opgaverne ligner de kommende eksamensopgaver lige så meget som de gamle eksamensopgaver.
+
+* Husk at der ligger data til de fleste gamle eksamensopgaver. Kør selv analyserne!
 
 ### Forelæsninger
 
 #### Forelæsninger mandag kl 13.00-14.45 i aud - A2-82.01 (3-02)
 
+* Afsnit 8.2 (s. 224-234)+ 8.4.1-8.4.2 (s. 243-249) i lærebogen om tosidet variansanalyse (ANOVA)
+
 #### Forelæsninger onsdag kl. 9.00-10.45 i aud - A2-82.01 (3-02) og kl. 15.00-15.45 i aud - A2-82.01 (3-02)
 
+* Eventuelle hængepartier vedrørende tosidet ANOVA
+* Modeller med både kvantitative og kontinuerte forklarende variable: afsnit 8.3 (side 234-242)
+ 
 ### Øvelsestimer
 
 #### Øvelser mandag kl. 15.00-16.45 (se lokaleplanen)
 
+* November 2017, opgave 3. Vink til spørgsmål 2: Husk hvad vekselvirkning betyder. 
+
+<!--
+* Opgave HS.24
+-->
+
+* Januar 2015, opgave 1. Data ligger på kursushjemmesiden ( [Data](data.html) ) som happy.txt og happy.xlsx. Derfor må du gerne selv regne på data i R, og fx. bruge R til at besvare delopgaverne (b) og (c) i stedet for at sætte tal fra den viste R udskrift ind i formlerne i bogen. Ekstra spørgsmål (e): Bestem et 95% prædiktionsinterval svarende til selvskab=25, indkomst=35 og VAT=18, og forklar hvordan intervallet skal fortolkes.
+
+* Opgave 8.2, men erstat spørgsmålene med følgende: Brug en tosidet ANOVA uden vekselvirkning til at undersøge om der er en effekt af sort (variety) og gødningsmængde (fertilizer) på udbyttet.
+
+
 #### Øvelser onsdag kl. 11:00-11:45 og kl. 13.00-14.45 (se lokaleplanen)
 
+<!--
+* Quiz 6: Start på quizzen cirka 15.15, så du har en halv times tid. Hvis du bliver hurtigt færdig, så kan du gå tilbage til opgaverne. Vi snakker den igennem ved den efterfølgende forelæsning.
+-->
+
+* Opgave HS.25: Tosidet ANOVA
+* Opgave HS.26: Model med både kategorisk og kontinuert forklarende variable.
+* Opgave HS.27: Det kan være en fordel at se på slide 33 (og evt. 29-32) fra forelæsningen d. 23/9-2019 som er nyttige, men ikke har været diskuteret i detaljer.
+* Opgave 8.9. Dette er en fortsættelse af opgave 6.6 som I regnede i kursusuge 3. 
 
 <!--
 ### Frivillig afleveringsopgave til mandag d. 21. oktober {#aflevering3}
