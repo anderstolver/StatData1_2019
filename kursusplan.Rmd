@@ -459,7 +459,8 @@ Det er frivilligt at aflevere opgaven, men det er god eksamenstræning og en mul
 * Quiz 6: Start på quizzen cirka 15.15, så du har en halv times tid. Hvis du bliver hurtigt færdig, så kan du gå tilbage til opgaverne. Vi snakker den igennem ved den efterfølgende forelæsning.
 -->
 
-* Opgave HS.25: Tosidet ANOVA
+* Opgave HS.25: Tosidet ANOVA. Data til opgaven findes under Opgave HS.25 på [siden med data](data.html).
+
 * Opgave HS.26: Model med både kategorisk og kontinuert forklarende variable.
 * Opgave HS.27: Det kan være en fordel at se på slide 33 (og evt. 29-32) fra forelæsningen d. 23/9-2019 som er nyttige, men ikke har været diskuteret i detaljer.
 * Opgave 8.9. Dette er en fortsættelse af opgave 6.6 som I regnede i kursusuge 3. 
