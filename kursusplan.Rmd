@@ -415,7 +415,7 @@ Det er frivilligt at aflevere opgaven, men det er god eksamenstræning og en mul
 
 ### Generel info
 
-* Husk [afleveringsopgaven](#aflevering2) (Januar 2019, opgave 1) der kan afleveres onsdag den 9. oktober ved øvelsernes. Opgaven bedes afleveret senest kl. 11:45. Hvis I laver opgaven i grupper, så nøjes med at aflevere et eksemplar. Det er instruktorernes ønske, at I afleverer opgaver på papir. I må naturligvis godt lave besvarelsen eleketronisk (fx. i R Markdown), men opgaven bedes skrevet ud!
+* Husk [afleveringsopgaven](#aflevering2) (Januar 2019, opgave 2) der kan afleveres onsdag den 9. oktober ved øvelsernes. Opgaven bedes afleveret senest kl. 11:45. Hvis I laver opgaven i grupper, så nøjes med at aflevere et eksemplar. Det er instruktorernes ønske, at I afleverer opgaver på papir. I må naturligvis godt lave besvarelsen eleketronisk (fx. i R Markdown), men opgaven bedes skrevet ud!
 
 * Jeg regner med at stille en frivillig afleveringsopgave til aflevering i kursusuge 7. For at sikre, at I kan nå at få rettet opgaverne, så regner jeg med at afleveringsfristen bliver mandag d. 21/10 (efter undervisningspausen i uge 42).
 
