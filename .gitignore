@@ -46,3 +46,4 @@ rsconnect/
 
 # .Rnw files 
 *.Rnw
+.Rproj.user
