@@ -153,3 +153,4 @@ Nogle af vejledningerne er skrevet på et forholdsvis højt niveau, så man skal
 
 * R-program fra forelæsning d. 2/10-2019: [output](R/forel191002_Rprog.html) - [R Markdown](R/forel191002_Rprog.Rmd)
 
+## Uge 6

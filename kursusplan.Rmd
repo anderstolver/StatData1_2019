@@ -431,7 +431,12 @@ Det er frivilligt at aflevere opgaven, men det er god eksamenstræning og en mul
 
 #### Forelæsninger mandag kl 13.00-14.45 i aud - A2-82.01 (3-02)
 
-* Afsnit 8.2 (s. 224-234)+ 8.4.1-8.4.2 (s. 243-249) i lærebogen om tosidet variansanalyse (ANOVA)
+Forelæsningen bører følgende afsnit i lærebogen
+
+* Afsnit 8.2 (s. 224-234) om den additive moel for tosidet variansanalyse (ANOVA)
++ 8.4.1-8.4.2 (s. 243-249) om den tosidede variansanalysemodel med vekselvirkning
+
+Slides til dagens forelæsning: [fuld version](slides/sd1_forel191007_handout.pdf) - [kort version: 4 slides per side](slides/sd1_forel191007_short.pdf)
 
 #### Forelæsninger onsdag kl. 9.00-10.45 i aud - A2-82.01 (3-02) og kl. 15.00-15.45 i aud - A2-82.01 (3-02)
 
