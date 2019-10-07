@@ -144,7 +144,7 @@ Nogle af vejledningerne er skrevet på et forholdsvis højt niveau, så man skal
 
 ## Uge 5
 
-* Ved undervisningen i uge 4 talte vi bl.a. om R kommandoerne
+* Ved undervisningen i uge 5 talte vi bl.a. om R kommandoerne
     - `lm(freq ~ temp + I(temp^2), data=eels)`: til at fitte en kvadratisk regressionsmodel
     - `anova()`: til at teste en lineær regressionsmodel imod hhv. en kvadratisk regressionsmodel og imod en ensidet ANOVA
     - `lm(Volume ~ Height + Girth)`: til at fitte en multipel lineær regressionsmodel
@@ -154,3 +154,10 @@ Nogle af vejledningerne er skrevet på et forholdsvis højt niveau, så man skal
 * R-program fra forelæsning d. 2/10-2019: [output](R/forel191002_Rprog.html) - [R Markdown](R/forel191002_Rprog.Rmd)
 
 ## Uge 6
+
+* Ved undervisningen i uge 6 talte vi bl.a. om R kommandoerne
+    - `interaction.plot()`: laver et vekselvirkningsplot til at undersøge effekten af to kategoriske variable i forbindelse med tosidet ANOVA
+    - `lm(hojde ~ studie + kon + studie*kon)`: til at fitte en tosidet ANOVA med vekselvirkning
+    - `lm(hojde ~ studie + kon)`: til at fitte en tosidet ANOVA uden vekselvirkning
+    
+* R-program fra forelæsning d. 7/10-2019: [output](R/forel191007_Rprog.html) - [R Markdown](R/forel191007_Rprog.Rmd)

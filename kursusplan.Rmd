@@ -438,6 +438,9 @@ Forelæsningen bører følgende afsnit i lærebogen
 
 Slides til dagens forelæsning: [fuld version](slides/sd1_forel191007_handout.pdf) - [kort version: 4 slides per side](slides/sd1_forel191007_short.pdf)
 
+R-program fra forelæsning d. 7/10-2019: [output](R/forel191007_Rprog.html) - [R Markdown](R/forel191007_Rprog.Rmd)
+
+
 #### Forelæsninger onsdag kl. 9.00-10.45 i aud - A2-82.01 (3-02) og kl. 15.00-15.45 i aud - A2-82.01 (3-02)
 
 * Eventuelle hængepartier vedrørende tosidet ANOVA
