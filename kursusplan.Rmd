@@ -417,7 +417,7 @@ Det er frivilligt at aflevere opgaven, men det er god eksamenstræning og en mul
 
 * Husk [afleveringsopgaven](#aflevering2) (Januar 2019, opgave 2) der kan afleveres onsdag den 9. oktober ved øvelsernes. Opgaven bedes afleveret senest kl. 11:45. Hvis I laver opgaven i grupper, så nøjes med at aflevere et eksemplar. Det er instruktorernes ønske, at I afleverer opgaver på papir. I må naturligvis godt lave besvarelsen eleketronisk (fx. i R Markdown), men opgaven bedes skrevet ud!
 
-* Jeg regner med at stille en frivillig afleveringsopgave til aflevering i kursusuge 7. For at sikre, at I kan nå at få rettet opgaverne, så regner jeg med at afleveringsfristen bliver mandag d. 21/10 (efter undervisningspausen i uge 42).
+* Jeg har nu stillet en frivillig [afleveringsopgave](#aflevering3) til aflevering i kursusuge 7. For at sikre, at I kan nå at få rettet opgaverne, så bliver afleveringsfristen mandag d. 21/10 (efter undervisningspausen i uge 42).
 
 * I denne uge gør vi normalfordelingsmodellerne færdige!
 
@@ -445,7 +445,9 @@ R-program fra forelæsning d. 7/10-2019: [output](R/forel191007_Rprog.html) - [R
 
 * Eventuelle hængepartier vedrørende tosidet ANOVA
 * Modeller med både kvantitative og kontinuerte forklarende variable: afsnit 8.3 (side 234-242)
- 
+
+Slides til dagens forelæsning: [fuld version](slides/sd1_forel191009_handout.pdf) - [kort version: 4 slides per side](slides/sd1_forel191009_short.pdf)
+
 ### Øvelsestimer
 
 #### Øvelser mandag kl. 15.00-16.45 (se lokaleplanen)
@@ -473,13 +475,12 @@ R-program fra forelæsning d. 7/10-2019: [output](R/forel191007_Rprog.html) - [R
 * Opgave HS.27: Det kan være en fordel at se på slide 33 (og evt. 29-32) fra forelæsningen d. 23/9-2019 som er nyttige, men ikke har været diskuteret i detaljer.
 * Opgave 8.9. Dette er en fortsættelse af opgave 6.6 som I regnede i kursusuge 3. 
 
-<!--
+
 ### Frivillig afleveringsopgave til mandag d. 21. oktober {#aflevering3}
 
 Det er frivilligt at aflevere opgaven, men det er god eksamenstræning og en mulighed for at få feedback på jeres måde at formulere jer på. Bemærk at instruktorerne - efter min "ordre" - ikke hjælper med afleveringsopgaven i øvelsestimerne. Hvis du har spørgsmål, så brug diskussionsforum i Absalon, som jeg (=Anders) vil checke ca. dagligt (i hverdage). 
 
-* Januar 2018, opgave 1.
--->
+* Januar 2019, opgave 1 (Data til opgaven findes under linket [Data](data.html) øverst på kursushjemmesiden)
 
 
 ***
@@ -488,6 +489,8 @@ Det er frivilligt at aflevere opgaven, men det er god eksamenstræning og en mul
 ## Kursusuge 7
 
 ### Generel info
+
+* Husk [afleveringsopgaven](#aflevering3) (Januar 2019, opgave 1) der kan afleveres mandag den 21. oktober ved øvelserne. Opgaven bedes afleveret senest kl. 11:45. Hvis I laver opgaven i grupper, så nøjes med at aflevere et eksemplar. Det er instruktorernes ønske, at I afleverer opgaver på papir. I må naturligvis godt lave besvarelsen eleketronisk (fx. i R Markdown), men opgaven bedes skrevet ud!
 
 
 ### Forelæsninger
