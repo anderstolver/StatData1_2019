@@ -53,6 +53,8 @@ Følgende afsnit fra lærebogen er gennemgået i kursusuge 1-5
 
 * Chapter 8.1: Multipel lineær regression
 
+* Chapter 8.2, 8.3, 8.4.1, 8.4.2: Om tosidet ANOVA og blandede modeller (både kontinuerte og kategoriske forklarende variable)
+
 # Program for enkelte uger
 
 
@@ -445,6 +447,7 @@ R-program fra forelæsning d. 7/10-2019: [output](R/forel191007_Rprog.html) - [R
 
 * Eventuelle hængepartier vedrørende tosidet ANOVA
 * Modeller med både kvantitative og kontinuerte forklarende variable: afsnit 8.3 (side 234-242)
+* Om eftermiddagen: gennemgang af Quiz 6 og eventuelle hængepartier
 
 Slides til dagens forelæsning: [fuld version](slides/sd1_forel191009_handout.pdf) - [kort version: 4 slides per side](slides/sd1_forel191009_short.pdf)
 
@@ -492,21 +495,43 @@ Det er frivilligt at aflevere opgaven, men det er god eksamenstræning og en mul
 
 ### Generel info
 
-* Husk [afleveringsopgaven](#aflevering3) (Januar 2019, opgave 1) der kan afleveres mandag den 21. oktober ved øvelserne. Opgaven bedes afleveret senest kl. 11:45. Hvis I laver opgaven i grupper, så nøjes med at aflevere et eksemplar. Det er instruktorernes ønske, at I afleverer opgaver på papir. I må naturligvis godt lave besvarelsen eleketronisk (fx. i R Markdown), men opgaven bedes skrevet ud!
+* Husk [afleveringsopgaven](#aflevering3) (Januar 2019, opgave 1) der kan afleveres mandag den 21. oktober ved øvelserne. Opgaven bedes afleveret senest kl. 16:45. Hvis I laver opgaven i grupper, så nøjes med at aflevere et eksemplar. Det er instruktorernes ønske, at I afleverer opgaver på papir. I må naturligvis godt lave besvarelsen eleketronisk (fx. i R Markdown), men opgaven bedes skrevet ud!
 
+* Jeg har nu lagt [vejledende besvarelser](https://github.com/anderstolver/StatData1_2019/tree/master/docs/eksamensopgaver) ud til nogle af de gamle eksamenssæt. Jeg tilbageholder besvarelserne for eksamenssættene fra januar 2018 og januar 2019, for jeg har tænkt mig at bruge opgaver fra disse eksamenssæt ved undervisningen i kursusugerne 7 og 8. Bemærk dog at instruktorerne har lagt vejledende besvarelser ud (i Absalon) til de eksamensopgaver fra jan 2018+2019, som har været på programmet ved øvelsestimerne i kursusuge 1-6. 
 
 ### Forelæsninger
 
 #### Forelæsninger mandag kl 13.00-14.45 i aud - A2-82.01 (3-02)
 
+* Kapitel 11 om binomialfordelingen
+
 #### Forelæsninger onsdag kl. 9.00-10.45 i aud - A2-82.01 (3-02) og kl. 15.00-15.45 i aud - A2-82.01 (3-02)
+
+* Kapitel 12, dog ikke afsnit 12.2.3 og 12.2.4 som ikke er pensum
 
 ### Øvelsestimer
 
 #### Øvelser mandag kl. 15.00-16.45 (se lokaleplanen)
 
+<!--
+* November 2018, opgave 1
+* Kort gennemgang af HS.25 (fra kursusuge 6)
+* Opgave 11.1
+* Opgave HS.28
+* Opgave 11.4. Kommentar til spørgsmål 2: Du kan bruge binom.test, så du behøver ikke bruge normalfordelingsapproksimationen som der ellers lægges op til i vinket.
+* HS.31 
+-->
+
 #### Øvelser onsdag kl. 11:00-11:45 og kl. 13.00-14.45 (se lokaleplanen)
 
+<!--
+* Quiz 7: Start på quizzen cirka 15.15, så du har en halv times tid. Hvis du bliver hurtigt færdig, så kan du gå tilbage til opgaverne. Vi snakker den igennem ved forelæsningen onsdag eftermiddag.
+* Kort gennemgang af HS.31 (fra mandag)
+* Opgave HS.29
+* Opgave HS.30
+* Opgave 12.5
+* HS.32 
+-->
 
 ***
 
@@ -522,4 +547,13 @@ Det er frivilligt at aflevere opgaven, men det er god eksamenstræning og en mul
 ### Øvelsestimer
 
 #### Øvelser mandag kl. 15.00-16.45 (se lokaleplanen)
+
+<!--
+* November 2018, opgave 1
+* Kort gennemgang af HS.32
+* Januar 2018, opgave 1
+* (November 2017, opgave 4, men kun spørgsmål 1)
+* (November 2015, opgave 1. Data ligger som mazdas.txt og mazdas.xlsx på Absalon)
+* Brug desuden timerne til at stille spørgsmål til opgaver fra kurset. 
+-->
 

@@ -464,6 +464,7 @@ $(document).ready(function () {
 <li><p>Chapter 6.5: Om fejl af type I og II i forbindelse med hypotesetest</p></li>
 <li><p>Chapter 7: Modelkontrol og prædiktion i forbindelse med modeller fittet med <code>lm()</code> funktionen i R</p></li>
 <li><p>Chapter 8.1: Multipel lineær regression</p></li>
+<li><p>Chapter 8.2, 8.3, 8.4.1, 8.4.2: Om tosidet ANOVA og blandede modeller (både kontinuerte og kategoriske forklarende variable)</p></li>
 </ul>
 </div>
 </div>
@@ -849,6 +850,7 @@ $(document).ready(function () {
 <ul>
 <li>Eventuelle hængepartier vedrørende tosidet ANOVA</li>
 <li>Modeller med både kvantitative og kontinuerte forklarende variable: afsnit 8.3 (side 234-242)</li>
+<li>Om eftermiddagen: gennemgang af Quiz 6 og eventuelle hængepartier</li>
 </ul>
 <p>Slides til dagens forelæsning: <a href="slides/sd1_forel191009_handout.pdf">fuld version</a> - <a href="slides/sd1_forel191009_short.pdf">kort version: 4 slides per side</a></p>
 <p>R-program fra forelæsning d. 9/10-2019: <a href="R/forel191009_Rprog.html">output</a> - <a href="R/forel191009_Rprog.Rmd">R Markdown</a></p>
@@ -896,25 +898,48 @@ $(document).ready(function () {
 <div id="generel-info-6" class="section level3">
 <h3>Generel info</h3>
 <ul>
-<li>Husk <a href="#aflevering3">afleveringsopgaven</a> (Januar 2019, opgave 1) der kan afleveres mandag den 21. oktober ved øvelserne. Opgaven bedes afleveret senest kl. 11:45. Hvis I laver opgaven i grupper, så nøjes med at aflevere et eksemplar. Det er instruktorernes ønske, at I afleverer opgaver på papir. I må naturligvis godt lave besvarelsen eleketronisk (fx. i R Markdown), men opgaven bedes skrevet ud!</li>
+<li><p>Husk <a href="#aflevering3">afleveringsopgaven</a> (Januar 2019, opgave 1) der kan afleveres mandag den 21. oktober ved øvelserne. Opgaven bedes afleveret senest kl. 16:45. Hvis I laver opgaven i grupper, så nøjes med at aflevere et eksemplar. Det er instruktorernes ønske, at I afleverer opgaver på papir. I må naturligvis godt lave besvarelsen eleketronisk (fx. i R Markdown), men opgaven bedes skrevet ud!</p></li>
+<li><p>Jeg har nu lagt <a href="https://github.com/anderstolver/StatData1_2019/tree/master/docs/eksamensopgaver">vejledende besvarelser</a> ud til nogle af de gamle eksamenssæt. Jeg tilbageholder besvarelserne for eksamenssættene fra januar 2018 og januar 2019, for jeg har tænkt mig at bruge opgaver fra disse eksamenssæt ved undervisningen i kursusugerne 7 og 8. Bemærk dog at instruktorerne har lagt vejledende besvarelser ud (i Absalon) til de eksamensopgaver fra jan 2018+2019, som har været på programmet ved øvelsestimerne i kursusuge 1-6.</p></li>
 </ul>
 </div>
 <div id="forelsninger-6" class="section level3">
 <h3>Forelæsninger</h3>
 <div id="forelsninger-mandag-kl-13.00-14.45-i-aud---a2-82.01-3-02-6" class="section level4">
 <h4>Forelæsninger mandag kl 13.00-14.45 i aud - A2-82.01 (3-02)</h4>
+<ul>
+<li>Kapitel 11 om binomialfordelingen</li>
+</ul>
 </div>
 <div id="forelsninger-onsdag-kl.-9.00-10.45-i-aud---a2-82.01-3-02-og-kl.-15.00-15.45-i-aud---a2-82.01-3-02-6" class="section level4">
 <h4>Forelæsninger onsdag kl. 9.00-10.45 i aud - A2-82.01 (3-02) og kl. 15.00-15.45 i aud - A2-82.01 (3-02)</h4>
+<ul>
+<li>Kapitel 12, dog ikke afsnit 12.2.3 og 12.2.4 som ikke er pensum</li>
+</ul>
 </div>
 </div>
 <div id="velsestimer-6" class="section level3">
 <h3>Øvelsestimer</h3>
 <div id="velser-mandag-kl.-15.00-16.45-se-lokaleplanen-6" class="section level4">
 <h4>Øvelser mandag kl. 15.00-16.45 (se lokaleplanen)</h4>
+<!--
+* November 2018, opgave 1
+* Kort gennemgang af HS.25 (fra kursusuge 6)
+* Opgave 11.1
+* Opgave HS.28
+* Opgave 11.4. Kommentar til spørgsmål 2: Du kan bruge binom.test, så du behøver ikke bruge normalfordelingsapproksimationen som der ellers lægges op til i vinket.
+* HS.31 
+-->
 </div>
 <div id="velser-onsdag-kl.-1100-1145-og-kl.-13.00-14.45-se-lokaleplanen-6" class="section level4">
 <h4>Øvelser onsdag kl. 11:00-11:45 og kl. 13.00-14.45 (se lokaleplanen)</h4>
+<!--
+* Quiz 7: Start på quizzen cirka 15.15, så du har en halv times tid. Hvis du bliver hurtigt færdig, så kan du gå tilbage til opgaverne. Vi snakker den igennem ved forelæsningen onsdag eftermiddag.
+* Kort gennemgang af HS.31 (fra mandag)
+* Opgave HS.29
+* Opgave HS.30
+* Opgave 12.5
+* HS.32 
+-->
 <hr />
 </div>
 </div>
@@ -934,6 +959,14 @@ $(document).ready(function () {
 <h3>Øvelsestimer</h3>
 <div id="velser-mandag-kl.-15.00-16.45-se-lokaleplanen-7" class="section level4">
 <h4>Øvelser mandag kl. 15.00-16.45 (se lokaleplanen)</h4>
+<!--
+* November 2018, opgave 1
+* Kort gennemgang af HS.32
+* Januar 2018, opgave 1
+* (November 2017, opgave 4, men kun spørgsmål 1)
+* (November 2015, opgave 1. Data ligger som mazdas.txt og mazdas.xlsx på Absalon)
+* Brug desuden timerne til at stille spørgsmål til opgaver fra kurset. 
+-->
 </div>
 </div>
 </div>

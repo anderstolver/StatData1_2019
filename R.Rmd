@@ -159,6 +159,7 @@ Nogle af vejledningerne er skrevet på et forholdsvis højt niveau, så man skal
     - `interaction.plot()`: laver et vekselvirkningsplot til at undersøge effekten af to kategoriske variable i forbindelse med tosidet ANOVA
     - `lm(hojde ~ studie + kon + studie*kon)`: til at fitte en tosidet ANOVA med vekselvirkning
     - `lm(hojde ~ studie + kon)`: til at fitte en tosidet ANOVA uden vekselvirkning
+    - `lm(time ~ day + women`): til at fitte en *blandet model* (både kontinuert og kategoriske forklarende variable)
     
 * R-program fra forelæsning d. 7/10-2019: [output](R/forel191007_Rprog.html) - [R Markdown](R/forel191007_Rprog.Rmd)
 
