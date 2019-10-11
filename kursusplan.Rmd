@@ -23,13 +23,13 @@ Kursusuge | Dag | Emner | Lærebog | Detaljer
 5 | Onsdag (2/10) | Multiple lineær regression | Ch. 8.1 | [link](#uge5)  
 6 | Mandag (7/10) | Tosidet ANOVA | Ch. 8.2 | [link](#uge6) 
 6 | Onsdag (9/10) | Modeller med både kvantitative og kontinuerte forklarende variable | Ch. 8.3 | [link](#uge6)  
-7 | Mandag (21/10) | Binomialfordelingen  | Ch. 11 | link 
-7 | Onsdag (23/10) | Analyse af antalstabeller | Dele af Ch. 12 | link  
+7 | Mandag (21/10) | Binomialfordelingen  | Ch. 11 | [link](#uge7) 
+7 | Onsdag (23/10) | Analyse af antalstabeller | Dele af Ch. 12 | [link](#uge7)  
 8 | Mandag (28/10) | Repetition / opgavegennemgang | Intet nyt! | link  
 
 ## Liste over gennemgået pensum
 
-Følgende afsnit fra lærebogen er gennemgået i kursusuge 1-5
+Følgende afsnit fra lærebogen er gennemgået i kursusuge 1-6
 
 * Chapter 1: Datatyper, visualisering og deskriptiv statistik
 
@@ -491,7 +491,7 @@ Det er frivilligt at aflevere opgaven, men det er god eksamenstræning og en mul
 ***
 
 
-## Kursusuge 7
+## Kursusuge 7 {#uge7}
 
 ### Generel info
 
@@ -503,7 +503,7 @@ Det er frivilligt at aflevere opgaven, men det er god eksamenstræning og en mul
 
 #### Forelæsninger mandag kl 13.00-14.45 i aud - A2-82.01 (3-02)
 
-* Kapitel 11 om binomialfordelingen
+* Kapitel 11: om binomialfordelingen
 
 #### Forelæsninger onsdag kl. 9.00-10.45 i aud - A2-82.01 (3-02) og kl. 15.00-15.45 i aud - A2-82.01 (3-02)
 
@@ -513,25 +513,28 @@ Det er frivilligt at aflevere opgaven, men det er god eksamenstræning og en mul
 
 #### Øvelser mandag kl. 15.00-16.45 (se lokaleplanen)
 
-<!--
-* November 2018, opgave 1
-* Kort gennemgang af HS.25 (fra kursusuge 6)
-* Opgave 11.1
-* Opgave HS.28
-* Opgave 11.4. Kommentar til spørgsmål 2: Du kan bruge binom.test, så du behøver ikke bruge normalfordelingsapproksimationen som der ellers lægges op til i vinket.
-* HS.31 
--->
+Du bør sikre dig, at du bruger nok tid på kurset i de sidste uger - særligt med henblik på at få træning i at regne opgaver. Du kan ikke regne med, at du kan nå at lave alle opgaverne i øvelsestimerne, så regn med at du skal bruge tid hjemme, hvis du vil nå igennem alle opgaver.
+
+
+* Opgave 11.1: beregning af sandsynligheder for udvalgte hændelser i en binomialfordeling
+
+* Opgave HS.28: estimation, konfidensintervaller og hypotesetest for en binomialfordeling
+
+* Opgave HS.29: sammenligning af forskelle mellem to binomialfordelinger (*differences between proportions*)
+
+* November 2018, opgave 1: god opgave til repetition af ensidet ANOVA.
+
+* Opgave 11.4. Kommentar til spørgsmål 2: Du kan bruge binom.test, så du behøver ikke bruge normalfordelingsapproksimationen som der ellers lægges op til i vinket (**Opgaverne 11.4 og HS.28 minder en del om hinanden!**)
 
 #### Øvelser onsdag kl. 11:00-11:45 og kl. 13.00-14.45 (se lokaleplanen)
 
-<!--
-* Quiz 7: Start på quizzen cirka 15.15, så du har en halv times tid. Hvis du bliver hurtigt færdig, så kan du gå tilbage til opgaverne. Vi snakker den igennem ved forelæsningen onsdag eftermiddag.
-* Kort gennemgang af HS.31 (fra mandag)
-* Opgave HS.29
-* Opgave HS.30
-* Opgave 12.5
-* HS.32 
--->
+Du bør sikre dig, at du bruger nok tid på kurset i de sidste uger - særligt med henblik på at få træning i at regne opgaver. Du kan ikke regne med, at du kan nå at lave alle opgaverne i øvelsestimerne, så regn med at du skal bruge tid hjemme, hvis du vil nå igennem alle opgaver.
+
+* Quiz 7: Start på quizzen cirka 14.15, så du har en halv times tid. Hvis du bliver hurtigt færdig, så kan du gå tilbage til opgaverne. Vi snakker den igennem ved forelæsningen onsdag eftermiddag.
+* Opgave HS.30: test for uafhængighed
+* Opgave 12.5: tosidede antalstabeller (3 x 3 tabel)
+* Opgave HS.32: se bort for spørgsmål (e).
+* Januar 2018, opgave 1: opgave der kommer godt rundt i pensum!
 
 ***
 
@@ -549,9 +552,6 @@ Det er frivilligt at aflevere opgaven, men det er god eksamenstræning og en mul
 #### Øvelser mandag kl. 15.00-16.45 (se lokaleplanen)
 
 <!--
-* November 2018, opgave 1
-* Kort gennemgang af HS.32
-* Januar 2018, opgave 1
 * (November 2017, opgave 4, men kun spørgsmål 1)
 * (November 2015, opgave 1. Data ligger som mazdas.txt og mazdas.xlsx på Absalon)
 * Brug desuden timerne til at stille spørgsmål til opgaver fra kurset. 
