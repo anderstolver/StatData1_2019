@@ -29,7 +29,7 @@ Kursusuge | Dag | Emner | Lærebog | Detaljer
 
 ## Liste over gennemgået pensum
 
-Følgende afsnit fra lærebogen er gennemgået i kursusuge 1-6
+Følgende afsnit fra lærebogen er gennemgået i kursusuge 1-7
 
 * Chapter 1: Datatyper, visualisering og deskriptiv statistik
 
@@ -37,7 +37,7 @@ Følgende afsnit fra lærebogen er gennemgået i kursusuge 1-6
 
 * Chapter 3: Sammenligning af grupper og introduktion til ensidet variansanalyse.
 
-* Chapter 4: Normalfordelingen. Nogle af de mere teoretiske ting omkring Infobox 4.2, 4.3 og 4.5 illustreres primært gennem eksempler (computersimulationer)
+* Chapter 4: Normalfordelingen. Nogle af de mere teoretiske ting omkring Infobox 4.2, 4.3 og 4.5 illustreres primært gennem eksempler (computersimulationer). Afsnit 4.4. er kun kursorisk. 
 
 * Chapter 5.3.1-5.3.3: Konfidensintervaller med fokus på konstruktion af konfidensintervaller for middelværdien i en sample (*one sample problem*)
 
@@ -53,7 +53,10 @@ Følgende afsnit fra lærebogen er gennemgået i kursusuge 1-6
 
 * Chapter 8.1: Multipel lineær regression
 
-* Chapter 8.2, 8.3, 8.4.1, 8.4.2: Om tosidet ANOVA og blandede modeller (både kontinuerte og kategoriske forklarende variable)
+* Chapter 8.2, 8.3, 8.4.1, 8.4.2: Om tosidet ANOVA og blandede modeller (både kontinuerte og kategoriske forklarende variable). Afsnittene 8.2.2 og 8.4.3 er ikke pensum.
+
+* Chapter 11: Om binomialfordelingen
+* Chapter 12: Om analyse af antalstabeller (dog ikke afsnit 12.2.3 og 12.2.4)
 
 # Program for enkelte uger
 
@@ -504,6 +507,8 @@ Det er frivilligt at aflevere opgaven, men det er god eksamenstræning og en mul
 #### Forelæsninger mandag kl 13.00-14.45 i aud - A2-82.01 (3-02)
 
 * Kapitel 11: om binomialfordelingen
+
+Slides til dagens forelæsning: [fuld version](slides/sd1_forel191021_handout.pdf) - [kort version: 4 slides per side](slides/sd1_forel191021_short.pdf)
 
 #### Forelæsninger onsdag kl. 9.00-10.45 i aud - A2-82.01 (3-02) og kl. 15.00-15.45 i aud - A2-82.01 (3-02)
 
