@@ -168,3 +168,9 @@ Nogle af vejledningerne er skrevet på et forholdsvis højt niveau, så man skal
 ## Uge 7
 
 * Ved undervisningen i uge 7 talte vi bl.a. om R kommandoerne
+    - `dbinom(), pbinom()`: til beregning af sandsynligheder for en binomialfordelt variabel Y
+    - `prop.test()`: til beregning af *forbedret* konfidensinterval for sandsynlighedsparameteren p i en binomialfordeling
+    - `binom.test()`: til at teste en hypotese $H_0: p = p_0$ om parameteren i en binomialfordeling
+    - `prop.test()`: til beregning af konfidensinterval for forskellen mellem sandsynligheder i to binomialfordelinger (eng: *differences between proportions*)
+    
+* R-program fra forelæsning d. 21/10-2019: [output](R/forel191021_Rprog.html) - [R Markdown](R/forel191021_Rprog.Rmd)

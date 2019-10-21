@@ -510,6 +510,8 @@ Det er frivilligt at aflevere opgaven, men det er god eksamenstræning og en mul
 
 Slides til dagens forelæsning: [fuld version](slides/sd1_forel191021_handout.pdf) - [kort version: 4 slides per side](slides/sd1_forel191021_short.pdf)
 
+R-program fra forelæsning d. 21/10-2019: [output](R/forel191021_Rprog.html) - [R Markdown](R/forel191021_Rprog.Rmd)
+
 #### Forelæsninger onsdag kl. 9.00-10.45 i aud - A2-82.01 (3-02) og kl. 15.00-15.45 i aud - A2-82.01 (3-02)
 
 * Kapitel 12, dog ikke afsnit 12.2.3 og 12.2.4 som ikke er pensum
