@@ -516,6 +516,8 @@ R-program fra forelæsning d. 21/10-2019: [output](R/forel191021_Rprog.html) - [
 
 * Kapitel 12, dog ikke afsnit 12.2.3 og 12.2.4 som ikke er pensum
 
+Slides til dagens forelæsning: [fuld version](slides/sd1_forel191023_handout.pdf) - [kort version: 4 slides per side](slides/sd1_forel191023_short.pdf)
+
 ### Øvelsestimer
 
 #### Øvelser mandag kl. 15.00-16.45 (se lokaleplanen)

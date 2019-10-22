@@ -1,0 +1,307 @@
+---
+title: 'StatData1: studerende på SD1 i 2019'
+output: 
+  html_document:
+    toc: true
+    code_folding: hide
+---
+
+***
+
+
+## Beskrivelse
+
+Ved den første forelæsning i Statistisk Dataanalyse 1 d. 2/9-2019 indsamlede vi nogle data. 
+
+Instruksen ved forelæsningen var
+
+* alle vælger en pink eller en grøn lap papir
+* alle skriver svaret på følgende spørgsmål på papirlappen
+    - 1. Studieretning:
+    - 2. Har du glædet dig til Statistisk Dataanalyse 1?
+    - 3. I hvilket årstal er du født?
+    - 4. Hvor ofte drikker du alkohol? A = aldrig, B = 0-1 gang om ugen, C = mindst 2 gange om ugen
+    - 5. Hvor træt er du typisk efter 30 minutters forelæsning? Graduer dit svar på en skala fra 0-100 (0 = vågen, 100 = træt)
+* alle krøller papirlappen sammen til en kugle og stiller sig bag en af stregerne på gulvet ved katederet og forsøger at ramme *kurven* med papirkuglen
+* forelæseren indsamler papirkuglerne og gemmer dem i to forskellige kurverter: i) kugler der ramte *kurver*, ii) kugler der ikke ramte *kurven*
+
+Jeg har indtastet (nogle af) data fra forelæsningen i to datafiler
+
+* `sd1_eksperiment.xlsx`: excel fil
+* `sd1_eksperiment.txt`: flad tekst fil
+
+I dette dokument benyttes disse data til at illustrere forskellige tricks, der kan være nyttige, når man skal arbejde med data i praksis. 
+
+
+***
+
+
+# Indlæsning af data
+
+**Vigtigt:** Da jeg ved, at excel-filen som jeg vil indlæse indeholder danske bogstaver (æ, ø, å), så kan der være problemer med at få indlæst disse tegn korrekt. For mig virker det, at køre kommandoen `Sys.setlocale()` først, som vist nedenfor.
+
+```{r message = F}
+library(tidyverse)
+library(readxl)
+Sys.setlocale("LC_ALL", 'en_US.UTF-8')
+data <- read_excel("../data/sd1_eksperiment.xlsx")
+```
+
+Undersøg om antallet af rækker og antallet af søjler i den indlæste datafil (her kaldet: `data`) svarer til antallet af rækker og søjler i datafilen (Excel). Dette kræver, at du også åbner og kigger i din datafil med rådata.
+
+```{r}
+dim(data) ### antal rækker og antal søjler
+nrow(data) ### antal rækker
+ncol(data) ### antal søjler
+```
+
+Undersøg om navnene på variablene (dvs. søjlerne) i den indlæste datafil (`data`) er korrekte og svarer til datafilen (her: Excel-filen).
+
+```{r}
+names(data) ### udskrive navne på variable i et datasæt
+```
+
+Det er en klassisk fejl, at R ved indlæsning af data *ikke* opfatter første række i datafilen som overskrifter/variabelnavne. Dette sker dog automatisk, når man (som her) benytter `read_excel()` funktionen til at læse en excel-fil. Når man indlæser en flad tekstfil (i .txt format), så kan man med fordel skrive som koden herunder 
+
+```{r eval = F}
+data <- read.table(file = "../data/sd1_eksperiment.txt", header = T)
+```
+
+
+***
+
+
+# Undersøgelse og rensning af alle variable
+
+Variabelnavnene i datasættet dækker over følgende
+
+* `studie`: studieretning
+* `sd1`: om man har glædet sig til kurset StatData1
+* `byear`: fødselsår
+* `alkohol`: hyppighed af alkoholindtag
+* `rosider`: om man kan lide rosiner
+* `traeter`: træthed efter 30 minutters forelæsning
+* `farve`: farve på papirlap hvor svarene var skrevet
+* `boldoje`: angiver om papirlappen ramme *kurven*
+
+I det følgende løber vi variablene igennem en for en med henblik på at rette forskellige oplagte fejl i datasættet.
+
+## `studie`
+
+Variablen `studie` er en kategorisk nominal variabel.
+
+Følgende værdier af variablen `studie` er repræsenteret i datasættet
+
+```{r}
+knitr::kable(unique(data$studie))
+```
+
+Der er et oplagt problemher:
+
+* samme studieretning kan være skrevet på forskellig måde
+
+En kategorisk variabel med et fast antal mulige kategorier kaldes ofte en faktor. Her vises, hvordan man kan få R til at opfatte `studie` som en faktor, og hvordan man slår svar sammen. Bemærk, at jeg her tillader mig at samle alle specialiseringer under naturressourcer.
+
+```{r}
+data <- mutate(data,
+               studie = fct_collapse(studie,
+                                         "jordbrugsøkonomi" = "JØ",
+                                         "biologi-bioteknologi" = c("biotek",
+                                                              "bioteknologi",
+                                                            "biologi-biotek",
+                                                            "biologi og bioteknologi",
+                                                            "biotch"),
+                                     "husdyrvidenskab" = c("husdyr"),
+                                     "naturressourcer" = c("naturressourcer, plante",
+                                                           "naturres",
+                                                           "naturresuser-miljø",
+                                                           "naturressourcer (miljø)",
+                                                           "Natres-Miljø økonomi",
+                                                           "naturressourcer-miljøvidenskab",
+                                                           "naturressourcer-plantevidenskab",
+                                                           "naturforvaltning",
+                                                           "plantevidenskab"))
+               )
+unique(data$studie)
+```
+
+
+## `sd1`
+
+Variablen `sd1` bør være en kategorisk nominal variabel med to grupper / niveauer: `ja` og `nej`.
+
+Følgende værdier af `sd1` optræder i datasættet.
+
+```{r}
+knitr::kable(unique(data$sd1))
+```
+
+Vi genkender problemerne fra arbejdet med variablen `studie`. Desuden er der nogle af svarene for variablen `sd1` som ikke gør det muligt at afgøre, hvilken af de to korrekte svarkategorier som observationen bør svare til. Vi ændrer derfor værdien af variablen til `NA` (*not available* / manglende svar  - i R kodet ved værdien `NULL`).
+
+```{r}
+data <- mutate(data,
+               sd1 = fct_collapse(sd1,
+                                  ja = c("yes",
+                                         "ja nogenlunde",
+                                         "ja, sådan da",
+                                         "ja, selvfølgelig",
+                                         "jada",
+                                          "ja, meget",
+                                         "måske",
+                                         "Jo…lidt skræmt måske",
+                                         "Jeg er spændt",
+                                         "jeg glæder mig lidt, men er også lidt nervøs",
+                                         "en smule",
+                                         "semi",
+                                         "Helt sikkert",
+                                         "fuck ja",
+                                         "ja da",
+                                         "tja…", 
+                                         "kinda",
+                                         "jaja",
+                                         "ja, jeg glæder mig til at komme i gang",
+                                         "mer end noget andet",
+                                         "meget",
+                                         "medium",
+                                         "sådan da",
+                                         "lidt",
+                                         "si" ),
+                                  nej = c("ikke rigtig, du",
+                                          "jeg glæder mig ikke",
+                                          "Næh…",
+                                          "ikke rigtig",
+                                          "ikke så meget",
+                                          "nej, ikke så meget",
+                                          "nej, jeg er bange"),
+                                  NULL = c("Æh", "argh…")
+                                          ))
+unique(data$sd1)
+```
+
+
+## `byear`
+
+Variablen `byear` (fødselsår) er en kvantitativ diskret variabel.
+
+```{r}
+unique(data$byear)
+```
+
+## `alkohol`
+
+Ikke alle har angivet en af de mulige svarkategorier (`A, B, C`). Alle øvrige svar omkodes til `NA` (her kaldet `NULL` som koder for manglende svar).
+
+```{r}
+knitr::kable(unique(data$alkohol))
+```
+
+```{r}
+data <- mutate(data, alkohol = fct_collapse(alkohol,
+                                          NULL = c("hver gang Avej er åben",
+                                                   "for meget",
+                                                   "Ja",
+                                                   "sjældent",
+                                                   "B eller C"
+                                                   )))
+unique(data$alkohol)
+```
+
+## `rosiner`
+
+Variablen `rosiner` indeholder følgende værdier
+
+```{r}
+knitr::kable(unique(data$rosiner))
+```
+
+Vi foretager passende ændriger, så de eneste værdier der optræder bliver: `med`, `uden` og `NA`.
+
+```{r}
+data <- mutate(data, 
+               rosiner = fct_recode(rosiner, "uden" = "nej",
+                          "uden" = "ikke lige mig med rosiner i bagværk",
+                          "uden" = "rosiner er djævlen",
+                          "uden" = "kan lide begge, men spiser mest uden",
+                          NULL = "ingen bagværk til mig",
+                          NULL = "begge er gode"))
+unique(data$rosiner)
+```
+
+
+## `traethed`
+
+Dette bør være en kvantitativ kontinuert variabel med gyldige værdier fra 0-100.
+
+Viser dog at der optræder et par ugyldig værdier (som ikke er tal) ...
+```{r}
+unique(data$traethed)
+```
+
+Disse værdier omkodes til `NA`
+
+```{r}
+data$traethed <- parse_double(replace(data$traethed, data$traethed %in% c("ok - 45 min er max", "30-40", "stadig frisk v.hjælp af kaffe"), NA))
+```
+
+Vi udregner diverse stikprøvestørrelser (*summary measures*) på baggrund af denne variabel, men konstaterer, at der ikke er nogle oplagte fejl og problemer.
+
+```{r}
+summary(data$traethed)
+```
+
+
+## `boldoje`
+
+Denne variabel indeholder ingen fejl (fordi jeg/Anders selv har indtastet data). Dog var der en del studerende, som blot lagde deres seddel på katederet. For disse observationer har jeg indtastet værdien `NA` (manglende) for variablen `boldoje`, fordi den studerende blot lagde sedlen på katederet.
+
+```{r}
+unique(data$boldoje)
+```
+
+## Eksport af renset datasæt
+
+Følgende R kode gemmer det rensede datasæt i filen `StatData1stud2019.txt` (ret evt. filnavnet under `file` hvis du prøver at køre koden på din egen computer).
+
+```{r}
+write.table(data, file = "../data/StatData1stud2019.txt", row.names = F, quote = F, sep = "\t")
+```
+
+# Antalstabeller 
+
+Nedenfor vises nogle antalstabeller på baggrund af de studerendes svar på spørgsmålene.
+
+## Studieretning
+
+```{r}
+knitr::kable(table(data$studie))
+```
+
+## Glæder du dig til StatData1?
+
+```{r}
+knitr::kable(table(data$sd1))
+```
+
+## Fødselsår
+
+```{r}
+knitr::kable(table(data$byear))
+```
+
+## Alkoholforbrug
+
+```{r}
+knitr::kable(table(data$alkohol))
+```
+
+## Rosiner i bagværk?
+
+```{r}
+knitr::kable(table(data$rosiner))
+```
+
+## Har du boldøje?
+
+```{r}
+knitr::kable(table(data$boldoje))
+```

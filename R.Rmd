@@ -61,9 +61,8 @@ Nogle af vejledningerne er skrevet på et forholdsvis højt niveau, så man skal
 
 * Anders Tolver: [Notat om at arbejde med R Markdown formatet](R/RMarkdown.html) (skrevet til StatData1)
 
-<!--
-* Anders Tolver: [Notat om at arbejde med data i R](R/working_with_data.html)
--->
+* Anders Tolver: [Notat om datasæt indsamlet ved forelæsning d. 2/9-2019](R/working_with_data.html)
+
 
 <!--
 * **Helle Sørensen:Gammels notat om R:** skrevet med henblik på studerende
