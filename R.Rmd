@@ -173,3 +173,5 @@ Nogle af vejledningerne er skrevet på et forholdsvis højt niveau, så man skal
     - `prop.test()`: til beregning af konfidensinterval for forskellen mellem sandsynligheder i to binomialfordelinger (eng: *differences between proportions*)
     
 * R-program fra forelæsning d. 21/10-2019: [output](R/forel191021_Rprog.html) - [R Markdown](R/forel191021_Rprog.Rmd)
+
+* R-program fra forelæsning d. 23/10-2019: [output](R/forel191023_Rprog.html) - [R Markdown](R/forel191023_Rprog.Rmd)
