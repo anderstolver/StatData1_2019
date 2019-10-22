@@ -32,6 +32,10 @@ chisq.test(c(315,108,101,32), p=c(9,3,3,1)/16)
 
 Indtastning af data/antalstabel og beregning af forventede antal under nulhypotesen. Husk, at der er n = 556 observationer i datasættet.
 
+* `obs`: er den observerede vektor af antal i de forskellige grupper
+* `p0`: er sandsynligheden for at havne i hver af de 4 grupper, hvis nulhypotesen er sand
+* `556*p0`: er det forventede antal i hver gruppe, hvis man indsamler data fra 556 ærter (og nulhypotesen er sand)
+
 ```{r}
 obs <- c(315,108,101,32)
 obs
@@ -61,7 +65,7 @@ Teststørrelsen omregning til en p-værdi ved opslag i en *tabel* over $\chi^2$-
 
 ## Beskrivelse af data og modelantagelser
 
-Eksemplet blev første gang diskuteret ved forelæsningen d. 23/10-2019 på Statistisk Dataanalyse 1
+Eksemplet blev første gang diskuteret ved forelæsningen d. 21/10-2019 på Statistisk Dataanalyse 1
 
 * Vi betragter data fra 100 mus, som blev tilfældigt inddelt i to lige store grupper. 
 * Den ene gruppe mus blev kastreret dagen efter fødsel; den anden gruppe mus blev ikke kastreret
@@ -99,15 +103,14 @@ diabetes
 ```
 
 
-For en 2x2 tabel laver `chisq.test` som default en kontinuitetskorrektion. Hvis vi ikke vil have det, skal vi bruge optionen `correct=FALSE. Ved forelæsningerne snakker vi kun om versionen uden kontinuitetskorrektion.
+For en 2x2 tabel laver `chisq.test` som default en kontinuitetskorrektion. Hvis vi ikke vil have det, skal vi bruge optionen `correct=FALSE. Ved forelæsningerne snakker vi kun om versionen uden kontinuitetskorrektion (-se dog slide 44-45 fra 23/10-2019).
 
 ```{r}
 chisq.test(diabetes, correct=FALSE)
 chisq.test(diabetes)
 ```
 
-p-værdien bliver hhv. 0.0039 og 0.0074, så hypotesen forkastes. Der er forskel på sandsynlighederne;
-risikoen er størst for kastrerede mus.
+p-værdien bliver hhv. 0.0039 og 0.0074, så hypotesen forkastes. Der er forskel på sandsynlighederne; risikoen er størst for kastrerede mus.
 
 **Beregning af teststørrelse ved håndkraft:** Vi kan nemt få de forventede værdier, som nu selv er en tabel (eller en matrix). Bemærk at de forventede værdier er ens med og uden kontinuitetskorrektion; forskellen ligger i hvordan de bruges i beregningen af teststørrelsen.
  
@@ -157,10 +160,10 @@ Ved første forelæsningen i Statistisk Dataanalyse 1 d. 2/9-2019 blev der indsa
 Nedenfor fokuserer vi på svarene på følgende spørgsmål
 
 * Har du glædet dig til StatData1? (ja/nej)
-* Hvor tit drikker du alkohol? \\
+* Hvor tit drikker du alkohol? 
 (A: aldrig, B : 0-1 gang/uge, C: 2- gange/uge)
 
-Det fulde datasæt kan findes under Data på kursushjemmesiden. Bemærk, at der under R på kursushjemmesiden findes et link, der beskriver oprensningen af de rå data, som skal foretages inden man kan analysere data. Kun det rensede datasæt (fra filen `StatData1stud2019.txt`) benyttes her.
+Det fulde datasæt kan findes under menupunktet **Data** på kursushjemmesiden. Bemærk, at der under menupunktet **R** på kursushjemmesiden findes et link, der beskriver oprensningen af de rå data, som skal foretages inden man kan analysere data. Kun det rensede datasæt (fra filen `StatData1stud2019.txt`) benyttes her.
 
 Når vi inddeler svarene fra 110 studerende efter de to inddelingskriterier (forventning til SD1 og alkoholforbrug) fås følgende tabel.
 
@@ -170,11 +173,11 @@ sd1tabel <- table(sd1data$sd1, sd1data$alkohol)
 sd1tabel
 ```
 
-Vi ønsker at teste hypotesen om, at svarende på de to spørgsmål er uafhængige af hinanden. Se mere på dagens forelæsningsslides for detaljer omkring, hvordan man kan formulere denne hypotese matematisk.
+Vi ønsker at teste hypotesen om, at svarene på de to spørgsmål er uafhængige af hinanden. Se mere på dagens forelæsningsslides for detaljer omkring, hvordan man kan formulere denne hypotese matematisk.
 
 ## Test for uafhængighed
 
-Bemærk at data ovenfor er indlæst som en matrix (kaldet `sd1tabel`), denne gang som en 2x3 matrix. Du kan også selvom indtaste datasæt *søjlevis* som beskrevet på slides til dagens forelæsning. Check altid at tabellen/matricen er blevet som den skal være.
+Bemærk at data ovenfor er indlæst som en matrix (kaldet `sd1tabel`), denne gang som en 2 x 3 matrix. Du kan også selvom indtaste datasættet *søjlevis* som beskrevet på slides til dagens forelæsning. Check altid at tabellen/matricen er blevet som den skal være.
 
 
 Dernæst bruges `chisq.test`. Tabellen er større end 2x2, så der er ingen mulighed for at lave kontinuitetskorrektion.
@@ -194,7 +197,7 @@ er store. Dette er særlig nyttigt hvis nulhypotesen forkastes, fordi denne tabe
 chisq.test(sd1tabel)$expected
 ```
 
-Når vi bruger `chisq.test`, får vi en p-værdi på 0.13, men vi får også en advarsel (`Warning`) om at $\chi^2$- approksimationen er tvivlsom. Det er fordi nogle af de forventede værdier er mindre end 5 (dog kun en enkelt). Vi er derfor ikke ganske sikre på validiteten af p-værdien.
+**Simulering af p-værdi ved tynde tabeller:** Når vi bruger `chisq.test`, får vi en p-værdi på 0.13, men vi får også en advarsel (`Warning`) om at $\chi^2$- approksimationen er tvivlsom. Det er fordi nogle af de forventede værdier er mindre end 5 (dog kun en enkelt). Vi er derfor ikke ganske sikre på validiteten af p-værdien.
 
 En mulighed i den situation er at simulere p-værdien. Dette opnås ved at bruge optionen
 `simulate.p.value` og angive hvor mange simulerede datatabeller R skal lave. Vi bruger 10000. 

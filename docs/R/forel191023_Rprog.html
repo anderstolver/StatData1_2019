@@ -178,6 +178,11 @@ $(document).ready(function () {
 <div id="manuelle-beregninger-af-teststrrelse-og-p-vrdi" class="section level2">
 <h2>Manuelle beregninger af teststørrelse og p-værdi</h2>
 <p>Indtastning af data/antalstabel og beregning af forventede antal under nulhypotesen. Husk, at der er n = 556 observationer i datasættet.</p>
+<ul>
+<li><code>obs</code>: er den observerede vektor af antal i de forskellige grupper</li>
+<li><code>p0</code>: er sandsynligheden for at havne i hver af de 4 grupper, hvis nulhypotesen er sand</li>
+<li><code>556*p0</code>: er det forventede antal i hver gruppe, hvis man indsamler data fra 556 ærter (og nulhypotesen er sand)</li>
+</ul>
 <pre class="r"><code>obs &lt;- c(315,108,101,32)
 obs</code></pre>
 <pre><code>## [1] 315 108 101  32</code></pre>
@@ -199,7 +204,7 @@ X2</code></pre>
 <h1>Kastrering (af mus) og diabetes</h1>
 <div id="beskrivelse-af-data-og-modelantagelser" class="section level2">
 <h2>Beskrivelse af data og modelantagelser</h2>
-<p>Eksemplet blev første gang diskuteret ved forelæsningen d. 23/10-2019 på Statistisk Dataanalyse 1</p>
+<p>Eksemplet blev første gang diskuteret ved forelæsningen d. 21/10-2019 på Statistisk Dataanalyse 1</p>
 <ul>
 <li>Vi betragter data fra 100 mus, som blev tilfældigt inddelt i to lige store grupper.</li>
 <li>Den ene gruppe mus blev kastreret dagen efter fødsel; den anden gruppe mus blev ikke kastreret</li>
@@ -235,7 +240,7 @@ diabetes</code></pre>
 <pre><code>##      [,1] [,2]
 ## [1,]   26   24
 ## [2,]   12   38</code></pre>
-<p>For en 2x2 tabel laver <code>chisq.test</code> som default en kontinuitetskorrektion. Hvis vi ikke vil have det, skal vi bruge optionen `correct=FALSE. Ved forelæsningerne snakker vi kun om versionen uden kontinuitetskorrektion.</p>
+<p>For en 2x2 tabel laver <code>chisq.test</code> som default en kontinuitetskorrektion. Hvis vi ikke vil have det, skal vi bruge optionen `correct=FALSE. Ved forelæsningerne snakker vi kun om versionen uden kontinuitetskorrektion (-se dog slide 44-45 fra 23/10-2019).</p>
 <pre class="r"><code>chisq.test(diabetes, correct=FALSE)</code></pre>
 <pre><code>## 
 ##  Pearson's Chi-squared test
@@ -312,9 +317,9 @@ X2</code></pre>
 <p>Nedenfor fokuserer vi på svarene på følgende spørgsmål</p>
 <ul>
 <li>Har du glædet dig til StatData1? (ja/nej)</li>
-<li>Hvor tit drikker du alkohol? \ (A: aldrig, B : 0-1 gang/uge, C: 2- gange/uge)</li>
+<li>Hvor tit drikker du alkohol? (A: aldrig, B : 0-1 gang/uge, C: 2- gange/uge)</li>
 </ul>
-<p>Det fulde datasæt kan findes under Data på kursushjemmesiden. Bemærk, at der under R på kursushjemmesiden findes et link, der beskriver oprensningen af de rå data, som skal foretages inden man kan analysere data. Kun det rensede datasæt (fra filen <code>StatData1stud2019.txt</code>) benyttes her.</p>
+<p>Det fulde datasæt kan findes under menupunktet <strong>Data</strong> på kursushjemmesiden. Bemærk, at der under menupunktet <strong>R</strong> på kursushjemmesiden findes et link, der beskriver oprensningen af de rå data, som skal foretages inden man kan analysere data. Kun det rensede datasæt (fra filen <code>StatData1stud2019.txt</code>) benyttes her.</p>
 <p>Når vi inddeler svarene fra 110 studerende efter de to inddelingskriterier (forventning til SD1 og alkoholforbrug) fås følgende tabel.</p>
 <pre class="r"><code>sd1data &lt;- read.table(file = &quot;../data/StatData1stud2019.txt&quot;, header = T)
 sd1tabel &lt;- table(sd1data$sd1, sd1data$alkohol)
@@ -323,11 +328,11 @@ sd1tabel</code></pre>
 ##        A  B  C
 ##   ja   6 43 27
 ##   nej  5 23  6</code></pre>
-<p>Vi ønsker at teste hypotesen om, at svarende på de to spørgsmål er uafhængige af hinanden. Se mere på dagens forelæsningsslides for detaljer omkring, hvordan man kan formulere denne hypotese matematisk.</p>
+<p>Vi ønsker at teste hypotesen om, at svarene på de to spørgsmål er uafhængige af hinanden. Se mere på dagens forelæsningsslides for detaljer omkring, hvordan man kan formulere denne hypotese matematisk.</p>
 </div>
 <div id="test-for-uafhngighed" class="section level2">
 <h2>Test for uafhængighed</h2>
-<p>Bemærk at data ovenfor er indlæst som en matrix (kaldet <code>sd1tabel</code>), denne gang som en 2x3 matrix. Du kan også selvom indtaste datasæt <em>søjlevis</em> som beskrevet på slides til dagens forelæsning. Check altid at tabellen/matricen er blevet som den skal være.</p>
+<p>Bemærk at data ovenfor er indlæst som en matrix (kaldet <code>sd1tabel</code>), denne gang som en 2 x 3 matrix. Du kan også selvom indtaste datasættet <em>søjlevis</em> som beskrevet på slides til dagens forelæsning. Check altid at tabellen/matricen er blevet som den skal være.</p>
 <p>Dernæst bruges <code>chisq.test</code>. Tabellen er større end 2x2, så der er ingen mulighed for at lave kontinuitetskorrektion.</p>
 <pre class="r"><code>chisq.test(sd1tabel, correct = FALSE)</code></pre>
 <pre><code>## Warning in chisq.test(sd1tabel, correct = FALSE): Chi-squared approximation
@@ -344,7 +349,7 @@ sd1tabel</code></pre>
 ##         A    B    C
 ##   ja  7.6 45.6 22.8
 ##   nej 3.4 20.4 10.2</code></pre>
-<p>Når vi bruger <code>chisq.test</code>, får vi en p-værdi på 0.13, men vi får også en advarsel (<code>Warning</code>) om at <span class="math inline">\(\chi^2\)</span>- approksimationen er tvivlsom. Det er fordi nogle af de forventede værdier er mindre end 5 (dog kun en enkelt). Vi er derfor ikke ganske sikre på validiteten af p-værdien.</p>
+<p><strong>Simulering af p-værdi ved tynde tabeller:</strong> Når vi bruger <code>chisq.test</code>, får vi en p-værdi på 0.13, men vi får også en advarsel (<code>Warning</code>) om at <span class="math inline">\(\chi^2\)</span>- approksimationen er tvivlsom. Det er fordi nogle af de forventede værdier er mindre end 5 (dog kun en enkelt). Vi er derfor ikke ganske sikre på validiteten af p-værdien.</p>
 <p>En mulighed i den situation er at simulere p-værdien. Dette opnås ved at bruge optionen <code>simulate.p.value</code> og angive hvor mange simulerede datatabeller R skal lave. Vi bruger 10000.</p>
 <p>Så får vi en p-værdi på omkring 0.12. Bemærk at vi ikke får præcis det samme hver gang, medmindre vi som i R koden vælger et fast <code>seed</code> (her vha. <code>set.seed(2019)</code>)</p>
 <pre class="r"><code>set.seed(2019)
