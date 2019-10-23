@@ -103,7 +103,7 @@ diabetes
 ```
 
 
-For en 2x2 tabel laver `chisq.test` som default en kontinuitetskorrektion. Hvis vi ikke vil have det, skal vi bruge optionen `correct=FALSE. Ved forelæsningerne snakker vi kun om versionen uden kontinuitetskorrektion (-se dog slide 44-45 fra 23/10-2019).
+For en 2x2 tabel laver `chisq.test` som default en kontinuitetskorrektion. Hvis vi ikke vil have det, skal vi bruge optionen `correct=FALSE`. Ved forelæsningerne snakker vi kun om versionen uden kontinuitetskorrektion (-se dog slide 44-45 fra 23/10-2019).
 
 ```{r}
 chisq.test(diabetes, correct=FALSE)
@@ -145,7 +145,7 @@ Vær dog opmærksom på følgende:
 
 * Testene udført med `chisq.test` og `prop.test` er altså identiske - men derudover giver de to funktioner forskellig ekstra information (forventede værdier hhv. konfidensinterval).
 
-* Bemærk at data skal indtastes på forskellig måde afhængig af om man bruger `chisq.test` og `prop.test.
+* Bemærk at data skal indtastes på forskellig måde afhængig af om man bruger `chisq.test` og `prop.test`.
 
 
 ***
@@ -197,7 +197,7 @@ er store. Dette er særlig nyttigt hvis nulhypotesen forkastes, fordi denne tabe
 chisq.test(sd1tabel)$expected
 ```
 
-**Simulering af p-værdi ved tynde tabeller:** Når vi bruger `chisq.test`, får vi en p-værdi på 0.13, men vi får også en advarsel (`Warning`) om at $\chi^2$- approksimationen er tvivlsom. Det er fordi nogle af de forventede værdier er mindre end 5 (dog kun en enkelt). Vi er derfor ikke ganske sikre på validiteten af p-værdien.
+**Simulering af p-værdi ved tynde tabeller:** Når vi bruger `chisq.test`, får vi en p-værdi på 0.13, men vi får også en advarsel (`Warning`) om at $\chi^2$- approksimationen er tvivlsom. Det er fordi nogle af de forventede værdier er mindre end 5 (dog kun en enkelt på 3.4). Vi er derfor ikke ganske sikre på validiteten af p-værdien.
 
 En mulighed i den situation er at simulere p-værdien. Dette opnås ved at bruge optionen
 `simulate.p.value` og angive hvor mange simulerede datatabeller R skal lave. Vi bruger 10000. 
