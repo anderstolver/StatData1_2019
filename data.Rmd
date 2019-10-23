@@ -30,6 +30,7 @@ Følgende datasæt har desuden været benyttet ved regneøvelserne
 * Opgave HS.25: [aske-kalk2.txt](data/aske-kalk2.txt) - [aske-kalk2.xlsx](data/aske-kalk2.xlsx)
 * Opgave HS.25: [aske-kalk2.txt](data/aske-kalk2.txt) - [aske-kalk2.xlsx](data/aske-kalk2.xlsx)
 * Opgave HS.32: [lyskilde.txt](data/lyskilde.txt) - [lyskilde.xlsx](data/lyskilde.xlsx)
+* Opgave HS.34: [patienter.txt](data/patienter.txt) - [patienter.xlsx](data/patienter.xlsx)
 
 ### Gamle eksamensopgaver
 
