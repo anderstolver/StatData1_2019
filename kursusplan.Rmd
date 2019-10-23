@@ -25,7 +25,7 @@ Kursusuge | Dag | Emner | Lærebog | Detaljer
 6 | Onsdag (9/10) | Modeller med både kvantitative og kontinuerte forklarende variable | Ch. 8.3 | [link](#uge6)  
 7 | Mandag (21/10) | Binomialfordelingen  | Ch. 11 | [link](#uge7) 
 7 | Onsdag (23/10) | Analyse af antalstabeller | Dele af Ch. 12 | [link](#uge7)  
-8 | Mandag (28/10) | Repetition / opgavegennemgang | Intet nyt! | link  
+8 | Mandag (28/10) | Repetition / opgavegennemgang | Intet nyt! | [link](#uge8)  
 
 ## Liste over gennemgået pensum
 
@@ -550,13 +550,17 @@ Du bør sikre dig, at du bruger nok tid på kurset i de sidste uger - særligt m
 ***
 
 
-## Kursusuge 8 
+## Kursusuge 8 {#uge8}
 
 ### Generel info
+
+* Vær opmærksom på følgende [notat om eksamen](notater/om-eksamen.pdf).
 
 * Så er kurset ved at være slut! Hvis du har spørgsmål mens du læser eksamen, så brug Absalons diskussionsforum. Jeg prøver at kigge forbi dagligt.
 
 * Der er ikke undervisning onsdag. Der kommer ikke slides til mandag, da vi mest snakker om nogle opgaver (men der kommer R-filer / R-programmer).
+
+* Program for forelæsningen og øvelserne kommer torsdag eller fredag i kursusuge 7
 
 ### Forelæsninger
 
