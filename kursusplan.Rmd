@@ -554,17 +554,48 @@ Du bør sikre dig, at du bruger nok tid på kurset i de sidste uger - særligt m
 
 ### Generel info
 
+* Så er kurset ved at være slut! Hvis du har spørgsmål mens du læser eksamen, så brug Absalons diskussionsforum. Jeg prøver at kigge forbi dagligt.
+
+* Der er ikke undervisning onsdag. Der kommer ikke slides til mandag, da vi mest snakker om nogle opgaver (men der kommer R-filer / R-programmer).
+
 ### Forelæsninger
 
 #### Forelæsninger mandag kl 13.00-14.45 i aud - A2-82.01 (3-02)
+
+
+Der er ikke noget nyt stof i dag. Vi laver lidt repetition via nedenstående opgaver eller et udvalg af dem. Lav opgaverne hjemmefra! Vi kan også bruge tid på spørgsmål fra jer hvis det passer jer bedre.
+
+<!--
+* modelkontrol
+* ensidet ANOVA med log-transformation
+* parrede stikprøver
+* blandede modeller
+* estimater for tosidet ANOVA
+* log-log regression og fortolkning (evt.)
+* test af beta = 3 (evt. i linreg og enstikprøve)
+* eksempel med relevel
+* diskuter opg. 12.5
+* løb gamle R programmer igennem
+* Case 1: fra kursusuge 2
+* 5.8 og 5.10 fra uge 3 nåede mange ikke
+* enstikprøveproblemet og resten af kurset (link)
+* 8.2 fra uge 6
+
+* Januar 2018, opgave 3, men kun spørgsmål 1+2
+* HS.34
+* HS.33
+* Eventuelle spørgsmål til quiz-delen (opgave 3) fra eksamen i Januar 2019: disse spørgsmål skal komme fra jer!
+* Eventuelle spørgsmål til quiz-delen (opgave 3) fra eksamen i November 2018: disse spørgsmål skal komme fra jer!
+-->
 
 ### Øvelsestimer
 
 #### Øvelser mandag kl. 15.00-16.45 (se lokaleplanen)
 
 <!--
-* (November 2017, opgave 4, men kun spørgsmål 1)
-* (November 2015, opgave 1. Data ligger som mazdas.txt og mazdas.xlsx på Absalon)
+* Kort gennemgang af HS.32
+* November 2017, opgave 4, men kun spørgsmål 1
+* November 2015, opgave 1. Data ligger som mazdas.txt og mazdas.xlsx på Absalon. Drop evt. spørgsmål (e).
 * Brug desuden timerne til at stille spørgsmål til opgaver fra kurset. 
 -->
 

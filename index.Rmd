@@ -120,7 +120,7 @@ Vi benytter os af lærebogen
 
 Det gennemgåede pensum dækkes i grove træk af indholdet kapitel 1-7, dele af kapitel 8, kapitel 10-12 og kapitel 14. En mere detaljeret pensumliste laves løbende som kurset skrider frem.
 
-[Engelsk-dansk miniordbog](notater/ordbog.pdf) til brug ved læsning af lærebogen (kom gerne med flere forslag).
+ til brug ved læsning af lærebogen (kom gerne med flere forslag).
 
 Du vil i lige så høj grad komme til at opleve, at vi trækker på følgende undervisningsmateriale
 
@@ -230,4 +230,6 @@ Det er jeres eget ansvar at holde jer orienteret om
 * frister for til- og afmelding til eksamen (jeg hverken må eller kan hjælpe)
 * tid og sted for den skriftlige eksamen
 
-Mere info og gode råd om eksamen kommer, når vi nærmer os afslutningen af kurset.
+## Notat med info og gode råd om eksamen
+
+Supplerende info og gode råd om eksamen findes i følgende [notat om eksamen](notater/om-eksamen.pdf).
