@@ -162,7 +162,7 @@ summary(twoway.add)
 confint(twoway.add)
 ```
 
-Referencegruppen (Intercept) svarer til antallet af henvendelser i Augugst 1971 under fuldmåne. Øvrige estimater angiver forskelle. Den estimerede forskel på antallet af henvendelser før og under fuldmåne estimeres til -2.500 (dvs lavere før), med et 95 % - konfidensinterval som går fra -4.54 til -0.46.  Man aflæser faktisk også p-værdien for test af hypotesen om, at denne forskel er lig med 0: p = 0.0186. Dette stemmer fint overens med, at et 95 % - konfidensinterval for forskellen ikke indeholder 0.
+Referencegruppen (Intercept) svarer til antallet af henvendelser i August 1971 under fuldmåne. Øvrige estimater angiver forskelle. Den estimerede forskel på antallet af henvendelser før og under fuldmåne estimeres til -2.500 (dvs lavere før), med et 95 % - konfidensinterval som går fra -4.54 til -0.46.  Man aflæser faktisk også p-værdien for test af hypotesen om, at denne forskel er lig med 0: p = 0.0186. Dette stemmer fint overens med, at et 95 % - konfidensinterval for forskellen ikke indeholder 0.
 
 ## (e)
 
@@ -177,16 +177,39 @@ $$
 \beta_{\texttt{Nej.Foer}} = \beta_{\texttt{Nej.Efter}}. 
 $$
 
+**Løsning 1 (som ved forelæsning 28/10-2019):**
+
 Vi benytter `relevel()` i R til at sikre, at R benytter gruppen `fuldmaane = Nej.Foer` som reference gruppe, og kigger for estimatet for forskellen mellem grupperne `Nej.Efter` og `Nej.Foer`.
 
+**Bemærk:** Hvis data er indlæst med `read.table()` fra filen `patienter.txt`, så vil variablen `fuldmaane` fra datasættet `data` automatisk være indlæst som en faktor. Man kan derfor ændre reference-gruppe blot ved at køre kommandoen
+
+
+`data$fuldmaane <- relevel(data$fuldmaane, ref = "Nej.Foer")`
+
+som jeg gjorde ved forelæsningen. Jeg er siden blevet gjort opmærksom på, at mange af jer foretrækker at indlæse data fra filen `patienter.xlsx` vha. `read_excel` fra R pakken `readxl`. Hvis man benytter denne fremgangsmåde til indlæsning, så skal `fuldmaane` laves om til en faktor, før man kan benytte `relevel`. Denne løsning virker også hvis data er indlæst med `read.table`. Jeg anbefaler derfor, at I bruger R koden nedenfor, hvor jeg har tilføjet `factor()` i forhold til den oprindelige version af R programmet.
+
 ```{r}
-data$fuldmaane <- relevel(data$fuldmaane, ref = "Nej.Foer")
+data$fuldmaane <- relevel(factor(data$fuldmaane), ref = "Nej.Foer")
 twoway.add_new <- lm(antal ~ maaned + fuldmaane, data = data)
 summary(twoway.add_new)
 ```
 
 Det forventede antal henvendelser efter fuldmåne estimeres til at være 0.5417 højere efter fuldmåne end før fuldmåne. Forskellen er dog ikke signfikant, da vi får en p-værdi på 0.588 for test at hypotesen om, at forskellen kunne være lig nul.
 
+**Løsning 2 (tilføjet efter forelæsning 28/10-2019):**
+
+Det er også muligt at løse delopgaven ved at en nulmodel, hvor man erstatter den kategoriske variable `fuldmaane` med tre niveauer med en ny variable der kun har to niveauer (svarende til at `Nej.Foer` og `Nej.Efter` slås sammen til en gruppe).
+
+Man kan så sammenligne nulmodellen med den fulde model (additive model for tosidet ANOVA) og lave testet for hypotesen som et F-test.
+
+```{r}
+data$ny_fuldmaane <- (data$fuldmaane == "Ja")
+table(data$fuldmaane, data$ny_fuldmaane)
+nulmodel <- lm(antal ~ maaned + ny_fuldmaane, data = data)
+anova(nulmodel, twoway.add)
+```
+
+F-teststørrelsen bliver F = 0.303 men en tilhørende p-værdi på 0.5876. Det er samme p-værdi som ved metoden ovenfor (fordi det er samme test)!
 
 ***
 
@@ -234,7 +257,7 @@ til at udføre et t-test for hypotesen $H_0: \theta = \theta_0$.
 Når man fitter en model med `lm()` i R og laver et `summary()` af modellen så angives i hver linje
 
 * estimat: $\hat{\theta}$
-* standard error på estimatet: $SE(\hat{theta})$
+* standard error på estimatet: $SE(\hat{\theta})$
 * t-teststørrelsen for test af hypotesen $H_0: \theta = 0$
 * p-værdien for test af hypotesen $H_0: \theta = 0$ baseret på omregning af t-teststørrelsen via den relevante t-fordeling
 

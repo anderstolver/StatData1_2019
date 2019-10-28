@@ -334,7 +334,7 @@ anova(nulmodel, twoway.add)</code></pre>
 ## maaned72.Mar        4.48513035 12.64820298
 ## fuldmaaneNej.Efter -3.99910149  0.08243482
 ## fuldmaaneNej.Foer  -4.54076816 -0.45923184</code></pre>
-<p>Referencegruppen (Intercept) svarer til antallet af henvendelser i Augugst 1971 under fuldmåne. Øvrige estimater angiver forskelle. Den estimerede forskel på antallet af henvendelser før og under fuldmåne estimeres til -2.500 (dvs lavere før), med et 95 % - konfidensinterval som går fra -4.54 til -0.46. Man aflæser faktisk også p-værdien for test af hypotesen om, at denne forskel er lig med 0: p = 0.0186. Dette stemmer fint overens med, at et 95 % - konfidensinterval for forskellen ikke indeholder 0.</p>
+<p>Referencegruppen (Intercept) svarer til antallet af henvendelser i August 1971 under fuldmåne. Øvrige estimater angiver forskelle. Den estimerede forskel på antallet af henvendelser før og under fuldmåne estimeres til -2.500 (dvs lavere før), med et 95 % - konfidensinterval som går fra -4.54 til -0.46. Man aflæser faktisk også p-værdien for test af hypotesen om, at denne forskel er lig med 0: p = 0.0186. Dette stemmer fint overens med, at et 95 % - konfidensinterval for forskellen ikke indeholder 0.</p>
 </div>
 <div id="e" class="section level2">
 <h2>(e)</h2>
@@ -345,8 +345,12 @@ anova(nulmodel, twoway.add)</code></pre>
 <p>så kan vi også udtrykke hypotesen ud fra modellens parametre som at <span class="math display">\[
 \beta_{\texttt{Nej.Foer}} = \beta_{\texttt{Nej.Efter}}. 
 \]</span></p>
+<p><strong>Løsning 1 (som ved forelæsning 28/10-2019):</strong></p>
 <p>Vi benytter <code>relevel()</code> i R til at sikre, at R benytter gruppen <code>fuldmaane = Nej.Foer</code> som reference gruppe, og kigger for estimatet for forskellen mellem grupperne <code>Nej.Efter</code> og <code>Nej.Foer</code>.</p>
-<pre class="r"><code>data$fuldmaane &lt;- relevel(data$fuldmaane, ref = &quot;Nej.Foer&quot;)
+<p><strong>Bemærk:</strong> Hvis data er indlæst med <code>read.table()</code> fra filen <code>patienter.txt</code>, så vil variablen <code>fuldmaane</code> fra datasættet <code>data</code> automatisk være indlæst som en faktor. Man kan derfor ændre reference-gruppe blot ved at køre kommandoen</p>
+<p><code>data$fuldmaane &lt;- relevel(data$fuldmaane, ref = &quot;Nej.Foer&quot;)</code></p>
+<p>som jeg gjorde ved forelæsningen. Jeg er siden blevet gjort opmærksom på, at mange af jer foretrækker at indlæse data fra filen <code>patienter.xlsx</code> vha. <code>read_excel</code> fra R pakken <code>readxl</code>. Hvis man benytter denne fremgangsmåde til indlæsning, så skal <code>fuldmaane</code> laves om til en faktor, før man kan benytte <code>relevel</code>. Denne løsning virker også hvis data er indlæst med <code>read.table</code>. Jeg anbefaler derfor, at I bruger R koden nedenfor, hvor jeg har tilføjet <code>factor()</code> i forhold til den oprindelige version af R programmet.</p>
+<pre class="r"><code>data$fuldmaane &lt;- relevel(factor(data$fuldmaane), ref = &quot;Nej.Foer&quot;)
 twoway.add_new &lt;- lm(antal ~ maaned + fuldmaane, data = data)
 summary(twoway.add_new)</code></pre>
 <pre><code>## 
@@ -380,6 +384,26 @@ summary(twoway.add_new)</code></pre>
 ## Multiple R-squared:  0.7955, Adjusted R-squared:  0.6746 
 ## F-statistic: 6.581 on 13 and 22 DF,  p-value: 6.265e-05</code></pre>
 <p>Det forventede antal henvendelser efter fuldmåne estimeres til at være 0.5417 højere efter fuldmåne end før fuldmåne. Forskellen er dog ikke signfikant, da vi får en p-værdi på 0.588 for test at hypotesen om, at forskellen kunne være lig nul.</p>
+<p><strong>Løsning 2 (tilføjet efter forelæsning 28/10-2019):</strong></p>
+<p>Det er også muligt at løse delopgaven ved at en nulmodel, hvor man erstatter den kategoriske variable <code>fuldmaane</code> med tre niveauer med en ny variable der kun har to niveauer (svarende til at <code>Nej.Foer</code> og <code>Nej.Efter</code> slås sammen til en gruppe).</p>
+<p>Man kan så sammenligne nulmodellen med den fulde model (additive model for tosidet ANOVA) og lave testet for hypotesen som et F-test.</p>
+<pre class="r"><code>data$ny_fuldmaane &lt;- (data$fuldmaane == &quot;Ja&quot;)
+table(data$fuldmaane, data$ny_fuldmaane)</code></pre>
+<pre><code>##            
+##             FALSE TRUE
+##   Nej.Foer     12    0
+##   Ja            0   12
+##   Nej.Efter    12    0</code></pre>
+<pre class="r"><code>nulmodel &lt;- lm(antal ~ maaned + ny_fuldmaane, data = data)
+anova(nulmodel, twoway.add)</code></pre>
+<pre><code>## Analysis of Variance Table
+## 
+## Model 1: antal ~ maaned + ny_fuldmaane
+## Model 2: antal ~ maaned + fuldmaane
+##   Res.Df    RSS Df Sum of Sq     F Pr(&gt;F)
+## 1     23 129.58                          
+## 2     22 127.82  1    1.7604 0.303 0.5876</code></pre>
+<p>F-teststørrelsen bliver F = 0.303 men en tilhørende p-værdi på 0.5876. Det er samme p-værdi som ved metoden ovenfor (fordi det er samme test)!</p>
 <hr />
 </div>
 </div>
@@ -438,7 +462,7 @@ hormData</code></pre>
 <p>Når man fitter en model med <code>lm()</code> i R og laver et <code>summary()</code> af modellen så angives i hver linje</p>
 <ul>
 <li>estimat: <span class="math inline">\(\hat{\theta}\)</span></li>
-<li>standard error på estimatet: <span class="math inline">\(SE(\hat{theta})\)</span></li>
+<li>standard error på estimatet: <span class="math inline">\(SE(\hat{\theta})\)</span></li>
 <li>t-teststørrelsen for test af hypotesen <span class="math inline">\(H_0: \theta = 0\)</span></li>
 <li>p-værdien for test af hypotesen <span class="math inline">\(H_0: \theta = 0\)</span> baseret på omregning af t-teststørrelsen via den relevante t-fordeling</li>
 </ul>
