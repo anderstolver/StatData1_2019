@@ -571,6 +571,8 @@ Der er ikke noget nyt stof i dag. Vi laver lidt repetition bl.a. vha. nedenståe
 
 **Bemærk:** Der kommer ikke slides til denne forelæsning. I stedet vil der blive lagt et kommenteret R program op **efter** forelæsningen, som dækker det fleste af de ting, som vi snakker om. Vær dog også opmærksom på de vejlende besvarelser til de oplistede opgaver.
 
+
+
 <!--
 * blandede modeller
 * log-log regression og fortolkning (evt.)
@@ -586,12 +588,14 @@ Der er ikke noget nyt stof i dag. Vi laver lidt repetition bl.a. vha. nedenståe
 * Udvalgte dele af R programmet fra forelæsningen d. 18/9-2019
 * Udvalgte dele af R programmet fra forelsæningen d. 9/10-2019
 
+R-program fra dagens forelæsning: [output](R/forel191028_Rprog.html) - [R Markdown](R/forel191028_Rprog.Rmd)
+
 ### Øvelsestimer
 
 #### Øvelser mandag kl. 15.00-16.45 (se lokaleplanen)
 
 * Kort gennemgang af HS.32
 * November 2017, opgave 4, men kun spørgsmål 1
-* November 2015, opgave 1. Data ligger som mazdas.txt og mazdas.xlsx på Absalon. Drop evt. spørgsmål (e).
+* November 2015, opgave 1. Data ligger som mazdas.txt og mazdas.xlsx på kursushjemmesiden. Drop evt. spørgsmål (e).
 * Brug desuden timerne til at stille spørgsmål til opgaver fra kurset. 
 

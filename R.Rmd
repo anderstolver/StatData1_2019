@@ -180,3 +180,7 @@ Nogle af vejledningerne er skrevet på et forholdsvis højt niveau, så man skal
 * R-program fra forelæsning d. 21/10-2019: [output](R/forel191021_Rprog.html) - [R Markdown](R/forel191021_Rprog.Rmd)
 
 * R-program fra forelæsning d. 23/10-2019: [output](R/forel191023_Rprog.html) - [R Markdown](R/forel191023_Rprog.Rmd)
+
+## Uge 8
+
+* R-program fra forelæsning d. 28/10-2019: [output](R/forel191028_Rprog.html) - [R Markdown](R/forel191028_Rprog.Rmd)

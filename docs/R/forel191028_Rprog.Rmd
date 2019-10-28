@@ -1,0 +1,323 @@
+---
+title: 'StatData1: forel191028'
+author: "Anders Tolver"
+output:   
+  html_document:
+    theme: sandstone
+    toc: true
+    code_folding: hide
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+***
+
+
+Dette dokument indeholder supplerende kommentarer til gennemgangen af opgaverne ved forelæsningen d. 28/10-2019 i Statistisk Dataanalyse 1.
+
+
+***
+
+# Jan. 2018, opgave 3 (delopgave 1+2)
+
+Der henvises til den vejledende besvarelse.
+
+
+***
+
+
+# Opgave HS 33
+
+Vi antager i delspørgsmål (1)-(3) at kroptemperaturen T kan beskrives med en normalfordeling med middelværdi 37 grader C og spredning på 0.4 grader C.
+
+## (1)
+
+Et interval som indeholder 95 % af populationen af raske mennesker kan laves ved at finde 2.5 % og 97.5 % fraktilen i den relevante normalfordeling.
+
+```{r}
+qnorm(0.025, mean = 37, sd = 0.4)
+qnorm(0.975, mean = 37, sd = 0.4)
+```
+
+Det ønskede interval bliver 36.2-37.8 grader C.
+
+## (2)
+
+Sandsynligheden for at et tilfældigt valgt raskt menneske har en temperatur over 37.5 grader C beregnes vha. `pnorm()` i R
+```{r}
+1- pnorm(37.5, mean = 37, sd = 0.4)
+```
+
+Altså: $P(T> 37.5) = 1- P(T \leq 37.5) = 0.106$ dvs. 10.6 %.
+
+## (3)
+
+Bemærk, at her interesserer vi os for antallet Y af personer ud af 10, som har en temp. over 37.5 grader C. Vi tænker på dette som 10 uafhængige og identiske gentagelser af et forsøg med to mulige udfald: temp. over 37.5 eller temp. under 37.5, hvor sandsynligheden for at have en temp. over 37.5 er 10.6 % (jf. delopgave (2)). Dermed kan antallet Y beskrives ved en binomialfordeling med antalsparameter n=10 og succes-sandsynlighed p=0.106.
+
+Vi udregner nu (i R) sandsynligeden P(Y=2) til ca. 20.6 %.
+
+```{r}
+dbinom(2, size = 10, prob = 0.106)
+```
+
+## (4)
+
+Vi antager at antallet Y af personer med temp. over 37.5 blandt de 130 raske personer kan beskrives ved en binomialfordeling bin(130, p), hvor p er ukendt. Vi observerer Y=4 personer med temp. over 37.5 grader Celcius.
+
+Vi estimerer p til $\hat{p}=4/130 = 0.0308$. Et simpelt 95 % konfidensinterval er givet ved $\hat{p}\pm 1.96 \cdot SE(\hat{p})$, hvor vi kan benytte formel (11.6) i lærebogen til at finde udtrykket for $SE(\hat{p})$.
+
+```{r}
+phat <- 4/130
+SE <- sqrt(phat * (1-phat)/130)
+phat - 1.96 * SE
+
+phat + 1.96 * SE
+```
+
+Konfidensintervallet for p bliver: 0.001-0.060.
+
+Ifølge beregningen i delopgave (2), så ville sandsynligheden p for at en tilfældigt valgt person har en kropstemp. over 37.5 grader C være 0.106 (eller 10.6 %). Vi ser at dette tal (0.106) *ikke* ligger i konfidensintervallet fra delopgave (4). Data fra delopgave (4) passer altså ikke med antagelsen om at gennemsnitstemperaturen er 37 grader C (og at spredningen er 0.4 grader C).
+
+
+***
+
+
+# Opgave HS 34
+
+## (a)
+
+Vi har
+
+* **Respons:** `antal` ... kontinuert / kvalitativ
+* **To forklarende variable:** `fuldmaane` (kategorisk med 3 grupper), `maaned` (kategorisk med 12 gruppper)
+
+Sammenhæng mellem en kontinuert respons og to kategoriske forklarende variabel kan modelleres med tosidet ANOVA (-se eventuelt modeloversigten).
+
+Da der ikke er gentagelser (dvs kun 1 målinger) for hver kombination af variablene `fuldmaane` og `maaned`, så kan vi *ikke* inkludere vekselvirkningen i modellen.
+
+## (b)
+
+
+Indlæsning af data
+
+```{r}
+data <- read.table(file = "../data/patienter.txt", header = T)
+head(data)
+```
+
+Modellen kan udtrykkes ved at antallet af henvendelser `antal` er givet som
+
+$$
+\texttt{antal}_i = \alpha_{\texttt{maaned}_i} + \beta_{\texttt{fuldmaane}_i} + e_i,
+$$
+
+hvor $e_1, \ldots, e_{36}$ er uafhængige og  normalfordelte med middelværdi 0 og samme (ukendte) spredning $\sigma$.
+
+Fitter tosidet ANOVA (uden vekselvirkning)
+
+```{r}
+twoway.add <- lm(antal ~ maaned + fuldmaane, data = data)
+```
+
+
+Vi kontrollerer modellens antagelser ved at lave 
+
+* et residualplot af de standardiserede residualer mod de fittede værdier
+
+* et QQ-plot af de standardiserede residualer
+```{r}
+plot(fitted(twoway.add), rstandard(twoway.add), pch = 16, main = "Tosidet ANOVA uden vekselvirkning", cex.main = 1.5, cex.lab = 1.5)
+abline(h = 0, lty = 2)
+qqnorm(rstandard(twoway.add), pch = 16)
+abline(0, 1, lwd = 2, lty = 2)
+```
+
+* Residualerne ligger pænt omkring 0 for alle prædikterede værdier
+
+* Variationen af residualerne (i y-aksens retning) er nogenlunde ens uanset de prædikterede værdier, hvilket typer på at antagelsen om varianshomogenitet (samme varians for alle målinger) er opfyldt.
+
+* QQ-plottet viser, at de standardiserede residualer ligger pænt omkring den rette linje, hvilket bekræfter at antagelsen om normalfordelte fejl er rimelig.
+
+## (c)
+
+Vi ønsker at teste hypotesen om, at den forventede antal henvendelser per dag ikke er forskellige i dagene før, under og efter fuldmåne. Dette kan formelt udtrykkes som at den forventede værdi er $\alpha_{\texttt{maaned}_i}$ (dvs. kun afhænger af måned og ikke af den kategoriske variabel \texttt{fuldmaane}).
+
+Testet udføres her som en F-test
+
+```{r}
+nulmodel <- lm(antal ~ maaned, data = data)
+anova(nulmodel, twoway.add)
+```
+
+Vi finder en F-teststørrelse på F = 3.57 og en tilhørende p-værdi på p=0.045. På et 5 % - signifikansniveau ville man således (lige akkurat) konkludere, at der er sammenhæng mellem antal daglige henvendelser og om det er fuldmåne.
+
+## (d)
+
+Vi kigger på estimaterne for den tosidede ANOVA
+```{r}
+summary(twoway.add)
+confint(twoway.add)
+```
+
+Referencegruppen (Intercept) svarer til antallet af henvendelser i Augugst 1971 under fuldmåne. Øvrige estimater angiver forskelle. Den estimerede forskel på antallet af henvendelser før og under fuldmåne estimeres til -2.500 (dvs lavere før), med et 95 % - konfidensinterval som går fra -4.54 til -0.46.  Man aflæser faktisk også p-værdien for test af hypotesen om, at denne forskel er lig med 0: p = 0.0186. Dette stemmer fint overens med, at et 95 % - konfidensinterval for forskellen ikke indeholder 0.
+
+## (e)
+
+Her ønsker vi at teste hypotesen om, at der er det samme antal henvendelser før og efter fuldmåne. Tager vi udgangspunkt i følgende formuleringen af den tosidede ANOVA
+
+$$
+\texttt{antal}_i = \alpha_{\texttt{maaned}_i} + \beta_{\texttt{fuldmaane}_i} + e_i,
+$$
+
+så kan vi også udtrykke hypotesen ud fra modellens parametre som at
+$$
+\beta_{\texttt{Nej.Foer}} = \beta_{\texttt{Nej.Efter}}. 
+$$
+
+Vi benytter `relevel()` i R til at sikre, at R benytter gruppen `fuldmaane = Nej.Foer` som reference gruppe, og kigger for estimatet for forskellen mellem grupperne `Nej.Efter` og `Nej.Foer`.
+
+```{r}
+data$fuldmaane <- relevel(data$fuldmaane, ref = "Nej.Foer")
+twoway.add_new <- lm(antal ~ maaned + fuldmaane, data = data)
+summary(twoway.add_new)
+```
+
+Det forventede antal henvendelser efter fuldmåne estimeres til at være 0.5417 højere efter fuldmåne end før fuldmåne. Forskellen er dog ikke signfikant, da vi får en p-værdi på 0.588 for test at hypotesen om, at forskellen kunne være lig nul.
+
+
+***
+
+
+# Fokuspointer fra R programmet til d. 18/9-2019 (formiddag)
+
+## Eksempel 6.1: Hormonkoncentration
+
+Eksemplet vedrører parrede målinger, hvor man på samme dyr har målt koncentrationen af et hormon før (`initial`) og efter (`final`).
+
+Hovedpointen i eksemplet er, at man reducerer problemet til noget simpelt (et enstikprøveproblem) ved at starte med at udregne forskellen (`dif`) i hormonkoncentrationen for de enkelte dyr i forsøget.
+
+Vi antager mao. at forskellen i hormonkoncentration $\texttt{dif}_1, \ldots \texttt{dif}_9$ for de 9 dyr i forsøget er uafhængige og normalfordelte med samme (ukendte) middelværdi $\mu$ og samme (ukendte) spredning $\sigma$.
+
+Fokuser på hvordan man kan 
+
+* estimere populationsmiddelværdien $\mu$ og spredningen $\sigma$
+* finde (estimere) standard error på estimatet $SE(\hat{\mu})$
+* teste hypotesen $H_0: \mu = 0$
+
+I eksemplet (dvs. R programmet fra 18/9-2019) vises i detaljer hvordan man kan regne alting ud
+
+* manuelt / i hånden
+* med R-kommandoen: `summary(lm(dif ~ 1, data=hormData))`
+* med R-kommandoen: `t.test(hormData$dif)`
+
+Nedenfor vises, hvordan man kan udføre testet direkte som et parret t-test ved indsættelse af hormonkoncentrationerne efter (`final`) og før (`initial`). Jeg understreger, at alle præsentere metoder er korrekte og løser det samme statistiske problem.
+
+```{r}
+library(isdals)
+data(hormone)
+hormData <- subset(hormone, feed=="1")
+hormData <- transform(hormData, dif = final-initial)
+hormData
+t.test(hormData$final, hormData$initial, paired = TRUE)
+```
+
+## t-test i lineær regression
+
+Det primære formål med at fremhæve dette eksempel var at minde om den generelle formel
+
+$$T = \frac{\hat{\theta}-\theta_0}{SE(\hat{\theta})}$$
+til at udføre et t-test for hypotesen $H_0: \theta = \theta_0$.
+
+Når man fitter en model med `lm()` i R og laver et `summary()` af modellen så angives i hver linje
+
+* estimat: $\hat{\theta}$
+* standard error på estimatet: $SE(\hat{theta})$
+* t-teststørrelsen for test af hypotesen $H_0: \theta = 0$
+* p-værdien for test af hypotesen $H_0: \theta = 0$ baseret på omregning af t-teststørrelsen via den relevante t-fordeling
+
+**Vigtigt:** Sørg for at forstå, hvad det er som estimeres i hver linje af tabellen fra `summary` af modellen.
+
+Eksemplet i R programmet fra 18/9-2019 (formiddag) laves fx. en lineær regressionsmodel
+
+```{r warning = F, message =F}
+library(MASS)
+data(cats)
+
+# Lineær regression 
+summary(lm(Hwt ~ Bwt, data = cats))
+```
+
+Her vedrører de to linjer i tabellen (under `Coefficients:`) skæring ($\alpha$) og hældning ($\beta$) for den lineære regressionsmodel, hvor den forventede hjertevægt (i g) for en kat skrives som
+$$
+\alpha + \beta \cdot \texttt{Bwt}
+$$
+hvor `Bwt` er kropsvægten (i kg). De to test som præsenteres i hver linje svarer til hypoteserne $H_0: \alpha = 0$  og $H_0: \beta = 0$. 
+
+Fokuser på, hvordan man kan teste hypoteser af formen $H_0: \beta = 4$ (som i R programmet fra 18/9) dvs.
+
+* hvordan beregnes t-teststørrelsen (manuelt)?
+* hvordan findes p-værdien (dvs. hvordan slår jeg op i den relevante t-fordeling)?
+
+
+***
+
+
+# Fokuspointer fra R programmet til d. 9/10-2019
+
+Dette R program (og denne undervisningsdag 9/10) repræsenterede det mest tekniske vi har set på kurset: de blandede modeller, hvor vi både har kontinuerte og kategoriske forklarende variable i modellen.
+
+## Løbetider på DHL-stafetten
+
+Det er helt centralt forstå, hvad der sker når man fitter modellen `model1 <- lm(time ~ day + women, data=dhl)` i R. Dvs. 
+
+* 1) hvordan skal man opskrive den tilsvarende statistiske model (på papir)?
+* 2) hvordan fortolker man parameterestimaterne fra R outputtet?
+
+
+```{r}
+library(isdals)
+data(dhl)
+dhl <- transform(dhl, time = 60*60*hours + 60*minutes + seconds)
+model1 <- lm(time ~ day + women, data=dhl)
+summary(model1)
+```
+
+**Forklaring:** Modellen udtrykker, at der er en lineær sammenhæng mellem (median) løbetiderne og antallet af kvinder i holdsammensætningen. Desuden der er forskel på de forskellige ugedage. Fortolkningen er, at der for hver ugedag er en lineær sammenhæng således at løbetiden bliver 242 sekunder langsommere for hver ekstra kvinde på holdet. Denne forøgelse af løbetiden er den samme uanset ugedag. Men løbetiden om mandagen (reference-gruppe) ligger fx. 15.8 sekunder lavere end løbetiden tirsdag - ligegyldigt hvor mange kvinder der er på holdet. Estimaterne gør det muligt at finde skæring og hældning for de 4 (parallelle) linjer som beskriver sammenhæng mellem antal kvinder på holdet og løbetiden.
+
+
+I stedet for at fokusere på estimaterne for skæringer og hældningen, så kunne vi interesseret os for estimatet for (median)løbetiden for hold med 3 kvinder, som løber om onsdagen.
+
+Estimatet (i sekunder) kan beregnes ved håndkraft således:
+
+```{r}
+(7818.911 - 205.167) + 242.236 * 3
+```
+
+Ønsker vi i stedet at bestemme et konfidensinterval, så kan vi i stedet benytte `predict` funktionen.
+
+```{r}
+model1 <- lm(time ~ day + women, data=dhl)
+newdata <- data.frame(day = "Wednesday", women = 3)
+predict(model1, newdata, interval = "c")
+```
+
+Et 95 % - konfidensinterval bliver (8270,8410) sekunder.
+
+## Lungefunktion
+
+Eksemplet er mere kompliceret end hvad jeg ville turde kaste jer ud i selv, medmindre I fik meget klare instrukser om, hvilken model i skulle benytte.
+
+Jeg anbefaler, at du primært fokuserer på at få repeteret
+
+* forskellen på at inddrage vekselvirkning eller ej mellem to kategoriske variable
+* test for vekselvirkning
+* fortolkning af estimater for hvordan med vekselvirkning og uden vekselvirkning
+
+Hvis du synes, at eksemplet med målinger af Lungefunktion er en tand for kompliceret, så kan du repetere de samme tre punkter (listet ovenfor) med udgangspunkt i eksemplet fra R programmet til d. 7/10-2019.
+
+
+
+
