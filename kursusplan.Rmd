@@ -562,7 +562,7 @@ Du bør sikre dig, at du bruger nok tid på kurset i de sidste uger - særligt m
 
 * Der er nu blevet lagt vejledende besvarelser op til de sidste gamle eksamenssæt.
 
-* Link (opdateret 5/11-2019 kl. 15:05) til [zipped folder med kursusmateriale fra hjemmesiden](https://we.tl/t-zOXE48Vy4U). Hvis du åbner filen `index.html` i en browser, så burde da have adgang til filerne på hjemmesiden (selvom du har afbrudt forbindelsen til internettet). Det er ikke sikkert, at løsningen umiddelbart fungerer med alle browsere, men problemerne burde kunne fixes. Linket er næppe permanent, så skriv endelig en email, hvis der opstår problemer.
+* Link (opdateret 5/11-2019 kl. 15:27) til [zipped folder med kursusmateriale fra hjemmesiden](https://we.tl/t-zOXE48Vy4U). Hvis du åbner filen `index.html` i en browser, så burde da have adgang til filerne på hjemmesiden (selvom du har afbrudt forbindelsen til internettet). Det er ikke sikkert, at løsningen umiddelbart fungerer med alle browsere, men problemerne burde kunne fixes. Linket er næppe permanent, så skriv endelig en email, hvis der opstår problemer.
 
 ### Forelæsninger
 
