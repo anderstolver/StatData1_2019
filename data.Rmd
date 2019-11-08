@@ -39,6 +39,8 @@ Følgende datasæt hører til de [gamle eksamensopgaver](https://github.com/ande
 
 Jeg minder om, at i eksamensopgaverne op til februar 2017 skulle man ikke selv køre R under eksamen. I stedet er der R kode i selve opgaven. Jeg har dog uploadet en del datasæt også til de gamle eksamensopgaver (før feb. 2017), og du opfordres til selv at køre R koden, hvis du bruger disse opgaver til eksamenstræning.
 
+* Eksamen nov. 2019, opgave 1: [hunde.txt](data/hunde.txt) - [ss_gr.xlsx](data/hunde.xlsx)
+* Eksamen nov. 2019, opgave 2: [training.txt](data/training.txt) - [training.xlsx](data/training.xlsx)
 * Eksamen jan. 2019, opgave 1: [ss_gr.txt](data/ss_gr.txt) - [ss_gr.xlsx](data/ss_gr.xlsx)
 * Eksamen jan. 2019, opgave 2: [florida.txt](data/florida.txt) - [florida.xlsx](data/florida.xlsx)
 * Eksamen nov. 2018, opgave 1: [soeer.txt](data/soeer.txt) - [soeer.xlsx](data/soeer.xlsx)
