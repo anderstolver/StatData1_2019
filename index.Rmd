@@ -233,3 +233,27 @@ Det er jeres eget ansvar at holde jer orienteret om
 ## Notat med info og gode råd om eksamen
 
 Supplerende info og gode råd om eksamen findes i følgende [notat om eksamen](notater/om-eksamen.pdf).
+
+## Reeksamen
+
+Hermed følger lidt information til de studerende, som skal til reeksamen i Statistisk Dataanalyse 1 i januar 2020.
+
+Pensum til reeksamen er identisk med pensum til den ordinære eksamen og kan bl.a. findes i følgende [notat om eksamen](notater/om-eksamen.pdf).
+
+Udgangspunktet bør være, at man ikke skal forvente at kunne løse alle opgaver til reeksamen med mindre man har styr på hele pensum. Det kan være en uoverskuelig opgave at få alt læst op helt alene, så her er et par supplerende råd/tilbud, som kan gøre det lettere at komme igennem reeksamen.
+
+* Jens Baalkilde Andersen (øvelseslærer fra blok 1) er blevet hyret til at afholde 1-2 øvelsessessioner/spørgetimer op imod reeksamen. Tid og sted samt program vil blive meddelt her. Ved den ene øvelsesgang regnes eksamenssættet fra den ordinære eksamen. Ved den anden øvelsesgang regnes et antal eksamenslignende opgaver. Jeg tænker, at formatet vil være, at Jens gennemgår opgaverne, og at I stiller opklarende spørgsmål.
+
+* I næste uge (20.-24. januar) vil jeg dagligt checke diskussionsforum i Absalon, hvor jeg vil forsøge at besvare jeres spørgsmål, som måtte opstå i forbindelse med eksamenslæsningen. Jeg er på ferie i reeksamensugen (27.-29. januar), hvorfor jeg ikke vil kunne besvare beskeder / emails i de sidste dage op til reeksamen. Vi sørger dog for, at den sidste øvelsesssion ved Jens afholdes så tæt på reeksamen som muligt, så I også har mulighed for at få lidt hjælp i denne periode.
+
+* Nedenfor vil jeg lave en komprimeret liste over ting, som du kunne vælge at fokusere på fra de forskellige undervisningsuger i forbindelse med oplæsning til reeksamen. Der henvises til i øvrigt til detaljerne i kursusplanen for de enkelte undervisningsuger (samt til det øvrige materiale på kursushjemmesiden).
+
+    + uge 1: 
+    + uge 2:
+    + uge 3:
+    + uge 4:
+    + uge 5:
+    + uge 6:
+    + uge 7:
+    
+    
