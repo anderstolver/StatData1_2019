@@ -39,6 +39,8 @@ Følgende datasæt hører til de [gamle eksamensopgaver](https://github.com/ande
 
 Jeg minder om, at i eksamensopgaverne op til februar 2017 skulle man ikke selv køre R under eksamen. I stedet er der R kode i selve opgaven. Jeg har dog uploadet en del datasæt også til de gamle eksamensopgaver (før feb. 2017), og du opfordres til selv at køre R koden, hvis du bruger disse opgaver til eksamenstræning.
 
+* Eksamen jan. 2020, opgave 1: [salat.txt](data/salat.txt) - [salat.xlsx](data/salat.xlsx)
+* Eksamen jan. 2020, opgave 2: [pestgolf.txt](data/pestgolf.txt) - [pestgolf.xlsx](data/pestgolf.xlsx)
 * Eksamen nov. 2019, opgave 1: [hunde.txt](data/hunde.txt) - [hunde.xlsx](data/hunde.xlsx)
 * Eksamen nov. 2019, opgave 2: [training.txt](data/training.txt) - [training.xlsx](data/training.xlsx)
 * Eksamen jan. 2019, opgave 1: [ss_gr.txt](data/ss_gr.txt) - [ss_gr.xlsx](data/ss_gr.xlsx)
